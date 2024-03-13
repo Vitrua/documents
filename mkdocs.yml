@@ -92,6 +92,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 copyright: |
   &copy; 2024 <a href="https://vitrua.top"  target="_blank" rel="noopener">Vitrua</a>
