@@ -1,4 +1,14 @@
-# 0.1.0 (2024-03-09)
+## [0.1.1](https://github.com/Vitrua/documents/compare/v0.1.0...v0.1.1) (2024-03-17)
+
+
+### Bug Fixes
+
+* custom colors and pages structure ([7dc4667](https://github.com/Vitrua/documents/commit/7dc4667f5a15e2793a32afc378a800a00a7c39c8))
+* start structuring pages ([644dd72](https://github.com/Vitrua/documents/commit/644dd72a5861b43cd42f98639010ca4258ef3f37))
+
+
+
+# [0.1.0](https://github.com/Vitrua/documents/compare/18be42789865022ec02258bf4d88aa73096befd0...v0.1.0) (2024-03-09)
 
 
 ### Bug Fixes
