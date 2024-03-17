@@ -1,31 +1,52 @@
 site_name: Vitrua.top
 site_url: https://vitruastudio.github.io/documents/
+
 theme:
   name: material
   features:
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
+    - search.share
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.prune
+
+
   language: en
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep-orange
+      accent: indigo
+      toggle:
+        icon: material/weather-night
         name: Switch to dark mode
-      primary: teal
-      accent: purple 
-    - scheme: slate 
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep-orange
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: teal
-      accent: lime
+        icon: material/brightness-auto
+        name: Switch to system preference
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  icon:
+    logo: logo
+  font:
+    text: DM Sans
+
 #
 #plugins:
 #  - social
@@ -38,6 +59,21 @@ extra:
       link: https://instagram.com/vitruastudio
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/phuongcth
+#  analytics: 
+#    feedback:
+#      title: Was this page helpful?
+#      ratings:
+#        - icon: material/emoticon-happy-outline
+#          name: This page was helpful
+#          data: 1
+#          note: >-
+#            Thanks for your feedback!
+#        - icon: material/emoticon-sad-outline
+#          name: This page could be improved
+#          data: 0
+#          note: >- 
+#            Thanks for your feedback! Help us improve this page by
+#            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
 
 
 markdown_extensions:
@@ -56,6 +92,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/vitrua"  target="_blank" rel="noopener">Vitrua</a>
+  &copy; 2024 <a href="https://vitrua.top"  target="_blank" rel="noopener">Vitrua</a>
