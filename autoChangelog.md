@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/Vitrua/documents/compare/v0.1.1...v0.1.2) (2024-03-18)
+
+
+### Bug Fixes
+
+* comment date plugin ([1379c73](https://github.com/Vitrua/documents/commit/1379c739cd929a7c9cc694afaf56fb639d6abfe2))
+
+
+
 ## [0.1.1](https://github.com/Vitrua/documents/compare/v0.1.0...v0.1.1) (2024-03-17)
 
 
