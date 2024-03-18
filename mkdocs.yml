@@ -1,5 +1,5 @@
 site_name: Vitrua.top
-site_url: https://vitruastudio.github.io/documents/
+site_url: https://docs.vitrua.top/
 
 theme:
   name: material
@@ -47,10 +47,10 @@ theme:
   font:
     text: DM Sans
 
-#
-#plugins:
+plugins:
 #  - social
-#
+  - git-revision-date-localized:
+      type: date
 extra:
   social:
     - icon: fontawesome/brands/patreon
