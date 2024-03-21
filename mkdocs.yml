@@ -47,10 +47,13 @@ theme:
   font:
     text: DM Sans
 
-#plugins:
-#  - social
-#  - git-revision-date-localized:
-#      type: date
+plugins:
+  - social
+  - search
+  - git-revision-date-localized:
+      type: date
+#  - search.highlight
+#  - search.share
 extra:
   social:
     - icon: fontawesome/brands/patreon
