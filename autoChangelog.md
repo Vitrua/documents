@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/Vitrua/documents/compare/v0.2.0...v0.2.1) (2024-03-21)
+
+
+### Bug Fixes
+
+* **ci:** pip plugins installation ([8707158](https://github.com/Vitrua/documents/commit/870715892b6c12f94f7392fc5b7ebcd6701e3226))
+
+
+
 # [0.2.0](https://github.com/Vitrua/documents/compare/v0.1.2...v0.2.0) (2024-03-21)
 
 
