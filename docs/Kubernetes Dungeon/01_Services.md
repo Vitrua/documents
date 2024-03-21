@@ -1,5 +1,4 @@
 # Services: ClusterIp, NodePort, LoadBalancer
-<small style="color:grey;">*2024/03/21*</small>
 
 ## Story time
 Once upon a time, three intrepid souls roamed the land: Brave Ben, Resourceful Rina, and Fearless Fred. One fateful day, they set their sights on the legendary Cluster Castle, a fabled dungeon rumored to conceal secrets of immense power and knowledge.
