@@ -1,5 +1,9 @@
 # Services: ClusterIp, NodePort, LoadBalancer
 
+<div style="text-align:center;">
+  <img src="https://github.com/Vitrua/images/blob/main/k8s/adventurers.jpg?raw=true" alt="adv" width="300" height="300">
+</div>
+
 ## Story time
 Once upon a time, three intrepid souls roamed the land: Brave Ben, Resourceful Rina, and Fearless Fred. One fateful day, they set their sights on the legendary Cluster Castle, a fabled dungeon rumored to conceal secrets of immense power and knowledge.
 
@@ -9,9 +13,21 @@ As they ventured forth, they diverged onto separate paths, destined for an unexp
 
 Brave Ben, opting for a solitary journey into the depths, utilized his teleportation magic to navigate the labyrinthine tunnels. Amidst the maze, he encountered **ClusterIP**, a spectral guide. This entity ensured seamless communication within the dungeon's confines, shielding him from external interference. The aid of ClusterIP was akin to possessing an exclusive map of the tunnels, accessible only to those within its bounds.
 
+<div style="text-align:center;">
+  <img src="https://github.com/Vitrua/images/blob/main/k8s/spectre.jpg?raw=true" alt="spec" width="200" height="200">
+</div>
+
 Meanwhile, Resourceful Rina circled the castle walls until she stumbled upon a concealed door. Upon entering, she was greeted by **NodePort**, the stalwart guardian. NodePort facilitated external access to specific chambers within the dungeon, acting as a direct bridge between the interior and the outside world. It served as a key to unlock designated areas, granting entry to predetermined zones.
 
+<div style="text-align:center;">
+  <img src="https://github.com/Vitrua/images/blob/main/k8s/guardian.jpg?raw=true" alt="guard" width="200" height="200">
+</div>
+
 Finally Fearless Fred decided to boldly march through the main entrance, confronting a massive gate guarded by the imposing **LoadBalancer**. This formidable gatekeeper permitted numerous adventurers to access the dungeon's chambers. The LoadBalancer represented the necessity for a broader entry point, providing an accessible map to guide all who sought exploration within.
+
+<div style="text-align:center;">
+  <img src="https://github.com/Vitrua/images/blob/main/k8s/gatekeeper.jpg?raw=true" alt="gate" width="200" height="200">
+</div>
 
 Though taking different routes, ClusterIP, NodePort, and LoadBalancer guided the adventurers through the Cluster Castle, each ensuring access to its treasures while safeguarding its secrets with their protective measures. The three adventurers all emerged victorious, and returned laden with newfound knowledge and riches.
 
@@ -81,3 +97,8 @@ Assuming you have a Kubernetes cluster set up and a sample application deployed 
 
 These steps should provide a hands-on experience in managing various types of Kubernetes services and familiarize you with their configurations and functionalities.
 
+<div style="text-align:center;">
+  <a href="https://patreon.com/Vitrua">
+    <img src="https://github.com/Vitrua/images/blob/main/others/supportmon.png?raw=true" alt="wiz" width="150" height="150">
+  </a>
+</div>

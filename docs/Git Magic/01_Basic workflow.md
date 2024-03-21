@@ -1,5 +1,9 @@
 # Basic Workflow
 
+<div style="text-align:center;">
+  <img src="https://github.com/Vitrua/images/blob/main/git/firemagic.jpg?raw=true" alt="wiz" width="300" height="300">
+</div>
+
 Once upon a time in the enchanted land of Vitrua, there lived a wizard named Wizzle. Wizzle was not your ordinary wizard; he was part of an order of fellow wizards and sorcerers who shared all their spells through a big cauldron. One day, Wizzle got an idea to upgrade the Fire spell, and he extracted a magical paper named `fire.spell` from the cauldron. 
 
 ```
@@ -66,3 +70,9 @@ And so, in the land of Vitrua, Wizzle the Spellcaster continued to weave his mag
 - `git push origin <branch_name>`: Push changes to a remote repository.
 
 And so, the tale of Wizzle the Git Spellcaster goes down in the magical scrolls of Vitrua, inspiring wizards and developers alike to wield the power of Git for enchanting collaborative creations.
+
+<div style="text-align:center;">
+  <a href="https://patreon.com/Vitrua">
+    <img src="https://github.com/Vitrua/images/blob/main/others/supportmon.png?raw=true" alt="wiz" width="150" height="150">
+  </a>
+</div>

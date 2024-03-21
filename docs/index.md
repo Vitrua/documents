@@ -1,9 +1,14 @@
 # Guides
 
-Welcome, you found the Guides section!
+Welcome! You've discovered the Guides section!
 
-Navigating around here let's you find the magic wolrd of tutorials.
+Here, you'll embark on a journey through the magical realm of tutorials. Explore and uncover the secrets of this enchanted domain!
 
-Or go back to our Homepage:
+<div style="text-align:center;">
+  <img src="https://github.com/Vitrua/images/blob/main/others/library.jpg?raw=true" alt="library" width="300" height="300">
+</div>
 
-image placeholder
+Or go back to our Homepage
+
+# [vitrua.top](https://vitrua.top)
+
