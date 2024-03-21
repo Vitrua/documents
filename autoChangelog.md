@@ -1,3 +1,13 @@
+# [0.2.0](https://github.com/Vitrua/documents/compare/v0.1.2...v0.2.0) (2024-03-21)
+
+
+### Features
+
+* add social and revision dates ([9520c72](https://github.com/Vitrua/documents/commit/9520c72d7b744c342156162f430c35598f321805))
+* **k8s:** add services ([9bfed82](https://github.com/Vitrua/documents/commit/9bfed82851543f66d5b271f47f868f236cf581ff))
+
+
+
 ## [0.1.2](https://github.com/Vitrua/documents/compare/v0.1.1...v0.1.2) (2024-03-18)
 
 
