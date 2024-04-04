@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/Vitrua/documents/compare/v0.3.0...v0.4.0) (2024-04-04)
+
+
+### Features
+
+* add support images ([014a95b](https://github.com/Vitrua/documents/commit/014a95b176e79a3aa5cfbb9e9e087f8c01fe886e))
+
+
+
 # [0.3.0](https://github.com/Vitrua/documents/compare/v0.2.1...v0.3.0) (2024-03-21)
 
 
