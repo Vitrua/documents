@@ -73,6 +73,7 @@ And so, the tale of Wizzle the Git Spellcaster goes down in the magical scrolls 
 
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
-    <img src="https://github.com/Vitrua/images/blob/main/others/supportmon.png?raw=true" alt="wiz" width="150" height="150">
+    <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">
+    <img src="https://github.com/Vitrua/images/blob/main/others/supportmon.png?raw=true#only-dark" alt="wiz" width="150" height="150">
   </a>
 </div>
