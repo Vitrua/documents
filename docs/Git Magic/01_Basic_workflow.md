@@ -12,7 +12,7 @@ git clone https://github.com/vitrua/spellbook
 
 Inscribed on the paper was the spell to conjure flames - a simple yet powerful "Fire" spell. Wizzle was excited to make it even more powerful.
 
-**The Spellcasting Ritual:**
+## The Spellcasting Ritual:
 
 1. **Create a New Branch - Fireball**:
 
@@ -59,7 +59,7 @@ His fellow wizards and sorcerers, connected through the magical network, marvele
 
 And so, in the land of Vitrua, Wizzle the Spellcaster continued to weave his magical Git commands, creating powerful spells and enchantments for the entire magical community.
 
-**Magical Git Commands Summary:**
+## Magical Git Commands Summary:
 
 - `git branch <branch_name>`: Create a new branch.
 - `git checkout <branch_name>`: Switch to a branch.

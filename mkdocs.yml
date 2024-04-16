@@ -18,6 +18,7 @@ theme:
     - navigation.instant.preview
     - navigation.tracking
     - navigation.prune
+  custom_dir: overrides
 
 
   language: en

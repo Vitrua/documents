@@ -1,3 +1,18 @@
+# [0.5.0](https://github.com/Vitrua/documents/compare/v0.4.0...v0.5.0) (2024-04-16)
+
+
+### Bug Fixes
+
+* copyright and small fixes docs ([ea4e691](https://github.com/Vitrua/documents/commit/ea4e691c916f2f75da2954be5da2709be21ab588))
+* readme custom domain ([5937e50](https://github.com/Vitrua/documents/commit/5937e504ec795c624b7607dd02703c79707c4372))
+
+
+### Features
+
+* add penguin linux basic workflow ([1bd1658](https://github.com/Vitrua/documents/commit/1bd16587845a4c0e68567a711da2ed857f809340))
+
+
+
 # [0.4.0](https://github.com/Vitrua/documents/compare/v0.3.0...v0.4.0) (2024-04-04)
 
 
