@@ -95,7 +95,7 @@ engine
   man pwd
   ```
 
-**Linux Survival Summary:**
+## Linux Survival Summary:
 
 - `pwd`: Get the path to the current working directory.
 - `ls`: List directory contents. `ls -lah` for more information.
