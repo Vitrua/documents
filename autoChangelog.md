@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/Vitrua/documents/compare/v0.5.0...v0.6.0) (2024-04-20)
+
+
+### Features
+
+* **k8s:** add dragonpod, complete services ([a370747](https://github.com/Vitrua/documents/commit/a370747025ef483a4311a4a5f0756ffcfa318225))
+
+
+
 # [0.5.0](https://github.com/Vitrua/documents/compare/v0.4.0...v0.5.0) (2024-04-16)
 
 
