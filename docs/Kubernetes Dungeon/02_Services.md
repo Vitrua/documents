@@ -11,30 +11,36 @@ Approaching the castle's entrance, they resolved to compete in their quest for t
 
 As they ventured forth, they diverged onto separate paths, destined for an unexpected encounter with the mystical guardians: ClusterIP, NodePort, LoadBalancer, and ExternalName.
 
+### ClusterIP
+
 Brave Ben, opting for a solitary journey into the depths, utilized his teleportation magic to navigate the labyrinthine tunnels. Amidst the maze, he encountered **ClusterIP**, a spectral guide. This entity ensured seamless communication within the dungeon's confines, shielding him from external interference. The aid of ClusterIP was akin to possessing an exclusive map of the tunnels, accessible only to those within its bounds.
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/k8s/spectre.jpg?raw=true" alt="spec" width="200" height="200">
 </div>
 
+### NodePort
 Meanwhile, Resourceful Rina circled the castle walls until she stumbled upon a concealed door. Upon entering, she was greeted by **NodePort**, the stalwart guardian. NodePort facilitated external access to specific chambers within the dungeon, acting as a direct bridge between the interior and the outside world. It served as a key to unlock designated areas, granting entry to predetermined zones.
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/k8s/guardian.jpg?raw=true" alt="guard" width="200" height="200">
 </div>
 
+### LoadBalancer
 Finally Fearless Fred decided to boldly march through the main entrance, confronting a massive gate guarded by the imposing **LoadBalancer**. This formidable gatekeeper permitted numerous adventurers to access the dungeon's chambers. The LoadBalancer represented the necessity for a broader entry point, providing an accessible map to guide all who sought exploration within.
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/k8s/gatekeeper.jpg?raw=true" alt="gate" width="200" height="200">
 </div>
 
+### ExternalName
 In the shadows, a lesser-known sorcerer, **ExternalName**, watched over a hidden passage leading to a realm beyond the dungeon's confines. This sorcerer acted as a conduit to an external service, allowing adventurers to access resources located outside the dungeon's domain. ExternalName served as a gateway to distant lands, offering a glimpse into worlds beyond imagination.
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/k8s/externalsorcerer.jpg?raw=true" alt="external" width="200" height="200">
 </div>
 
+### Conclusion
 Though taking different routes, ClusterIP, NodePort, LoadBalancer, and ExternalName guided the adventurers through the Cluster Castle, each ensuring access to its treasures while safeguarding its secrets with their protective measures. The four adventurers all emerged victorious, and returned laden with newfound knowledge and riches.
 
 ---

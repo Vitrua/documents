@@ -1,3 +1,13 @@
+## [0.6.1](https://github.com/Vitrua/documents/compare/v0.6.0...v0.6.1) (2024-04-20)
+
+
+### Bug Fixes
+
+* deploy CNAME ([7a93113](https://github.com/Vitrua/documents/commit/7a93113b74cdcd1cd2befd557bdddc614eb7ddfc))
+* k8s 2 tutorials and ci ([e61851a](https://github.com/Vitrua/documents/commit/e61851aa5eb79daf0d458244f4a1c33fa5ad4612))
+
+
+
 # [0.6.0](https://github.com/Vitrua/documents/compare/v0.5.0...v0.6.0) (2024-04-20)
 
 
