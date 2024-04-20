@@ -37,4 +37,4 @@ secret
 *.tar.gz
 
 # Ignore local builds
-/venv/
+venv/
