@@ -1,7 +1,7 @@
-# Basic Workflow
+# Git Basic Workflow
 
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/git/firemagic.jpg?raw=true" alt="wiz" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/misc/firemagic.jpg?raw=true" alt="wiz" width="300" height="300">
 </div>
 
 Once upon a time in the enchanted land of Vitrua, there lived a wizard named Wizzle. Wizzle was not your ordinary wizard; he was part of an order of fellow wizards and sorcerers who shared all their spells through a big cauldron. One day, Wizzle got an idea to upgrade the Fire spell, and he extracted a magical paper named `fire.spell` from the cauldron. 
