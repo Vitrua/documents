@@ -1,3 +1,13 @@
+## [0.7.1](https://github.com/Vitrua/documents/compare/v0.7.0...v0.7.1) (2024-04-21)
+
+
+### Bug Fixes
+
+* add objectives to all the docs ([fe6c7d2](https://github.com/Vitrua/documents/commit/fe6c7d200468b236f030e7f88fc0b240de2ab92c))
+* cowsay fortune example ([5e047db](https://github.com/Vitrua/documents/commit/5e047db881aa8ac2322808742887922d0fe3f135))
+
+
+
 # [0.7.0](https://github.com/Vitrua/documents/compare/v0.6.1...v0.7.0) (2024-04-21)
 
 
