@@ -4,6 +4,22 @@
   <img src="https://github.com/Vitrua/images/blob/main/misc/cowfortune.jpg?raw=true" alt="misc" width="300" height="300">
 </div>
 
+## Objective
+
+Being greeted by a cow predicting your fortune every time you open a bash terminal. 
+
+## Example
+
+```bash
+ ___________________________________
+< Beware of low-flying butterflies. >
+ -----------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
 ## Storytime
 Fortune-teller cow wasn't known for her milk production,
 
@@ -13,11 +29,7 @@ Farmers flocked to her pasture, eagerly awaiting a swish of her tail
 
 (left meant sunshine, right meant rain). 
 
-## Objective
-
-Transform your mundane bash terminal into a whimsical oracle of fortunes with the mystical insights of the Fortune-teller Cow. Each time you open your terminal, be greeted by a prophetic message delivered by the wise bovine seer.
-
-## Install
+## Installation
 
 1. **Install fortune and cowsay**
     

@@ -4,6 +4,10 @@
   <img src="https://github.com/Vitrua/images/blob/main/linux/penguinspace.jpg?raw=true" alt="Penguin in Space" width="300" height="300">
 </div>
 
+## Objective
+
+Learn commands for basic Linux operations from terminal.
+
 ## Introduction
 
 Meet Pulsar Penguin, the brave astronaut quietly floating in his spaceship in outer space. As he taps with his fins on the control panel keyboard, his spacecraft is suddenly damaged by a small meteor. Trained to stay calm in such situations, he begins to navigate through the dire scenario.
