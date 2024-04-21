@@ -4,6 +4,10 @@
   <img src="https://github.com/Vitrua/images/blob/main/k8s/dragonscientist.jpg?raw=true" alt="adv" width="300" height="300">
 </div>
 
+## Objective
+
+Learn the basic configuration of a Kubernetes pod.
+
 ## Storytime
 
 In the mystical realm of Vitrua, there dwelled a revered scientist whose companion was a venerable dragon in the twilight of its existence. Determined to extend the dragon's waning years, the scientist delved into the arcane arts of longevity. Initially, he succeeded in encapsulating the essence of the dragon within a mesmerizing **image**, a tapestry of intricate **layers**. However, it was only when this image was ensconced within a **container**, a mystical orb, that true transformation occurred, imbuing the dragon with a vitality beyond its natural state.
