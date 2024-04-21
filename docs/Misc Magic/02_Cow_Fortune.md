@@ -17,7 +17,20 @@ Farmers flocked to her pasture, eagerly awaiting a swish of her tail
 
 Transform your mundane bash terminal into a whimsical oracle of fortunes with the mystical insights of the Fortune-teller Cow. Each time you open your terminal, be greeted by a prophetic message delivered by the wise bovine seer.
 
-## Install
+## Example
+
+```bash
+ ___________________________________
+< Beware of low-flying butterflies. >
+ -----------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+## Installation
 
 1. **Install fortune and cowsay**
     
