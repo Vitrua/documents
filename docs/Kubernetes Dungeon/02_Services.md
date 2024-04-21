@@ -4,6 +4,10 @@
   <img src="https://github.com/Vitrua/images/blob/main/k8s/adventurers.jpg?raw=true" alt="adv" width="300" height="300">
 </div>
 
+## Objective
+
+Learn and get practice with the different types of kubernetes services.
+
 ## Story time
 Once upon a time, three intrepid souls roamed the land: Brave Ben, Resourceful Rina, and Fearless Fred. One fateful day, they set their sights on the legendary Cluster Castle, a fabled dungeon rumored to conceal secrets of immense power and knowledge.
 
