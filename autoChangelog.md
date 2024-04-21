@@ -1,3 +1,12 @@
+# [0.7.0](https://github.com/Vitrua/documents/compare/v0.6.1...v0.7.0) (2024-04-21)
+
+
+### Features
+
+* add misc category and add cow fortune ([3b6a713](https://github.com/Vitrua/documents/commit/3b6a713463b51c0cee68582c373cf8e36c3b9bbf))
+
+
+
 ## [0.6.1](https://github.com/Vitrua/documents/compare/v0.6.0...v0.6.1) (2024-04-20)
 
 
