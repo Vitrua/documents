@@ -2,32 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.vitrua.top/</loc>
-         <lastmod>2024-04-21</lastmod>
+         <lastmod>2024-04-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/Kubernetes%20Dungeon/01_Pods/</loc>
-         <lastmod>2024-04-21</lastmod>
+         <lastmod>2024-04-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/Kubernetes%20Dungeon/02_Services/</loc>
-         <lastmod>2024-04-21</lastmod>
+         <lastmod>2024-04-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/Misc%20Magic/01_Git_Basic_workflow/</loc>
-         <lastmod>2024-04-21</lastmod>
+         <lastmod>2024-04-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/Misc%20Magic/02_Cow_Fortune/</loc>
-         <lastmod>2024-04-21</lastmod>
+         <lastmod>2024-04-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OSpace/01_Basic_Linux/</loc>
-         <lastmod>2024-04-21</lastmod>
+         <lastmod>2024-04-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vitrua.top/OpenShift%20Castle/01_authentication_new_project_basics/</loc>
+         <lastmod>2024-04-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
