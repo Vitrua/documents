@@ -35,4 +35,24 @@
          <lastmod>2024-04-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://docs.vitrua.top/OpenShift%20Castle/02_exploring_api_resources/</loc>
+         <lastmod>2024-04-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vitrua.top/OpenShift%20Castle/03_extracting_config_data/</loc>
+         <lastmod>2024-04-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vitrua.top/OpenShift%20Castle/04_examining_cluster_metrics/</loc>
+         <lastmod>2024-04-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vitrua.top/OpenShift%20Castle/05_get_events_and_troubleshooting/</loc>
+         <lastmod>2024-04-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/01_authentication_new_project_basics/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/02_exploring_api_resources/">
       
       
-        <link rel="prev" href="../../OSpace/01_Basic_Linux/">
+        <link rel="prev" href="../01_authentication_new_project_basics/">
       
       
-        <link rel="next" href="../02_exploring_api_resources/">
+        <link rel="next" href="../03_extracting_config_data/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Entering the Openshift Castle: Authentication, new project and basic commands - Vitrua.top</title>
+        <title>Navigating the Openshift Realm: Exploring API Resources - Vitrua.top</title>
       
     
     
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Entering the Openshift Castle: Authentication, new project and basic commands - Vitrua.top" >
+        <meta  property="og:title"  content="Navigating the Openshift Realm: Exploring API Resources - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/01_authentication_new_project_basics.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/02_exploring_api_resources.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/01_authentication_new_project_basics/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/02_exploring_api_resources/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Entering the Openshift Castle: Authentication, new project and basic commands - Vitrua.top" >
+        <meta  name="twitter:title"  content="Navigating the Openshift Realm: Exploring API Resources - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/01_authentication_new_project_basics.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/02_exploring_api_resources.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#entering-the-openshift-castle-authentication-new-project-and-basic-commands" class="md-skip">
+        <a href="#navigating-the-openshift-realm-exploring-api-resources" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Entering the Openshift Castle: Authentication, new project and basic commands
+              Navigating the Openshift Realm: Exploring API Resources
             
           </span>
         </div>
@@ -320,7 +320,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../01_authentication_new_project_basics/" class="md-tabs__link">
           
   
   OpenShift Castle
@@ -566,6 +566,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_authentication_new_project_basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entering the Openshift Castle: Authentication, new project and basic commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -582,7 +603,7 @@
           
   
   <span class="md-ellipsis">
-    Entering the Openshift Castle: Authentication, new project and basic commands
+    Navigating the Openshift Realm: Exploring API Resources
   </span>
   
 
@@ -593,7 +614,7 @@
         
   
   <span class="md-ellipsis">
-    Entering the Openshift Castle: Authentication, new project and basic commands
+    Navigating the Openshift Realm: Exploring API Resources
   </span>
   
 
@@ -642,47 +663,53 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#authentication-gates" class="md-nav__link">
+  <a href="#viewing-api-resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Authentication Gates
+      Viewing API Resources
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#forging-new-projects" class="md-nav__link">
+  <a href="#openshift-main-resource-types" class="md-nav__link">
     <span class="md-ellipsis">
-      Forging New Projects
+      Openshift Main Resource Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Openshift Main Resource Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buildconfig-architectural-blueprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      BuildConfig: Architectural Blueprints
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#commanding-the-castle" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#deploymentconfig-strategic-deployments" class="md-nav__link">
     <span class="md-ellipsis">
-      Commanding the Castle
+      DeploymentConfig: Strategic Deployments
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#token-of-entry-oauth" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#routes-pathways-of-navigation" class="md-nav__link">
     <span class="md-ellipsis">
-      Token of Entry - OAuth
+      Routes: Pathways of Navigation
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -690,27 +717,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../02_exploring_api_resources/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Navigating the Openshift Realm: Exploring API Resources
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -840,47 +846,53 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#authentication-gates" class="md-nav__link">
+  <a href="#viewing-api-resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Authentication Gates
+      Viewing API Resources
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#forging-new-projects" class="md-nav__link">
+  <a href="#openshift-main-resource-types" class="md-nav__link">
     <span class="md-ellipsis">
-      Forging New Projects
+      Openshift Main Resource Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Openshift Main Resource Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buildconfig-architectural-blueprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      BuildConfig: Architectural Blueprints
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#commanding-the-castle" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#deploymentconfig-strategic-deployments" class="md-nav__link">
     <span class="md-ellipsis">
-      Commanding the Castle
+      DeploymentConfig: Strategic Deployments
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#token-of-entry-oauth" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#routes-pathways-of-navigation" class="md-nav__link">
     <span class="md-ellipsis">
-      Token of Entry - OAuth
+      Routes: Pathways of Navigation
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -899,62 +911,36 @@
                   
 
 
-<h1 id="entering-the-openshift-castle-authentication-new-project-and-basic-commands">Entering the Openshift Castle: Authentication, new project and basic commands</h1>
+<h1 id="navigating-the-openshift-realm-exploring-api-resources">Navigating the Openshift Realm: Exploring API Resources</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/incisions.jpg?raw=true" alt="inscription" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/blueprint1.jpg?raw=true" alt="discovery" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Learn how to authenticate, create new projects, and some basic commands in Openshift.</p>
+<p>Discover and explore the API resources available within Openshift to understand the landscape of its capabilities.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To embark on this adventure, you'll need:</p>
+<p>To embark on this journey of discovery, you'll need:</p>
 <ul>
 <li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
 <li>Basic familiarity with command-line interfaces (CLI) and Kubernetes concepts.</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>In the vast landscape of the digital realm, where clusters of containers flourish like bustling kingdoms, there lies the imposing fortress of Openshift. Built upon the foundation of Kubernetes, this castle stands as a bastion of security and scalability, protecting its treasures with unwavering vigilance.</p>
-<p>Our hero, a brave adventurer seeking knowledge and mastery, stands before the gates of Openshift. The castle looms above, its architecture intricate and imposing, a testament to the power it holds within.</p>
-<h2 id="authentication-gates">Authentication Gates</h2>
-<p>Before venturing forth, our hero must authenticate at the castle gates. With the <code>oc login</code> command, he present their credentials:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>login<span class="w"> </span>&lt;cluster-url&gt;
-</code></pre></div></p>
-<h2 id="forging-new-projects">Forging New Projects</h2>
-<p>A strange sensation courses through our hero's veins as they enter the castle, as if the fortress were under their command. The first thing noticed is the multitude of different wings within the castle, each isolated from the others. With newfound powers, our hero invokes the creation of a new project to carve out a new realm:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>new<span class="w"> </span>project<span class="w"> </span>&lt;my-app&gt;
-</code></pre></div></p>
-<h2 id="commanding-the-castle">Commanding the Castle</h2>
-<p>Adorning the walls are inscriptions in a mysterious language. Armed with the knowledge of oc commands, our hero delves deeper into the castle's inner workings:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>cluster-info
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>oc<span class="w"> </span>api-versions
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>oc<span class="w"> </span>get<span class="w"> </span>clusteroperator
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>oc<span class="w"> </span>get<span class="w"> </span>pod
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>&lt;pod_name&gt;
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>&lt;pod_name&gt;<span class="w"> </span>-o<span class="w"> </span>yaml
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>&lt;pod_name&gt;<span class="w"> </span>-o<span class="w"> </span>json
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>oc<span class="w"> </span>get<span class="w"> </span>deploy<span class="w"> </span>&lt;deploy_name&gt;<span class="w"> </span>-o<span class="w"> </span>wide
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>oc<span class="w"> </span>get<span class="w"> </span>all
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>oc<span class="w"> </span>describe<span class="w"> </span>&lt;resource_type&gt;<span class="w"> </span>&lt;resource_name&gt;
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>oc<span class="w"> </span>explain<span class="w"> </span>&lt;jsonpath_identifier&gt;
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>oc<span class="w"> </span>explain<span class="w"> </span>&lt;jsonpath_identifier&gt;<span class="w"> </span>--recursive
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>oc<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>&lt;pod.yaml&gt;
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>oc<span class="w"> </span>status<span class="w"> </span>--suggest
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>oc<span class="w"> </span>delete<span class="w"> </span>&lt;resource_type&gt;<span class="w"> </span>&lt;resource_name&gt;
+<p>As we venture deeper into the heart of the Openshift castle, we uncover the API resources, the very fabric that defines the realm's architecture and functionality. These resources represent the essence of every component within the castle, guiding its operations and interactions.</p>
+<h2 id="viewing-api-resources">Viewing API Resources</h2>
+<p>The API resource objects serve as blueprints for the intended state of every entity in the cluster. Similar to their counterparts in the realm of Kubernetes, these commands offer insights into the castle's inner workings:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>api-resources
 </code></pre></div>
-For instance:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>explain<span class="w"> </span>pods.spec.containers.resources
-</code></pre></div>
-These commands unveil the secrets of the castle's infrastructure and its inhabitants.</p>
-<p>To make these commands influence a different wing of the castle, than the one where he is in that moment, our hero needs to add the option <code>--namespace</code> or <code>-n</code> to the instruction:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;
+You can refine and organize the results using additional flags:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>api-resources<span class="w"> </span>--namespaced<span class="o">=</span><span class="nb">true</span><span class="w"> </span>--api-group<span class="w"> </span>apps<span class="w"> </span>--sort-by<span class="w"> </span>name
 </code></pre></div></p>
-<h2 id="token-of-entry-oauth">Token of Entry - OAuth</h2>
-<p>For those who seek passage via OAuth, the castle offers tokens of entry:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>oc<span class="w"> </span>login<span class="w"> </span>--token<span class="o">=</span>sha256-BW...fE2<span class="w"> </span>--server<span class="o">=</span>https://api.eg.vitrua.top:6443
-</code></pre></div>
-These tokens grant access to the castle's inner sanctums.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>And thus, the hero took his first steps inside the castle.</p>
+<h2 id="openshift-main-resource-types">Openshift Main Resource Types</h2>
+<h3 id="buildconfig-architectural-blueprints">BuildConfig: Architectural Blueprints</h3>
+<p>In the grand design of the Openshift castle, the BuildConfig stands as the architect's blueprint, defining the intricate process of constructing container images from source code stored in Git repositories. It is the cornerstone of continuous integration and delivery workflows, laying the foundation for innovation and evolution within Openshift projects.</p>
+<h3 id="deploymentconfig-strategic-deployments">DeploymentConfig: Strategic Deployments</h3>
+<p>Within the fortified walls of Openshift, the DeploymentConfig serves as a strategic map, guiding the deployment and management of sets of containers within pods. With features encompassing scaling and deployment strategies, it orchestrates the movement of troops across the battlefield of the cluster. In Openshift 4.5, it yields to Deployment objects, heralding a new era of enhanced features and flexibility, yet its legacy remains ingrained in the castle's history.</p>
+<h3 id="routes-pathways-of-navigation">Routes: Pathways of Navigation</h3>
+<p>Like ancient pathways leading through the labyrinthine corridors of the Openshift castle, Routes are the DNS hostnames recognized by the Openshift router. They serve as the entry points for accessing applications and microservices, guiding travelers through the bustling streets and bustling squares of the cluster. With each route mapped and each journey embarked upon, they facilitate the seamless flow of traffic within Openshift's intricate network of pathways and passages.</p>
+<p>Embark on this journey of exploration through the API resources of Openshift, unraveling its intricacies and unlocking its potential.</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">

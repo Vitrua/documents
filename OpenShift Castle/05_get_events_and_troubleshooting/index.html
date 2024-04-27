@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/01_authentication_new_project_basics/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/05_get_events_and_troubleshooting/">
       
       
-        <link rel="prev" href="../../OSpace/01_Basic_Linux/">
+        <link rel="prev" href="../04_examining_cluster_metrics/">
       
-      
-        <link rel="next" href="../02_exploring_api_resources/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Entering the Openshift Castle: Authentication, new project and basic commands - Vitrua.top</title>
+        <title>Unveiling the Mysteries of the Openshift Citadel: Exploring Cluster Events and Troubleshooting - Vitrua.top</title>
       
     
     
@@ -57,11 +55,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Entering the Openshift Castle: Authentication, new project and basic commands - Vitrua.top" >
+        <meta  property="og:title"  content="Unveiling the Mysteries of the Openshift Citadel: Exploring Cluster Events and Troubleshooting - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/01_authentication_new_project_basics.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/05_get_events_and_troubleshooting.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +67,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/01_authentication_new_project_basics/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/05_get_events_and_troubleshooting/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Entering the Openshift Castle: Authentication, new project and basic commands - Vitrua.top" >
+        <meta  name="twitter:title"  content="Unveiling the Mysteries of the Openshift Citadel: Exploring Cluster Events and Troubleshooting - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/01_authentication_new_project_basics.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/05_get_events_and_troubleshooting.png" >
       
     
     
@@ -100,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#entering-the-openshift-castle-authentication-new-project-and-basic-commands" class="md-skip">
+        <a href="#unveiling-the-mysteries-of-the-openshift-citadel-exploring-cluster-events-and-troubleshooting" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Entering the Openshift Castle: Authentication, new project and basic commands
+              Unveiling the Mysteries of the Openshift Citadel: Exploring Cluster Events and Troubleshooting
             
           </span>
         </div>
@@ -320,7 +318,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../01_authentication_new_project_basics/" class="md-tabs__link">
           
   
   OpenShift Castle
@@ -566,30 +564,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Entering the Openshift Castle: Authentication, new project and basic commands
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01_authentication_new_project_basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -598,98 +576,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#authentication-gates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Authentication Gates
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#forging-new-projects" class="md-nav__link">
-    <span class="md-ellipsis">
-      Forging New Projects
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commanding-the-castle" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commanding the Castle
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#token-of-entry-oauth" class="md-nav__link">
-    <span class="md-ellipsis">
-      Token of Entry - OAuth
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -762,10 +648,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../05_get_events_and_troubleshooting/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unveiling the Mysteries of the Openshift Citadel: Exploring Cluster Events and Troubleshooting
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -774,6 +680,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-cluster-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Cluster Events
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-node-status-and-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check Node Status and Troubleshooting
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -840,45 +811,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#authentication-gates" class="md-nav__link">
+  <a href="#get-cluster-events" class="md-nav__link">
     <span class="md-ellipsis">
-      Authentication Gates
+      Get Cluster Events
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#forging-new-projects" class="md-nav__link">
+  <a href="#check-node-status-and-troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
-      Forging New Projects
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commanding-the-castle" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commanding the Castle
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#token-of-entry-oauth" class="md-nav__link">
-    <span class="md-ellipsis">
-      Token of Entry - OAuth
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
+      Check Node Status and Troubleshooting
     </span>
   </a>
   
@@ -899,62 +843,46 @@
                   
 
 
-<h1 id="entering-the-openshift-castle-authentication-new-project-and-basic-commands">Entering the Openshift Castle: Authentication, new project and basic commands</h1>
+<h1 id="unveiling-the-mysteries-of-the-openshift-citadel-exploring-cluster-events-and-troubleshooting">Unveiling the Mysteries of the Openshift Citadel: Exploring Cluster Events and Troubleshooting</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/incisions.jpg?raw=true" alt="inscription" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/detective.jpg?raw=true" alt="events" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Learn how to authenticate, create new projects, and some basic commands in Openshift.</p>
+<p>Delve into the realm of Openshift's cluster events and troubleshooting, illuminating the path to understanding and resolution within the fortress's walls.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To embark on this adventure, you'll need:</p>
+<p>To embark on this journey of exploration and discovery, you'll need:</p>
 <ul>
 <li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
 <li>Basic familiarity with command-line interfaces (CLI) and Kubernetes concepts.</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>In the vast landscape of the digital realm, where clusters of containers flourish like bustling kingdoms, there lies the imposing fortress of Openshift. Built upon the foundation of Kubernetes, this castle stands as a bastion of security and scalability, protecting its treasures with unwavering vigilance.</p>
-<p>Our hero, a brave adventurer seeking knowledge and mastery, stands before the gates of Openshift. The castle looms above, its architecture intricate and imposing, a testament to the power it holds within.</p>
-<h2 id="authentication-gates">Authentication Gates</h2>
-<p>Before venturing forth, our hero must authenticate at the castle gates. With the <code>oc login</code> command, he present their credentials:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>login<span class="w"> </span>&lt;cluster-url&gt;
-</code></pre></div></p>
-<h2 id="forging-new-projects">Forging New Projects</h2>
-<p>A strange sensation courses through our hero's veins as they enter the castle, as if the fortress were under their command. The first thing noticed is the multitude of different wings within the castle, each isolated from the others. With newfound powers, our hero invokes the creation of a new project to carve out a new realm:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>new<span class="w"> </span>project<span class="w"> </span>&lt;my-app&gt;
-</code></pre></div></p>
-<h2 id="commanding-the-castle">Commanding the Castle</h2>
-<p>Adorning the walls are inscriptions in a mysterious language. Armed with the knowledge of oc commands, our hero delves deeper into the castle's inner workings:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>cluster-info
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>oc<span class="w"> </span>api-versions
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>oc<span class="w"> </span>get<span class="w"> </span>clusteroperator
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>oc<span class="w"> </span>get<span class="w"> </span>pod
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>&lt;pod_name&gt;
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>&lt;pod_name&gt;<span class="w"> </span>-o<span class="w"> </span>yaml
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>&lt;pod_name&gt;<span class="w"> </span>-o<span class="w"> </span>json
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>oc<span class="w"> </span>get<span class="w"> </span>deploy<span class="w"> </span>&lt;deploy_name&gt;<span class="w"> </span>-o<span class="w"> </span>wide
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>oc<span class="w"> </span>get<span class="w"> </span>all
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>oc<span class="w"> </span>describe<span class="w"> </span>&lt;resource_type&gt;<span class="w"> </span>&lt;resource_name&gt;
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>oc<span class="w"> </span>explain<span class="w"> </span>&lt;jsonpath_identifier&gt;
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>oc<span class="w"> </span>explain<span class="w"> </span>&lt;jsonpath_identifier&gt;<span class="w"> </span>--recursive
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>oc<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>&lt;pod.yaml&gt;
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>oc<span class="w"> </span>status<span class="w"> </span>--suggest
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>oc<span class="w"> </span>delete<span class="w"> </span>&lt;resource_type&gt;<span class="w"> </span>&lt;resource_name&gt;
+<p>As we venture deeper into the fortified confines of the Openshift citadel, we encounter the realm of cluster events and troubleshooting. Here, amidst the ebb and flow of activity, lies a treasure trove of insights and solutions waiting to be unearthed.</p>
+<h2 id="get-cluster-events">Get Cluster Events</h2>
+<p>Adventurers have the power to unveil the chronicles of the cluster through commands like:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>get<span class="w"> </span>events<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span>--sortby<span class="w"> </span>.metadata.creationTimestamp
 </code></pre></div>
-For instance:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>explain<span class="w"> </span>pods.spec.containers.resources
+Openshift boasts a monitoring stack anchored by Prometheus, residing within the 'openshift-monitoring' namespace. Powered by the Prometheus platform and Alertmanager, it stands as a sentinel, ever vigilant over the citadel's affairs.</p>
+<h2 id="check-node-status-and-troubleshooting">Check Node Status and Troubleshooting</h2>
+<p>Armed with knowledge and determination, explorers can scrutinize the general status of the cluster and delve deeper into its inner workings with commands such as:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>cluster-info
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>oc<span class="w"> </span>get<span class="w"> </span>nodes
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>oc<span class="w"> </span>get<span class="w"> </span>node<span class="w"> </span>&lt;NODE_NAME&gt;<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span>*<span class="s1">&#39;{&quot;Allocatable:\n&quot;}{.status.allocatable}{&quot;\n\n&quot;}{&quot;Capacity:\n&quot;}{.status.capacity}{&quot;\n&quot;}&#39;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>oc<span class="w"> </span>get<span class="w"> </span>node<span class="w"> </span>&lt;NODE_NAME&gt;<span class="w"> </span>-o<span class="w"> </span>json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;.status.conditions&#39;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>oc<span class="w"> </span>adm<span class="w"> </span>node-logs<span class="w"> </span>&lt;NODE_NAME&gt;<span class="w"> </span>-u<span class="w"> </span>&lt;COMPONENT_NAME&gt;<span class="w"> </span>--tail<span class="w"> </span><span class="m">10</span>
 </code></pre></div>
-These commands unveil the secrets of the castle's infrastructure and its inhabitants.</p>
-<p>To make these commands influence a different wing of the castle, than the one where he is in that moment, our hero needs to add the option <code>--namespace</code> or <code>-n</code> to the instruction:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;
-</code></pre></div></p>
-<h2 id="token-of-entry-oauth">Token of Entry - OAuth</h2>
-<p>For those who seek passage via OAuth, the castle offers tokens of entry:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>oc<span class="w"> </span>login<span class="w"> </span>--token<span class="o">=</span>sha256-BW...fE2<span class="w"> </span>--server<span class="o">=</span>https://api.eg.vitrua.top:6443
+For those brave enough to seek resolution in the face of adversity, the path of the troubleshooter beckons. Activate the debug session and peer into the heart of the node:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>debug<span class="w"> </span>node/&lt;NODE_NAME&gt;
 </code></pre></div>
-These tokens grant access to the castle's inner sanctums.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>And thus, the hero took his first steps inside the castle.</p>
+Within the confines of the debug session, adventurers can confirm the activity of services with commands like:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># To run binaries in the host&#39;s executable path</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>chroot<span class="w"> </span>/host
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># To confirm that the services are active</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">for</span><span class="w"> </span>SERVICES<span class="w"> </span><span class="k">in</span><span class="w"> </span>kubelet<span class="w"> </span>crio<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span>----<span class="w"> </span><span class="nv">$SERVICES</span><span class="w"> </span>----<span class="w"> </span><span class="p">;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>systemctl<span class="w"> </span>is-active<span class="w"> </span><span class="nv">$SERVICES</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</code></pre></div>
+Similar procedures can be employed for delving into the workings of pods, unraveling the threads of mystery woven within the citadel's walls.</p>
+<p>Embark on this journey of discovery, as we illuminate the shadows cast by the veil of uncertainty, and emerge victorious in the quest for knowledge and resolution within the timeless bastion of Openshift's citadel.</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">
