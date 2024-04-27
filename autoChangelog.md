@@ -1,3 +1,12 @@
+# [0.9.0](https://github.com/Vitrua/documents/compare/v0.8.0...v0.9.0) (2024-04-27)
+
+
+### Features
+
+* openshift complete first part ([6598b05](https://github.com/Vitrua/documents/commit/6598b05350c67f3f3321c3fb2b3e04388997ad4f))
+
+
+
 # [0.8.0](https://github.com/Vitrua/documents/compare/v0.7.1...v0.8.0) (2024-04-27)
 
 
