@@ -70,7 +70,7 @@ oc get pod -n <namespace>
 
 For those who seek passage via OAuth, the castle offers tokens of entry:
 ```bash
-oc login --token=sha256-BW...rA8 --server=https://api.ocp4.example.com:6443
+oc login --token=sha256-BW...fE2 --server=https://api.eg.vitrua.top:6443
 ```
 These tokens grant access to the castle's inner sanctums.
 
