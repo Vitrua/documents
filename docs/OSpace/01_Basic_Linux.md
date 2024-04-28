@@ -1,4 +1,4 @@
-# Penguin in Outer Space: Basic Linux Workflow
+# Basic Linux Workflow
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/linux/penguinspace.jpg?raw=true" alt="Penguin in Space" width="300" height="300">
@@ -6,7 +6,7 @@
 
 ## Objective
 
-Learn commands for basic Linux operations from terminal.
+Learn commands for basic Linux operations from terminal by following a penguin in Outer Space. 
 
 ## Introduction
 
