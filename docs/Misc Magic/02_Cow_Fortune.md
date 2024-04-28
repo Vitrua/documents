@@ -1,4 +1,4 @@
-# Cow Fortune
+# Cowsay Fortune
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/misc/cowfortune.jpg?raw=true" alt="misc" width="300" height="300">

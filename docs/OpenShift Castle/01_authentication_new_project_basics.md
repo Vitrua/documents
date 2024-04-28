@@ -1,4 +1,4 @@
-# Entering the Openshift Castle: Authentication, new project and basic commands
+# Authentication, new project and basic commands
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/openshift/incisions.jpg?raw=true" alt="inscription" width="300" height="300">
@@ -6,7 +6,7 @@
 
 ## Objective
 
-Learn how to authenticate, create new projects, and some basic commands in Openshift.
+Learn how to authenticate, create new projects, and some basic commands in Openshift. Enter the Openshift Castle.
 
 ## Prerequisites
 

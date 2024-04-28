@@ -1,4 +1,4 @@
-# Unveiling the Secrets of Openshift: Data Extraction from configurations
+# Data Extraction from Configurations
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/openshift/blueprint2.jpg?raw=true" alt="data_extraction" width="300" height="300">

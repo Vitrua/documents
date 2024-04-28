@@ -1,4 +1,4 @@
-# Unveiling the Mysteries of the Openshift Citadel: Exploring Cluster Events and Troubleshooting
+# Exploring Cluster Events and Troubleshooting
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/openshift/detective.jpg?raw=true" alt="events" width="300" height="300">
