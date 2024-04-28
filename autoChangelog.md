@@ -1,3 +1,12 @@
+# [0.10.0](https://github.com/Vitrua/documents/compare/v0.9.0...v0.10.0) (2024-04-28)
+
+
+### Features
+
+* add create and explore pod openshift, fix titles ([7302c50](https://github.com/Vitrua/documents/commit/7302c5071e3a1bbb6ca9576bafd2e81a354bf0f4))
+
+
+
 # [0.9.0](https://github.com/Vitrua/documents/compare/v0.8.0...v0.9.0) (2024-04-27)
 
 
