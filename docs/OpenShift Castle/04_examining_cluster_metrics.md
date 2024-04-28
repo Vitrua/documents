@@ -1,4 +1,4 @@
-# Delving into the Heart of the Openshift Castle: Examining Cluster Metrics
+# Examine Cluster Metrics
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/openshift/measures.jpg?raw=true" alt="metrics" width="300" height="300">

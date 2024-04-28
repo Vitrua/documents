@@ -1,4 +1,4 @@
-# Navigating the Openshift Realm: Exploring API Resources
+# Exploring API Resources
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/openshift/blueprint1.jpg?raw=true" alt="discovery" width="300" height="300">
@@ -6,7 +6,7 @@
 
 ## Objective
 
-Discover and explore the API resources available within Openshift to understand the landscape of its capabilities.
+Discover and explore the API resources available within Openshift to understand the landscape of its capabilities. Learn to navigate in the OpenShift realm.
 
 ## Prerequisites
 

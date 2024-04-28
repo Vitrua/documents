@@ -1,4 +1,4 @@
-# The dragon Pod
+# The Pod
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/k8s/dragonscientist.jpg?raw=true" alt="adv" width="300" height="300">
@@ -6,7 +6,7 @@
 
 ## Objective
 
-Learn the basic configuration of a Kubernetes pod.
+Learn the basic configuration of a Kubernetes pod by observing a cute dragon pod.
 
 ## Storytime
 
