@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/02_exploring_api_resources/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/07_container_logs/">
       
       
-        <link rel="prev" href="../01_authentication_new_project_basics/">
+        <link rel="prev" href="../06_pods_creation_and_management/">
       
-      
-        <link rel="next" href="../03_extracting_config_data/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Exploring API Resources - Vitrua.top</title>
+        <title>Explore Container Logs - Vitrua.top</title>
       
     
     
@@ -57,11 +55,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Exploring API Resources - Vitrua.top" >
+        <meta  property="og:title"  content="Explore Container Logs - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/02_exploring_api_resources.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/07_container_logs.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +67,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/02_exploring_api_resources/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/07_container_logs/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Exploring API Resources - Vitrua.top" >
+        <meta  name="twitter:title"  content="Explore Container Logs - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/02_exploring_api_resources.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/07_container_logs.png" >
       
     
     
@@ -100,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exploring-api-resources" class="md-skip">
+        <a href="#explore-container-logs" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exploring API Resources
+              Explore Container Logs
             
           </span>
         </div>
@@ -587,30 +585,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Exploring API Resources
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../02_exploring_api_resources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -619,104 +597,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#viewing-api-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Viewing API Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#openshift-main-resource-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      Openshift Main Resource Types
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Openshift Main Resource Types">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#buildconfig-architectural-blueprints" class="md-nav__link">
-    <span class="md-ellipsis">
-      BuildConfig: Architectural Blueprints
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploymentconfig-strategic-deployments" class="md-nav__link">
-    <span class="md-ellipsis">
-      DeploymentConfig: Strategic Deployments
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#routes-pathways-of-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Routes: Pathways of Navigation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -810,10 +690,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../07_container_logs/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Explore Container Logs
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -822,6 +722,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Container Logs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attach-to-pods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attach to Pods
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -888,53 +853,20 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#viewing-api-resources" class="md-nav__link">
+  <a href="#container-logs" class="md-nav__link">
     <span class="md-ellipsis">
-      Viewing API Resources
+      Container Logs
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#openshift-main-resource-types" class="md-nav__link">
+  <a href="#attach-to-pods" class="md-nav__link">
     <span class="md-ellipsis">
-      Openshift Main Resource Types
+      Attach to Pods
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Openshift Main Resource Types">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#buildconfig-architectural-blueprints" class="md-nav__link">
-    <span class="md-ellipsis">
-      BuildConfig: Architectural Blueprints
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploymentconfig-strategic-deployments" class="md-nav__link">
-    <span class="md-ellipsis">
-      DeploymentConfig: Strategic Deployments
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#routes-pathways-of-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Routes: Pathways of Navigation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -953,36 +885,35 @@
                   
 
 
-<h1 id="exploring-api-resources">Exploring API Resources</h1>
+<h1 id="explore-container-logs">Explore Container Logs</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/blueprint1.jpg?raw=true" alt="discovery" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/explorepod.jpg?raw=true" alt="container_logs" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Discover and explore the API resources available within Openshift to understand the landscape of its capabilities. Learn to navigate in the OpenShift realm.</p>
+<p>Uncover the secrets held within the logs of containers, shedding light on the activities and events transpiring within the walls of the Openshift citadel.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To embark on this journey of discovery, you'll need:</p>
+<p>To embark on this journey of exploration and revelation, you'll need:</p>
 <ul>
 <li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
 <li>Basic familiarity with command-line interfaces (CLI) and Kubernetes concepts.</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>As we venture deeper into the heart of the Openshift castle, we uncover the API resources, the very fabric that defines the realm's architecture and functionality. These resources represent the essence of every component within the castle, guiding its operations and interactions.</p>
-<h2 id="viewing-api-resources">Viewing API Resources</h2>
-<p>The API resource objects serve as blueprints for the intended state of every entity in the cluster. Similar to their counterparts in the realm of Kubernetes, these commands offer insights into the castle's inner workings:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>api-resources
+<p>As we delve into the depths of the Openshift citadel, we turn our attention to the archives of container logs. Here, amidst the echoes of past events, lies a wealth of information waiting to be discovered and deciphered.</p>
+<h2 id="container-logs">Container Logs</h2>
+<p>The logs of a container, akin to the chronicles of history, provide insights into the activities and events within. To retrieve these logs, adventurers employ the following command with various options:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>logs<span class="w"> </span>&lt;pod_name&gt;<span class="w"> </span><span class="o">[</span>options<span class="o">]</span>
 </code></pre></div>
-You can refine and organize the results using additional flags:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>api-resources<span class="w"> </span>--namespaced<span class="o">=</span><span class="nb">true</span><span class="w"> </span>--api-group<span class="w"> </span>apps<span class="w"> </span>--sort-by<span class="w"> </span>name
+- <code>-l</code> or <code>--selector=''</code>: Filters objects based on label key:value constraint.
+- <code>--tail=</code>: Specifies the number of lines of logs to display.
+- <code>-c</code> or <code>--container=</code>: Useful when multiple containers exist in a pod.
+- <code>-f</code> or <code>--follow=</code>: Streams logs for a container.
+- <code>-p</code> or <code>--previous=true</code>: Prints logs for a previous container instance in the pod, if available.</p>
+<h2 id="attach-to-pods">Attach to Pods</h2>
+<p>For a more immersive experience, the <code>attach</code> command allows adventurers to connect to and start an interactive session on a running container within a pod:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>attach<span class="w"> </span>my-app<span class="w"> </span>-it
 </code></pre></div></p>
-<h2 id="openshift-main-resource-types">Openshift Main Resource Types</h2>
-<h3 id="buildconfig-architectural-blueprints">BuildConfig: Architectural Blueprints</h3>
-<p>In the grand design of the Openshift castle, the BuildConfig stands as the architect's blueprint, defining the intricate process of constructing container images from source code stored in Git repositories. It is the cornerstone of continuous integration and delivery workflows, laying the foundation for innovation and evolution within Openshift projects.</p>
-<h3 id="deploymentconfig-strategic-deployments">DeploymentConfig: Strategic Deployments</h3>
-<p>Within the fortified walls of Openshift, the DeploymentConfig serves as a strategic map, guiding the deployment and management of sets of containers within pods. With features encompassing scaling and deployment strategies, it orchestrates the movement of troops across the battlefield of the cluster. In Openshift 4.5, it yields to Deployment objects, heralding a new era of enhanced features and flexibility, yet its legacy remains ingrained in the castle's history.</p>
-<h3 id="routes-pathways-of-navigation">Routes: Pathways of Navigation</h3>
-<p>Like ancient pathways leading through the labyrinthine corridors of the Openshift castle, Routes are the DNS hostnames recognized by the Openshift router. They serve as the entry points for accessing applications and microservices, guiding travelers through the bustling streets and bustling squares of the cluster. With each route mapped and each journey embarked upon, they facilitate the seamless flow of traffic within Openshift's intricate network of pathways and passages.</p>
-<p>Embark on this journey of exploration through the API resources of Openshift, unraveling its intricacies and unlocking its potential.</p>
+<p>Embark on this journey of exploration and revelation, as we illuminate the archives of the Openshift citadel and uncover the secrets hidden within its container logs.</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">

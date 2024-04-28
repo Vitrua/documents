@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/02_exploring_api_resources/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/06_pods_creation_and_management/">
       
       
-        <link rel="prev" href="../01_authentication_new_project_basics/">
+        <link rel="prev" href="../05_get_events_and_troubleshooting/">
       
       
-        <link rel="next" href="../03_extracting_config_data/">
+        <link rel="next" href="../07_container_logs/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Exploring API Resources - Vitrua.top</title>
+        <title>Pods Creation and Management - Vitrua.top</title>
       
     
     
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Exploring API Resources - Vitrua.top" >
+        <meta  property="og:title"  content="Pods Creation and Management - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/02_exploring_api_resources.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/06_pods_creation_and_management.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/02_exploring_api_resources/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/06_pods_creation_and_management/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Exploring API Resources - Vitrua.top" >
+        <meta  name="twitter:title"  content="Pods Creation and Management - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/02_exploring_api_resources.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/06_pods_creation_and_management.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exploring-api-resources" class="md-skip">
+        <a href="#pods-creation-and-management" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exploring API Resources
+              Pods Creation and Management
             
           </span>
         </div>
@@ -587,30 +587,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Exploring API Resources
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../02_exploring_api_resources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -619,104 +599,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#viewing-api-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Viewing API Resources
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#openshift-main-resource-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      Openshift Main Resource Types
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Openshift Main Resource Types">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#buildconfig-architectural-blueprints" class="md-nav__link">
-    <span class="md-ellipsis">
-      BuildConfig: Architectural Blueprints
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploymentconfig-strategic-deployments" class="md-nav__link">
-    <span class="md-ellipsis">
-      DeploymentConfig: Strategic Deployments
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#routes-pathways-of-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Routes: Pathways of Navigation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -789,10 +671,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../06_pods_creation_and_management/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pods Creation and Management
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -801,6 +703,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pods-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pods Creation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executing-commands-in-running-pod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executing commands in running pod
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -888,53 +855,20 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#viewing-api-resources" class="md-nav__link">
+  <a href="#pods-creation" class="md-nav__link">
     <span class="md-ellipsis">
-      Viewing API Resources
+      Pods Creation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#openshift-main-resource-types" class="md-nav__link">
+  <a href="#executing-commands-in-running-pod" class="md-nav__link">
     <span class="md-ellipsis">
-      Openshift Main Resource Types
+      Executing commands in running pod
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Openshift Main Resource Types">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#buildconfig-architectural-blueprints" class="md-nav__link">
-    <span class="md-ellipsis">
-      BuildConfig: Architectural Blueprints
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploymentconfig-strategic-deployments" class="md-nav__link">
-    <span class="md-ellipsis">
-      DeploymentConfig: Strategic Deployments
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#routes-pathways-of-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Routes: Pathways of Navigation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -953,36 +887,39 @@
                   
 
 
-<h1 id="exploring-api-resources">Exploring API Resources</h1>
+<h1 id="pods-creation-and-management">Pods Creation and Management</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/blueprint1.jpg?raw=true" alt="discovery" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/createpod.jpg?raw=true" alt="pods_creation" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Discover and explore the API resources available within Openshift to understand the landscape of its capabilities. Learn to navigate in the OpenShift realm.</p>
+<p>Learn the art of creating and managing pods within the bastion of the Openshift citadel, laying the groundwork for your digital domains.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To embark on this journey of discovery, you'll need:</p>
+<p>To embark on this journey of creation and mastery, you'll need:</p>
 <ul>
 <li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
 <li>Basic familiarity with command-line interfaces (CLI) and Kubernetes concepts.</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>As we venture deeper into the heart of the Openshift castle, we uncover the API resources, the very fabric that defines the realm's architecture and functionality. These resources represent the essence of every component within the castle, guiding its operations and interactions.</p>
-<h2 id="viewing-api-resources">Viewing API Resources</h2>
-<p>The API resource objects serve as blueprints for the intended state of every entity in the cluster. Similar to their counterparts in the realm of Kubernetes, these commands offer insights into the castle's inner workings:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>api-resources
+<p>As we lay the cornerstone of our digital domains within the fortified confines of the Openshift citadel, we delve into the realm of pod creation and management. Here, amidst the hum of activity, like the rooms of a castle, lies the little foundations upon which our containerized realms shall thrive.</p>
+<h2 id="pods-creation">Pods Creation</h2>
+<p>The creation of pods, the very crucible of containerization, is an art mastered through the commands of 'kubectl' or 'oc CLI'. With the <code>run</code> command, we breathe life into our digital entities:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>run<span class="w"> </span>&lt;RESOURCE/NAME&gt;<span class="w"> </span>--image<span class="w"> </span>&lt;IMAGE&gt;<span class="w"> </span><span class="o">[</span>options<span class="o">]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>oc<span class="w"> </span>run<span class="w"> </span>&lt;RESOURCE/NAME&gt;<span class="w"> </span>--image<span class="w"> </span>&lt;IMAGE&gt;<span class="w"> </span>--command<span class="w"> </span>--<span class="w"> </span>cmd<span class="w"> </span>&lt;arg1<span class="w"> </span>...<span class="w"> </span>argN&gt;
 </code></pre></div>
-You can refine and organize the results using additional flags:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>api-resources<span class="w"> </span>--namespaced<span class="o">=</span><span class="nb">true</span><span class="w"> </span>--api-group<span class="w"> </span>apps<span class="w"> </span>--sort-by<span class="w"> </span>name
-</code></pre></div></p>
-<h2 id="openshift-main-resource-types">Openshift Main Resource Types</h2>
-<h3 id="buildconfig-architectural-blueprints">BuildConfig: Architectural Blueprints</h3>
-<p>In the grand design of the Openshift castle, the BuildConfig stands as the architect's blueprint, defining the intricate process of constructing container images from source code stored in Git repositories. It is the cornerstone of continuous integration and delivery workflows, laying the foundation for innovation and evolution within Openshift projects.</p>
-<h3 id="deploymentconfig-strategic-deployments">DeploymentConfig: Strategic Deployments</h3>
-<p>Within the fortified walls of Openshift, the DeploymentConfig serves as a strategic map, guiding the deployment and management of sets of containers within pods. With features encompassing scaling and deployment strategies, it orchestrates the movement of troops across the battlefield of the cluster. In Openshift 4.5, it yields to Deployment objects, heralding a new era of enhanced features and flexibility, yet its legacy remains ingrained in the castle's history.</p>
-<h3 id="routes-pathways-of-navigation">Routes: Pathways of Navigation</h3>
-<p>Like ancient pathways leading through the labyrinthine corridors of the Openshift castle, Routes are the DNS hostnames recognized by the Openshift router. They serve as the entry points for accessing applications and microservices, guiding travelers through the bustling streets and bustling squares of the cluster. With each route mapped and each journey embarked upon, they facilitate the seamless flow of traffic within Openshift's intricate network of pathways and passages.</p>
-<p>Embark on this journey of exploration through the API resources of Openshift, unraveling its intricacies and unlocking its potential.</p>
+To commence an interactive session within the pod's container, the <code>-it</code> option is invoked:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>my-app<span class="w"> </span>--image<span class="w"> </span>docker.io/library/busybox<span class="w"> </span>--command<span class="w"> </span>--<span class="w"> </span>/bin/bash
+</code></pre></div>
+Further options allow for fine-tuning the creation process, specifying restart policies, environment variables, and automatic deletion after the session's conclusion:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>kubectl<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>my-app<span class="w"> </span>--rm<span class="w"> </span>--image<span class="w"> </span>docker.io/library/busybox<span class="w"> </span>--env<span class="w"> </span><span class="nv">MY_PASSWORD</span><span class="o">=</span>P455w@rd<span class="w"> </span>--restart<span class="w"> </span>Never<span class="w"> </span>--command<span class="w"> </span>--<span class="w"> </span>date
+</code></pre></div>
+In the realm of Openshift, containers created by regular users are subject to the constraints imposed by the Security Context Constraints controller, ensuring a safe environment.</p>
+<h2 id="executing-commands-in-running-pod">Executing commands in running pod</h2>
+<p>When a pod is already in motion, commands can still be executed within its confines using <code>exec</code>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>&lt;RESOURCE/NAME&gt;<span class="w"> </span>--<span class="w"> </span>&lt;COMMAND&gt;<span class="w"> </span><span class="o">[</span>args...<span class="o">]</span><span class="w"> </span><span class="o">[</span>options<span class="o">]</span>
+</code></pre></div>
+For an interactive session, the <code>-i</code> and <code>-t</code> flags once again guide our path. In multi-container pods, the <code>-c</code> or <code>--container=</code> flag designates the specific container for command execution.</p>
+<p>Embark on this journey of creation and management, as we forge the foundations of our digital realms within the hallowed halls of the Openshift citadel.</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">
