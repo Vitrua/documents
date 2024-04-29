@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/Kubernetes%20Dungeon/01_Pods/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/14_container_operations_and_monitoring/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../13_copying_files_to_and_from_containers/">
       
-      
-        <link rel="next" href="../02_Services/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +20,7 @@
     
     
       
-        <title>The Pod - Vitrua.top</title>
+        <title>Container Operations and Monitoring - Vitrua.top</title>
       
     
     
@@ -57,11 +55,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="The Pod - Vitrua.top" >
+        <meta  property="og:title"  content="Container Operations and Monitoring - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/Kubernetes Dungeon/01_Pods.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/14_container_operations_and_monitoring.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +67,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/Kubernetes%20Dungeon/01_Pods/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/14_container_operations_and_monitoring/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="The Pod - Vitrua.top" >
+        <meta  name="twitter:title"  content="Container Operations and Monitoring - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/Kubernetes Dungeon/01_Pods.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/14_container_operations_and_monitoring.png" >
       
     
     
@@ -100,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-pod" class="md-skip">
+        <a href="#container-operations-and-monitoring" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The Pod
+              Container Operations and Monitoring
             
           </span>
         </div>
@@ -260,13 +258,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../Kubernetes%20Dungeon/01_Pods/" class="md-tabs__link">
           
   
   Kubernetes Dungeon
@@ -316,11 +312,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../OpenShift%20Castle/01_authentication_new_project_basics/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01_authentication_new_project_basics/" class="md-tabs__link">
           
   
   OpenShift Castle
@@ -387,169 +385,41 @@
       
   
   
-    
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
   
-    
-    
-    
+  
+    <a href="../../Kubernetes%20Dungeon/01_Pods/" class="md-nav__link">
       
-        
-        
-      
-      
-        
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
   
   <span class="md-ellipsis">
     Kubernetes Dungeon
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Kubernetes Dungeon
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+        <span class="md-nav__icon md-icon"></span>
       
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    The Pod
-  </span>
+    </a>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    The Pod
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#storytime" class="md-nav__link">
-    <span class="md-ellipsis">
-      Storytime
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pod-basic-yaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pod basic yaml
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#components-explanation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Components explanation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../02_Services/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Services: ClusterIp, NodePort, LoadBalancer, ExternalName
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -647,11 +517,16 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
@@ -659,29 +534,506 @@
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
-  
-  
-    <a href="../../OpenShift%20Castle/01_authentication_new_project_basics/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
   
   <span class="md-ellipsis">
     OpenShift Castle
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            OpenShift Castle
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_authentication_new_project_basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authentication, new project and basic commands
+  </span>
   
 
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_exploring_api_resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring API Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_extracting_config_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Extraction from Configurations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_examining_cluster_metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Examine Cluster Metrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_get_events_and_troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exploring Cluster Events and Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_pods_creation_and_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pods Creation and Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_container_logs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Explore Container Logs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_deleting_resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deleting Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_cri-o_container_engine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The CRI-O Container Engine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_oc_images/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OC Images
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_cli_troubleshooting_tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CLI Troubleshooting Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_editing_resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editing Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_copying_files_to_and_from_containers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Copying Files to and from Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Container Operations and Monitoring
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Container Operations and Monitoring
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#container-operations-and-monitoring_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Container Operations and Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Container Operations and Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connecting-to-a-running-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting to a Running Container
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connecting to a Running Container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executing-commands-within-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executing Commands Within a Container
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Executing Commands Within a Container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-container-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Container Logs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Viewing Container Logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-container-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring Container Events
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitoring Container Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -723,29 +1075,131 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#storytime" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Storytime
+      Prerequisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pod-basic-yaml" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Pod basic yaml
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#components-explanation" class="md-nav__link">
+  <a href="#container-operations-and-monitoring_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Components explanation
+      Container Operations and Monitoring
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Container Operations and Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connecting-to-a-running-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting to a Running Container
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connecting to a Running Container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executing-commands-within-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executing Commands Within a Container
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Executing Commands Within a Container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-container-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Container Logs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Viewing Container Logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-container-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring Container Events
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitoring Container Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -764,80 +1218,55 @@
                   
 
 
-<h1 id="the-pod">The Pod</h1>
+<h1 id="container-operations-and-monitoring">Container Operations and Monitoring</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/k8s/dragonscientist.jpg?raw=true" alt="adv" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/interaction.jpg?raw=true" alt="container_operations" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Learn the basic configuration of a Kubernetes pod by observing a cute dragon pod.</p>
-<h2 id="storytime">Storytime</h2>
-<p>In the mystical realm of Vitrua, there dwelled a revered scientist whose companion was a venerable dragon in the twilight of its existence. Determined to extend the dragon's waning years, the scientist delved into the arcane arts of longevity. Initially, he succeeded in encapsulating the essence of the dragon within a mesmerizing <strong>image</strong>, a tapestry of intricate <strong>layers</strong>. However, it was only when this image was ensconced within a <strong>container</strong>, a mystical orb, that true transformation occurred, imbuing the dragon with a vitality beyond its natural state.</p>
-<p>The dragon was still sad, as it had troubles interacting with the external world from it's container, so the scientist had to find a solution to facilitate the dragon's interaction with the world outside its confines. Through relentless experimentation, he devised a remarkable exoskeleton using a deceptively simple engineering blueprint:</p>
-<h2 id="pod-basic-yaml">Pod basic yaml</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Pod</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dragon-pod</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dragon-app</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nt">spec</span><span class="p">:</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">containers</span><span class="p">:</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dragon-container</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dragon-image:latest</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">containerPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">443</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">      </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span>
+<p>Interact with containers. Master the art of executing commands, monitoring events, and accessing logs within containers, enabling efficient container management within the mystical confines of the Openshift castle.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To embark on this journey of container operations and monitoring, you'll need:</p>
+<ul>
+<li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
+<li>Basic familiarity with command-line interfaces (CLI) and container concepts.</li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>As we delve deeper into the enchanted landscapes of the Openshift castle, the need to interact with and monitor containers becomes essential. Here, amidst the swirling energies of digital realms, lies the ability to execute commands, track events, and access logs within containers.</p>
+<h2 id="container-operations-and-monitoring_1">Container Operations and Monitoring</h2>
+<h3 id="connecting-to-a-running-container">Connecting to a Running Container</h3>
+<p>To establish a connection to a running container within a pod, troubleshooters can utilize the <code>oc rsh</code> command:</p>
+<ul>
+<li><code>oc rsh &lt;POD_NAME&gt;</code>: Connect to the specified running container, enabling direct interaction and execution of commands.</li>
+</ul>
+<h4 id="example-usage">Example Usage</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>rsh<span class="w"> </span>my-app-pod
 </code></pre></div>
-<h2 id="components-explanation">Components explanation</h2>
-<p>The scientist has made quite the simple but effective blueprint. Let's break down the YAML structure:</p>
-<ol>
-<li>
-<p><code>apiVersion: v1</code>: This line specifies the API version being used to ensure compatibility with the cluster, which in this case is version 1 of the Kubernetes API. It's analogous to specifying the version of a software application.</p>
-</li>
-<li>
-<p><code>kind: Pod</code>: Here, a Kubernetes Pod is being defined. A Pod is the smallest deployable unit in Kubernetes, representing a single instance of a running process. This Pod likely encapsulates the environment for the dragon's consciousness and interaction.</p>
-</li>
-<li>
-<p><code>metadata</code>: This section provides metadata about the Pod, including its name and labels.</p>
+<h3 id="executing-commands-within-a-container">Executing Commands Within a Container</h3>
+<p>For executing commands directly within a container, the <code>oc exec</code> command provides a powerful tool:</p>
 <ul>
-<li>
-<p><code>name: dragon-pod</code>: This line specifies the name of the Pod, which is "dragon-pod". This name is how Kubernetes will refer to and manage this specific instance of the Pod.</p>
-</li>
-<li>
-<p><code>labels</code>: Labels are key-value pairs used to organize and select subsets of objects in Kubernetes. Here, the Pod is labeled with <code>type: dragon-app</code>, indicating that it belongs to a category of applications related to dragons.</p>
-</li>
+<li><code>oc exec &lt;POD&gt; | &lt;TYPE/NAME&gt; [-c &lt;container_name&gt;] -- &lt;COMMAND&gt; [&lt;arg1 ... argN&gt;]</code>: Execute the specified command within the container, optionally specifying the container name if multiple containers exist within the pod.</li>
 </ul>
-</li>
-<li>
-<p><code>spec</code>: This section specifies the desired state for the Pod, including its containers and their configuration.</p>
+<h4 id="example-usage_1">Example Usage</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>my-app-pod<span class="w"> </span>--<span class="w"> </span>ls<span class="w"> </span>/app
+</code></pre></div>
+<h3 id="viewing-container-logs">Viewing Container Logs</h3>
+<p>To access the logs generated by a container, troubleshooters can use the <code>oc logs</code> command:</p>
 <ul>
-<li>
-<p><code>containers</code>: This subsection defines the containers that should be launched within the Pod.</p>
+<li><code>oc logs &lt;POD_NAME&gt;</code>: Retrieve and display the logs generated by the specified container.</li>
+</ul>
+<h4 id="example-usage_2">Example Usage</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>logs<span class="w"> </span>my-app-pod
+</code></pre></div>
+<h3 id="monitoring-container-events">Monitoring Container Events</h3>
+<p>For monitoring events related to containers within a namespace, troubleshooters can utilize the <code>oc get events</code> command:</p>
 <ul>
-<li>
-<p><code>name: dragon-container</code>: This line assigns a name to the container within the Pod. In this case, it's named "dragon-container", representing the vessel for the dragon's consciousness.</p>
-</li>
-<li>
-<p><code>image: dragon-image:latest</code>: Here, the image for the container is specified. The container will be created using the Docker image named "dragon-image" with the tag "latest". This image likely contains the necessary software and environment for the dragon's consciousness to operate within the container.</p>
-</li>
-<li>
-<p><code>ports</code>: This subsection specifies the ports that should be exposed by the container.</p>
-<ul>
-<li>
-<p><code>- containerPort: 443</code>: This line indicates that the container should expose port 443, which is commonly used for HTTPS traffic. In the story, this port might be used for communication or interaction between the dragon and external systems.</p>
-</li>
-<li>
-<p><code>protocol: TCP</code>: This line specifies the protocol to be used for communication on the exposed port. In this case, it's TCP (Transmission Control Protocol), a common protocol used for reliable communication over networks.</p>
-</li>
+<li><code>oc get events</code>: View the events related to containers, providing insights into their lifecycle and status changes.</li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<p>Overall, this YAML file describes the configuration for a Kubernetes Pod named "dragon-pod", which contains a single container named "dragon-container" running the "dragon-image" Docker image. The container exposes port 443 for TCP communication, likely facilitating interactions between the dragon's consciousness and external systems in the Land of Vitrua.</p>
+<h4 id="example-usage_3">Example Usage</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>get<span class="w"> </span>events
+</code></pre></div>
+<p>Embark on this journey of container operations and monitoring, as we master the art of efficient container management within the enchanted confines of the Openshift castle.</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">
@@ -864,7 +1293,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 28, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 29, 2024</span>
   </span>
 
     
