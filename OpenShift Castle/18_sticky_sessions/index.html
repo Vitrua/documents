@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/01_authentication_new_project_basics/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/18_sticky_sessions/">
       
       
-        <link rel="prev" href="../../OSpace/01_Basic_Linux/">
+        <link rel="prev" href="../17_routes_external_connectivity/">
       
       
-        <link rel="next" href="../02_exploring_api_resources/">
+        <link rel="next" href="../19_scaling/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Authentication, new project and basic commands - Vitrua.top</title>
+        <title>Sticky Sessions - Vitrua.top</title>
       
     
     
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Authentication, new project and basic commands - Vitrua.top" >
+        <meta  property="og:title"  content="Sticky Sessions - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/01_authentication_new_project_basics.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/18_sticky_sessions.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/01_authentication_new_project_basics/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/18_sticky_sessions/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Authentication, new project and basic commands - Vitrua.top" >
+        <meta  name="twitter:title"  content="Sticky Sessions - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/01_authentication_new_project_basics.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/18_sticky_sessions.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#authentication-new-project-and-basic-commands" class="md-skip">
+        <a href="#sticky-sessions" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Authentication, new project and basic commands
+              Sticky Sessions
             
           </span>
         </div>
@@ -320,7 +320,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../01_authentication_new_project_basics/" class="md-tabs__link">
           
   
   OpenShift Castle
@@ -566,30 +566,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Authentication, new project and basic commands
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01_authentication_new_project_basics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -598,98 +578,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#authentication-gates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Authentication Gates
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#forging-new-projects" class="md-nav__link">
-    <span class="md-ellipsis">
-      Forging New Projects
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commanding-the-castle" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commanding the Castle
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#token-of-entry-oauth" class="md-nav__link">
-    <span class="md-ellipsis">
-      Token of Entry - OAuth
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1035,10 +923,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../18_sticky_sessions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Sticky Sessions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1047,6 +955,101 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sticky-sessions_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sticky Sessions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sticky Sessions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-session-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Session Persistence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Session Persistence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overwriting-default-cookie-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overwriting Default Cookie Name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1134,47 +1137,50 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#authentication-gates" class="md-nav__link">
+  <a href="#sticky-sessions_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Authentication Gates
+      Sticky Sessions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sticky Sessions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-session-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Session Persistence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Session Persistence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overwriting-default-cookie-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overwriting Default Cookie Name
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#forging-new-projects" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Forging New Projects
+      Example Usage
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#commanding-the-castle" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commanding the Castle
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#token-of-entry-oauth" class="md-nav__link">
-    <span class="md-ellipsis">
-      Token of Entry - OAuth
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1193,62 +1199,34 @@
                   
 
 
-<h1 id="authentication-new-project-and-basic-commands">Authentication, new project and basic commands</h1>
+<h1 id="sticky-sessions">Sticky Sessions</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/incisions.jpg?raw=true" alt="inscription" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/sticky.jpg?raw=true" alt="sticky_sessions" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Learn how to authenticate, create new projects, and some basic commands in Openshift. Enter the Openshift Castle.</p>
+<p>Learn how to configure sticky sessions in the mystical realms of Openshift to maintain session persistence for user requests.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To embark on this adventure, you'll need:</p>
+<p>To embark on this journey of sticky sessions, you'll need:</p>
 <ul>
 <li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
-<li>Basic familiarity with command-line interfaces (CLI) and Kubernetes concepts.</li>
+<li>Basic understanding of Openshift concepts and command-line interfaces (CLI).</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>In the vast landscape of the digital realm, where clusters of containers flourish like bustling kingdoms, there lies the imposing fortress of Openshift. Built upon the foundation of Kubernetes, this castle stands as a bastion of security and scalability, protecting its treasures with unwavering vigilance.</p>
-<p>Our hero, a brave adventurer seeking knowledge and mastery, stands before the gates of Openshift. The castle looms above, its architecture intricate and imposing, a testament to the power it holds within.</p>
-<h2 id="authentication-gates">Authentication Gates</h2>
-<p>Before venturing forth, our hero must authenticate at the castle gates. With the <code>oc login</code> command, he present their credentials:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>login<span class="w"> </span>&lt;cluster-url&gt;
-</code></pre></div></p>
-<h2 id="forging-new-projects">Forging New Projects</h2>
-<p>A strange sensation courses through our hero's veins as they enter the castle, as if the fortress were under their command. The first thing noticed is the multitude of different wings within the castle, each isolated from the others. With newfound powers, our hero invokes the creation of a new project to carve out a new realm:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>new<span class="w"> </span>project<span class="w"> </span>&lt;my-app&gt;
-</code></pre></div></p>
-<h2 id="commanding-the-castle">Commanding the Castle</h2>
-<p>Adorning the walls are inscriptions in a mysterious language. Armed with the knowledge of oc commands, our hero delves deeper into the castle's inner workings:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>cluster-info
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>oc<span class="w"> </span>api-versions
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>oc<span class="w"> </span>get<span class="w"> </span>clusteroperator
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>oc<span class="w"> </span>get<span class="w"> </span>pod
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>&lt;pod_name&gt;
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>&lt;pod_name&gt;<span class="w"> </span>-o<span class="w"> </span>yaml
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>&lt;pod_name&gt;<span class="w"> </span>-o<span class="w"> </span>json
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>oc<span class="w"> </span>get<span class="w"> </span>deploy<span class="w"> </span>&lt;deploy_name&gt;<span class="w"> </span>-o<span class="w"> </span>wide
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>oc<span class="w"> </span>get<span class="w"> </span>all
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>oc<span class="w"> </span>describe<span class="w"> </span>&lt;resource_type&gt;<span class="w"> </span>&lt;resource_name&gt;
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>oc<span class="w"> </span>explain<span class="w"> </span>&lt;jsonpath_identifier&gt;
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>oc<span class="w"> </span>explain<span class="w"> </span>&lt;jsonpath_identifier&gt;<span class="w"> </span>--recursive
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>oc<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>&lt;pod.yaml&gt;
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>oc<span class="w"> </span>status<span class="w"> </span>--suggest
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>oc<span class="w"> </span>delete<span class="w"> </span>&lt;resource_type&gt;<span class="w"> </span>&lt;resource_name&gt;
+<p>Welcome, traveler, to the realm of sticky sessions within the enchanted confines of Openshift. Here, amidst the ebb and flow of digital traffic, lies the art of maintaining session persistence for user requests. Join us as we delve into the mysteries of sticky sessions and learn how to configure them to ensure seamless user experiences.</p>
+<h2 id="sticky-sessions_1">Sticky Sessions</h2>
+<h3 id="configuring-session-persistence">Configuring Session Persistence</h3>
+<p>RHOCP utilizes cookies to configure session persistence for ingress and route resources. The ingress controller selects an endpoint to handle user requests and creates a cookie for the session. This cookie is then passed back in response to the request, allowing the ingress controller to route subsequent requests to the same pod, ensuring session continuity.</p>
+<h4 id="overwriting-default-cookie-name">Overwriting Default Cookie Name</h4>
+<p>By default, RHOCP auto-generates the cookie name for ingress and route resources. However, troubleshooters can overwrite this default cookie name using the <code>annotate</code> command with either <code>kubectl</code> or <code>oc</code>. </p>
+<h4 id="example-usage">Example Usage</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>annotate<span class="w"> </span>ingress<span class="w"> </span>ingr-example<span class="w"> </span>ingress.kubernetes.io/affinity<span class="o">=</span>cookie
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>oc<span class="w"> </span>annotate<span class="w"> </span>route<span class="w"> </span>route-example<span class="w"> </span>router.openshift.io/cookie_name<span class="o">=</span>myapp
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nv">ROUTE_NAME</span><span class="o">=</span><span class="k">$(</span>oc<span class="w"> </span>get<span class="w"> </span>route<span class="w"> </span>&lt;route_name&gt;<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.spec.host}&#39;</span><span class="k">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>curl<span class="w"> </span><span class="nv">$ROUTE_NAME</span><span class="w"> </span>-k<span class="w"> </span>-c<span class="w"> </span>/tmp/cookie_jar
 </code></pre></div>
-For instance:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>explain<span class="w"> </span>pods.spec.containers.resources
-</code></pre></div>
-These commands unveil the secrets of the castle's infrastructure and its inhabitants.</p>
-<p>To make these commands influence a different wing of the castle, than the one where he is in that moment, our hero needs to add the option <code>--namespace</code> or <code>-n</code> to the instruction:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span>get<span class="w"> </span>pod<span class="w"> </span>-n<span class="w"> </span>&lt;namespace&gt;
-</code></pre></div></p>
-<h2 id="token-of-entry-oauth">Token of Entry - OAuth</h2>
-<p>For those who seek passage via OAuth, the castle offers tokens of entry:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>oc<span class="w"> </span>login<span class="w"> </span>--token<span class="o">=</span>sha256-BW...fE2<span class="w"> </span>--server<span class="o">=</span>https://api.eg.vitrua.top:6443
-</code></pre></div>
-These tokens grant access to the castle's inner sanctums.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>And thus, the hero took his first steps inside the castle.</p>
+<p>The cookie is passed back in response to the request and is saved to the <code>/tmp/cookie_jar</code> directory.</p>
+<p>Embark on this journey of sticky sessions, as we configure session persistence to ensure uninterrupted user experiences within the mystical confines of the Openshift castle.</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">
@@ -1275,7 +1253,7 @@ These tokens grant access to the castle's inner sanctums.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 28, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 30, 2024</span>
   </span>
 
     
