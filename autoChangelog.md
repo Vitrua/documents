@@ -1,3 +1,12 @@
+# [0.12.0](https://github.com/Vitrua/documents/compare/v0.11.0...v0.12.0) (2024-04-30)
+
+
+### Features
+
+* add 5 openshift ([83dac16](https://github.com/Vitrua/documents/commit/83dac16a9e0bc763db0312cd098c09e93596a36a))
+
+
+
 # [0.11.0](https://github.com/Vitrua/documents/compare/v0.10.0...v0.11.0) (2024-04-29)
 
 
