@@ -1,3 +1,17 @@
+# [0.13.0](https://github.com/Vitrua/documents/compare/v0.12.0...v0.13.0) (2024-05-11)
+
+
+### Bug Fixes
+
+* remove navigation sections ([9dee7df](https://github.com/Vitrua/documents/commit/9dee7df3414e4624fb0551ad71e563b52c2e4963))
+
+
+### Features
+
+* add storages, config and secrets in openshift ([9ebbec7](https://github.com/Vitrua/documents/commit/9ebbec7ec331bde480608a6e3d75549a61582135))
+
+
+
 # [0.12.0](https://github.com/Vitrua/documents/compare/v0.11.0...v0.12.0) (2024-04-30)
 
 
