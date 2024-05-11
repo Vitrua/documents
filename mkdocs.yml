@@ -18,6 +18,7 @@ theme:
     - navigation.instant.preview
     - navigation.tracking
     - navigation.prune
+    - navigation.footer
   custom_dir: overrides
 
 
