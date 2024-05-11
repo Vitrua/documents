@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/15_resource_management/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/22_storage_class/">
       
       
-        <link rel="prev" href="../14_container_operations_and_monitoring/">
+        <link rel="prev" href="../21_persistent_storage/">
       
       
-        <link rel="next" href="../16_k8s_networking/">
+        <link rel="next" href="../23_stateful_set/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Command Line Resources Management - Vitrua.top</title>
+        <title>Storage Classes - Vitrua.top</title>
       
     
     
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Command Line Resources Management - Vitrua.top" >
+        <meta  property="og:title"  content="Storage Classes - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/15_resource_management.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/22_storage_class.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/15_resource_management/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/22_storage_class/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Command Line Resources Management - Vitrua.top" >
+        <meta  name="twitter:title"  content="Storage Classes - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/15_resource_management.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/22_storage_class.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#command-line-resources-management" class="md-skip">
+        <a href="#storage-classes" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Command Line Resources Management
+              Storage Classes
             
           </span>
         </div>
@@ -852,30 +852,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Command Line Resources Management
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../15_resource_management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -884,140 +864,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#command-line-resources-management_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Command Line Resources Management
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Command Line Resources Management">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#imperative-commands-crafting-realms-with-swiftness" class="md-nav__link">
-    <span class="md-ellipsis">
-      Imperative Commands: Crafting Realms with Swiftness
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Imperative Commands: Crafting Realms with Swiftness">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#declarative-commands-weaving-threads-of-intention" class="md-nav__link">
-    <span class="md-ellipsis">
-      Declarative Commands: Weaving Threads of Intention
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Declarative Commands: Weaving Threads of Intention">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#workload-resources-crafting-grand-designs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Workload Resources: Crafting Grand Designs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Workload Resources: Crafting Grand Designs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1153,10 +999,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../22_storage_class/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Storage Classes
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1165,6 +1031,101 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-storage-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defining Storage Classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defining Storage Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crafting-the-blueprint-of-destiny" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crafting the Blueprint of Destiny
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crafting the Blueprint of Destiny">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1252,23 +1213,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#command-line-resources-management_1" class="md-nav__link">
+  <a href="#defining-storage-classes" class="md-nav__link">
     <span class="md-ellipsis">
-      Command Line Resources Management
+      Defining Storage Classes
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Command Line Resources Management">
+    <nav class="md-nav" aria-label="Defining Storage Classes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#imperative-commands-crafting-realms-with-swiftness" class="md-nav__link">
+  <a href="#crafting-the-blueprint-of-destiny" class="md-nav__link">
     <span class="md-ellipsis">
-      Imperative Commands: Crafting Realms with Swiftness
+      Crafting the Blueprint of Destiny
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Imperative Commands: Crafting Realms with Swiftness">
+    <nav class="md-nav" aria-label="Crafting the Blueprint of Destiny">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1285,56 +1246,17 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#declarative-commands-weaving-threads-of-intention" class="md-nav__link">
-    <span class="md-ellipsis">
-      Declarative Commands: Weaving Threads of Intention
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Declarative Commands: Weaving Threads of Intention">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#workload-resources-crafting-grand-designs" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Workload Resources: Crafting Grand Designs
+      Conclusion
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Workload Resources: Crafting Grand Designs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1353,44 +1275,46 @@
                   
 
 
-<h1 id="command-line-resources-management">Command Line Resources Management</h1>
+<h1 id="storage-classes">Storage Classes</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/declimper.jpg?raw=true" alt="command_line_management" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/storageclasses.jpg?raw=true" alt="storage_classes" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Master the art of managing resources through command-line interfaces within the mystical confines of the Openshift castle, enabling efficient resource creation and configuration.</p>
+<p>Delve into the realm of storage classes within Openshift, understanding how they define the characteristics and capabilities of persistent storage for your applications.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To embark on this journey of command-line resources management, you'll need:</p>
+<p>Before embarking on this journey of storage classes, ensure you possess:</p>
 <ul>
 <li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
-<li>Basic familiarity with command-line interfaces (CLI) and container concepts.</li>
+<li>Familiarity with basic Openshift concepts and command-line interfaces (CLI).</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome, traveler, to the wondrous realms of the Openshift castle, where digital landscapes intertwine with mystical energies. As we navigate the labyrinthine corridors of this ancient stronghold, we discover the need to manage resources with precision and efficiency. Here, amidst the ever-changing vistas of digital realms, lies the power of command-line tools to shape and mold the fabric of existence itself.</p>
-<h2 id="command-line-resources-management_1">Command Line Resources Management</h2>
-<h3 id="imperative-commands-crafting-realms-with-swiftness">Imperative Commands: Crafting Realms with Swiftness</h3>
-<p>Imperative commands such as <code>create</code>, <code>set</code>, and <code>run</code> serve as the swift hand of creation within the castle's halls. They offer a rapid means of crafting pods and other resources, bypassing the need for intricate object definitions. Like skilled artisans, troubleshooters wield these commands to forge new realms with speed and agility.</p>
+<p>Welcome, architect of storage, to the realm of storage classes within the fortified bastion of Openshift. As the weaver of storage destinies, you possess the power to define the characteristics and capabilities of persistent storage within your fortress. Join us as we unravel the mysteries of crafting and managing storage classes, empowering your applications with tailored storage solutions within the mystical confines of Openshift.</p>
+<h2 id="defining-storage-classes">Defining Storage Classes</h2>
+<h3 id="crafting-the-blueprint-of-destiny">Crafting the Blueprint of Destiny</h3>
+<p>In the tapestry of persistent storage, storage classes serve as the blueprint of destiny, defining the characteristics and capabilities of persistent volumes (PVs). Through declarative means, troubleshooters manifest the essence of their storage solutions, specifying parameters such as storage provider, volume type, and reclaim policy.</p>
 <h4 id="example-usage">Example Usage</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>run<span class="w"> </span>example-pod<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--image<span class="o">=</span>docker.io/library/busybox<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--restart<span class="o">=</span>Never<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello, world!&quot;</span>
+<p>To craft a storage class, troubleshooters wield the power of YAML manifests, defining the blueprint of destiny within their fortress. For example:</p>
+<div class="highlight"><span class="filename">io1-gold-storage.yaml</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">storage.k8s.io/v1</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">StorageClass</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">io1-gold-storage</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">annotations</span><span class="p">:</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">storageclass.kubernetes.io/is-default-class</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;false&#39;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Provides</span><span class="nv"> </span><span class="s">RWO</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">RWOP</span><span class="nv"> </span><span class="s">Filesystem</span><span class="nv"> </span><span class="s">&amp;</span><span class="nv"> </span><span class="s">Block</span><span class="nv"> </span><span class="s">volumes&#39;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nt">parameters</span><span class="p">:</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">io1</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">iopsPerGB</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10&quot;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nt">provisioner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubernetes.io/aws-ebs</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="nt">reclaimPolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Delete</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nt">volumeBindingMode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Immediate</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nt">allowVolumeExpansion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
-<h3 id="declarative-commands-weaving-threads-of-intention">Declarative Commands: Weaving Threads of Intention</h3>
-<p>Declarative commands beckon troubleshooters to weave threads of intention into the fabric of the digital tapestry. Through YAML files or templates, they define the desired state of resources, allowing for precise configuration and management. Within these commands lies the power to manifest visions into reality, shaping the very essence of the castle's domains.</p>
-<h4 id="example-usage_1">Example Usage</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>new-app<span class="w"> </span>--template<span class="w"> </span>hello-world<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>--param<span class="w"> </span><span class="nv">MESSAGE</span><span class="o">=</span><span class="s2">&quot;Hello, world!&quot;</span>
+<p>With this manifest, troubleshooters define a storage class named "io1-gold-storage", specifying parameters such as storage type, IOPS per GB, provisioner, and reclaim policy. They can then create the storage class using the command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>io1-gold-storage.yaml
 </code></pre></div>
-<h3 id="workload-resources-crafting-grand-designs">Workload Resources: Crafting Grand Designs</h3>
-<p>Workload resources such as Jobs, Deployments, and StatefulSets represent the grand designs within the castle's architecture. With commands like <code>oc create job</code>, troubleshooters breathe life into these constructs, imbuing them with purpose and function. Through these commands, they orchestrate the movements of digital legions, fulfilling the castle's ever-changing needs.</p>
-<h4 id="example-usage_2">Example Usage</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>create<span class="w"> </span>job<span class="w"> </span>hello-job<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>--image<span class="o">=</span>docker.io/library/busybox<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>--<span class="w"> </span>/bin/echo<span class="w"> </span><span class="s2">&quot;Hello, world!&quot;</span>
-</code></pre></div>
-<p>Embark on this grand journey of command-line resources management, as we navigate the enchanted pathways of creation and configuration within the mystical confines of the Openshift castle.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Embark on this journey of crafting storage destinies within the fortified bastion of Openshift. By mastering the art of storage classes, you empower your applications with tailored storage solutions, ensuring their resilience and efficiency within the mystical confines of Openshift.</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">
@@ -1417,7 +1341,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 30, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 11, 2024</span>
   </span>
 
     
@@ -1455,7 +1379,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../14_container_operations_and_monitoring/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Container Operations and Monitoring">
+          <a href="../21_persistent_storage/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Persistent Storage">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1465,20 +1389,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Container Operations and Monitoring
+                Persistent Storage
               </div>
             </div>
           </a>
         
         
           
-          <a href="../16_k8s_networking/" class="md-footer__link md-footer__link--next" aria-label="Next: Kubernetes Networking">
+          <a href="../23_stateful_set/" class="md-footer__link md-footer__link--next" aria-label="Next: StatefulSet Configuration: Fortifying the Castle">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Kubernetes Networking
+                StatefulSet Configuration: Fortifying the Castle
               </div>
             </div>
             <div class="md-footer__button md-icon">

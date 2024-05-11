@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/15_resource_management/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/23_stateful_set/">
       
       
-        <link rel="prev" href="../14_container_operations_and_monitoring/">
+        <link rel="prev" href="../22_storage_class/">
       
-      
-        <link rel="next" href="../16_k8s_networking/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Command Line Resources Management - Vitrua.top</title>
+        <title>StatefulSet Configuration: Fortifying the Castle - Vitrua.top</title>
       
     
     
@@ -57,11 +55,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Command Line Resources Management - Vitrua.top" >
+        <meta  property="og:title"  content="StatefulSet Configuration: Fortifying the Castle - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/15_resource_management.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/23_stateful_set.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +67,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/15_resource_management/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/23_stateful_set/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Command Line Resources Management - Vitrua.top" >
+        <meta  name="twitter:title"  content="StatefulSet Configuration: Fortifying the Castle - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/15_resource_management.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/23_stateful_set.png" >
       
     
     
@@ -100,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#command-line-resources-management" class="md-skip">
+        <a href="#statefulset-configuration-fortifying-the-castle" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Command Line Resources Management
+              StatefulSet Configuration: Fortifying the Castle
             
           </span>
         </div>
@@ -852,30 +850,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Command Line Resources Management
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../15_resource_management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -884,140 +862,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#command-line-resources-management_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Command Line Resources Management
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Command Line Resources Management">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#imperative-commands-crafting-realms-with-swiftness" class="md-nav__link">
-    <span class="md-ellipsis">
-      Imperative Commands: Crafting Realms with Swiftness
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Imperative Commands: Crafting Realms with Swiftness">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#declarative-commands-weaving-threads-of-intention" class="md-nav__link">
-    <span class="md-ellipsis">
-      Declarative Commands: Weaving Threads of Intention
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Declarative Commands: Weaving Threads of Intention">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#workload-resources-crafting-grand-designs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Workload Resources: Crafting Grand Designs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Workload Resources: Crafting Grand Designs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1174,10 +1018,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../23_stateful_set/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    StatefulSet Configuration: Fortifying the Castle
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1186,6 +1050,143 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statefulset-configuration-building-the-castles-keep" class="md-nav__link">
+    <span class="md-ellipsis">
+      StatefulSet Configuration: Building the Castle's Keep
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="StatefulSet Configuration: Building the Castle's Keep">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-stateful-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Stateful Components
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Stateful Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-manifest-fortifying-the-castle-walls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Manifest: Fortifying the Castle Walls
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-statefulsets-protecting-the-castles-integrity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing StatefulSets: Protecting the Castle's Integrity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing StatefulSets: Protecting the Castle's Integrity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-statefulset-raising-the-castles-walls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a StatefulSet: Raising the Castle's Walls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-a-statefulset-reinforcing-the-castles-defenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating a StatefulSet: Reinforcing the Castle's Defenses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-a-statefulset-securing-the-castle-gates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting a StatefulSet: Securing the Castle Gates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1252,29 +1253,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#command-line-resources-management_1" class="md-nav__link">
+  <a href="#statefulset-configuration-building-the-castles-keep" class="md-nav__link">
     <span class="md-ellipsis">
-      Command Line Resources Management
+      StatefulSet Configuration: Building the Castle's Keep
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Command Line Resources Management">
+    <nav class="md-nav" aria-label="StatefulSet Configuration: Building the Castle's Keep">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#imperative-commands-crafting-realms-with-swiftness" class="md-nav__link">
+  <a href="#understanding-stateful-components" class="md-nav__link">
     <span class="md-ellipsis">
-      Imperative Commands: Crafting Realms with Swiftness
+      Understanding Stateful Components
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Imperative Commands: Crafting Realms with Swiftness">
+    <nav class="md-nav" aria-label="Understanding Stateful Components">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-usage" class="md-nav__link">
+  <a href="#example-manifest-fortifying-the-castle-walls" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Usage
+      Example Manifest: Fortifying the Castle Walls
     </span>
   </a>
   
@@ -1286,43 +1287,37 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#declarative-commands-weaving-threads-of-intention" class="md-nav__link">
+  <a href="#managing-statefulsets-protecting-the-castles-integrity" class="md-nav__link">
     <span class="md-ellipsis">
-      Declarative Commands: Weaving Threads of Intention
+      Managing StatefulSets: Protecting the Castle's Integrity
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Declarative Commands: Weaving Threads of Intention">
+    <nav class="md-nav" aria-label="Managing StatefulSets: Protecting the Castle's Integrity">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-usage_1" class="md-nav__link">
+  <a href="#creating-a-statefulset-raising-the-castles-walls" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Usage
+      Creating a StatefulSet: Raising the Castle's Walls
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#updating-a-statefulset-reinforcing-the-castles-defenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating a StatefulSet: Reinforcing the Castle's Defenses
+    </span>
+  </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#workload-resources-crafting-grand-designs" class="md-nav__link">
+  <a href="#deleting-a-statefulset-securing-the-castle-gates" class="md-nav__link">
     <span class="md-ellipsis">
-      Workload Resources: Crafting Grand Designs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Workload Resources: Crafting Grand Designs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
+      Deleting a StatefulSet: Securing the Castle Gates
     </span>
   </a>
   
@@ -1335,6 +1330,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
   
 </li>
       
@@ -1353,44 +1357,90 @@
                   
 
 
-<h1 id="command-line-resources-management">Command Line Resources Management</h1>
+<h1 id="statefulset-configuration-fortifying-the-castle">StatefulSet Configuration: Fortifying the Castle</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/declimper.jpg?raw=true" alt="command_line_management" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/persistentstorage.jpg?raw=true" alt="storage_classes" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Master the art of managing resources through command-line interfaces within the mystical confines of the Openshift castle, enabling efficient resource creation and configuration.</p>
+<p>Configure StatefulSets effectively in your Kubernetes cluster.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To embark on this journey of command-line resources management, you'll need:</p>
 <ul>
-<li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
-<li>Basic familiarity with command-line interfaces (CLI) and container concepts.</li>
+<li>Access to a Kubernetes cluster or a terminal emulator connected to one.</li>
+<li>Basic knowledge of Kubernetes concepts and command-line interfaces (CLI).</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome, traveler, to the wondrous realms of the Openshift castle, where digital landscapes intertwine with mystical energies. As we navigate the labyrinthine corridors of this ancient stronghold, we discover the need to manage resources with precision and efficiency. Here, amidst the ever-changing vistas of digital realms, lies the power of command-line tools to shape and mold the fabric of existence itself.</p>
-<h2 id="command-line-resources-management_1">Command Line Resources Management</h2>
-<h3 id="imperative-commands-crafting-realms-with-swiftness">Imperative Commands: Crafting Realms with Swiftness</h3>
-<p>Imperative commands such as <code>create</code>, <code>set</code>, and <code>run</code> serve as the swift hand of creation within the castle's halls. They offer a rapid means of crafting pods and other resources, bypassing the need for intricate object definitions. Like skilled artisans, troubleshooters wield these commands to forge new realms with speed and agility.</p>
-<h4 id="example-usage">Example Usage</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>run<span class="w"> </span>example-pod<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>--image<span class="o">=</span>docker.io/library/busybox<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>--restart<span class="o">=</span>Never<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>--<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello, world!&quot;</span>
+<p>In the dynamic landscape of Kubernetes, most applications are designed to be stateless, akin to agile warriors traversing the castle's battlements. However, certain applications, such as databases, require persistent storage and consistent identities across pod restarts. StatefulSets serve as the stout walls and sturdy gates of the castle, providing the necessary mechanisms to manage such stateful applications within Kubernetes clusters.</p>
+<h2 id="statefulset-configuration-building-the-castles-keep">StatefulSet Configuration: Building the Castle's Keep</h2>
+<h3 id="understanding-stateful-components">Understanding Stateful Components</h3>
+<p>StatefulSets enable the deployment of stateful applications by providing ordered pod creation, stable network identifiers, and unique persistent storage for each pod instance. This ensures that each pod in the StatefulSet maintains a consistent identity across restarts and rescheduling, much like the steadfast guards stationed atop the castle's towers.</p>
+<h4 id="example-manifest-fortifying-the-castle-walls">Example Manifest: Fortifying the Castle Walls</h4>
+<div class="highlight"><span class="filename">mysql-server.statefulset.yaml</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apps/v1</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">StatefulSet</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql-server</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">database</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">template</span><span class="p">:</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">      </span><span class="nt">labels</span><span class="p">:</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">database</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nt">containers</span><span class="p">:</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">env</span><span class="p">:</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MYSQL_USER</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">          </span><span class="nt">valueFrom</span><span class="p">:</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">            </span><span class="nt">secretKeyRef</span><span class="p">:</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">              </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">              </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">db-credentials</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql/mysql-server:8.0</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">database</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="nt">ports</span><span class="p">:</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">containerPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3306</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">          </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">database</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">        </span><span class="nt">volumeMounts</span><span class="p">:</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">mountPath</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/lib/mysql</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">          </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">      </span><span class="nt">terminationGracePeriodSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">  </span><span class="nt">volumeClaimTemplates</span><span class="p">:</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">    </span><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">      </span><span class="nt">accessModes</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="w"> </span><span class="s">&quot;ReadWriteOnce&quot;</span><span class="w"> </span><span class="p p-Indicator">]</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">      </span><span class="nt">storageClassName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;example-storage-class&quot;</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">      </span><span class="nt">resources</span><span class="p">:</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">        </span><span class="nt">requests</span><span class="p">:</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">          </span><span class="nt">storage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2Gi</span>
 </code></pre></div>
-<h3 id="declarative-commands-weaving-threads-of-intention">Declarative Commands: Weaving Threads of Intention</h3>
-<p>Declarative commands beckon troubleshooters to weave threads of intention into the fabric of the digital tapestry. Through YAML files or templates, they define the desired state of resources, allowing for precise configuration and management. Within these commands lies the power to manifest visions into reality, shaping the very essence of the castle's domains.</p>
-<h4 id="example-usage_1">Example Usage</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>new-app<span class="w"> </span>--template<span class="w"> </span>hello-world<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>--param<span class="w"> </span><span class="nv">MESSAGE</span><span class="o">=</span><span class="s2">&quot;Hello, world!&quot;</span>
+<p>In this manifest, we erect the castle's keep, naming it "mysql-server" with three replicas. Each replica houses a pod with a MySQL database container, fortified with persistent storage for data persistence. The <code>volumeClaimTemplates</code> section outlines the blueprint for the persistent volume claim (PVC) used by each pod instance, ensuring the castle's storerooms remain well-stocked and impregnable.</p>
+<h3 id="managing-statefulsets-protecting-the-castles-integrity">Managing StatefulSets: Protecting the Castle's Integrity</h3>
+<p>StatefulSets, akin to the castle's ramparts and battlements, demand careful management to uphold the fortress's integrity and resilience. Let us explore how to safeguard and fortify our castle against potential threats.</p>
+<h4 id="creating-a-statefulset-raising-the-castles-walls">Creating a StatefulSet: Raising the Castle's Walls</h4>
+<p>To raise the castle's walls, apply the manifest file using the <code>kubectl create</code> command:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>kubectl<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>&lt;stateful_manifest_name&gt;
 </code></pre></div>
-<h3 id="workload-resources-crafting-grand-designs">Workload Resources: Crafting Grand Designs</h3>
-<p>Workload resources such as Jobs, Deployments, and StatefulSets represent the grand designs within the castle's architecture. With commands like <code>oc create job</code>, troubleshooters breathe life into these constructs, imbuing them with purpose and function. Through these commands, they orchestrate the movements of digital legions, fulfilling the castle's ever-changing needs.</p>
-<h4 id="example-usage_2">Example Usage</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>create<span class="w"> </span>job<span class="w"> </span>hello-job<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>--image<span class="o">=</span>docker.io/library/busybox<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>--<span class="w"> </span>/bin/echo<span class="w"> </span><span class="s2">&quot;Hello, world!&quot;</span>
+For instance:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>kubectl<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>mysql-server.statefulset.yaml
+</code></pre></div></p>
+<h4 id="updating-a-statefulset-reinforcing-the-castles-defenses">Updating a StatefulSet: Reinforcing the Castle's Defenses</h4>
+<p>To reinforce the castle's defenses, edit the manifest file accordingly and apply the changes using <code>kubectl apply</code>:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>&lt;stateful_manifest_name&gt;
 </code></pre></div>
-<p>Embark on this grand journey of command-line resources management, as we navigate the enchanted pathways of creation and configuration within the mystical confines of the Openshift castle.</p>
+For example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>updated-mysql-server.statefulset.yaml
+</code></pre></div></p>
+<h4 id="deleting-a-statefulset-securing-the-castle-gates">Deleting a StatefulSet: Securing the Castle Gates</h4>
+<p>To secure the castle gates and dismantle any potential threats, use the <code>kubectl delete</code> command:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>kubectl<span class="w"> </span>delete<span class="w"> </span>statefulset<span class="w"> </span>&lt;statefulset_name&gt;
+</code></pre></div>
+For instance:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>kubectl<span class="w"> </span>delete<span class="w"> </span>statefulset<span class="w"> </span>mysql-server
+</code></pre></div></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>StatefulSets serve as the bastions of fortitude within Kubernetes clusters, safeguarding stateful applications with unwavering resilience. By mastering their configuration and management principles, you can fortify the castle of your Kubernetes realm, ensuring the perpetuity and security of your data with the stalwart vigilance of its guardians.</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">
@@ -1417,7 +1467,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 30, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 11, 2024</span>
   </span>
 
     
@@ -1455,7 +1505,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../14_container_operations_and_monitoring/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Container Operations and Monitoring">
+          <a href="../22_storage_class/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Storage Classes">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1465,27 +1515,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Container Operations and Monitoring
+                Storage Classes
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../16_k8s_networking/" class="md-footer__link md-footer__link--next" aria-label="Next: Kubernetes Networking">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Kubernetes Networking
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
