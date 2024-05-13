@@ -1,3 +1,12 @@
+# [0.14.0](https://github.com/Vitrua/documents/compare/v0.13.0...v0.14.0) (2024-05-13)
+
+
+### Features
+
+* add jenkins and openid ([ad7b9d3](https://github.com/Vitrua/documents/commit/ad7b9d3e355734b6adf71bb85fd5e55630f90960))
+
+
+
 # [0.13.0](https://github.com/Vitrua/documents/compare/v0.12.0...v0.13.0) (2024-05-11)
 
 
