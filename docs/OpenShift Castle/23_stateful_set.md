@@ -1,4 +1,4 @@
-# StatefulSet Configuration: Fortifying the Castle
+# StatefulSet Configuration
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/openshift/persistentstorage.jpg?raw=true" alt="storage_classes" width="300" height="300">
