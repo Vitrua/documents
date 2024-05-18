@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/21_persistent_storage/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/25_pod_scheduling/">
       
       
-        <link rel="prev" href="../20_secrets_and_configmaps/">
+        <link rel="prev" href="../24_health_probes/">
       
       
-        <link rel="next" href="../22_storage_class/">
+        <link rel="next" href="../26_compute_resources/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Persistent Storage - Vitrua.top</title>
+        <title>Pod Scheduling - Vitrua.top</title>
       
     
     
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Persistent Storage - Vitrua.top" >
+        <meta  property="og:title"  content="Pod Scheduling - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/21_persistent_storage.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/25_pod_scheduling.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/21_persistent_storage/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/25_pod_scheduling/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Persistent Storage - Vitrua.top" >
+        <meta  name="twitter:title"  content="Pod Scheduling - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/21_persistent_storage.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/25_pod_scheduling.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#persistent-storage" class="md-skip">
+        <a href="#pod-scheduling" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Persistent Storage
+              Pod Scheduling
             
           </span>
         </div>
@@ -996,30 +996,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Persistent Storage
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../21_persistent_storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1028,251 +1008,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-persistent-volumes-pvs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating Persistent Volumes (PVs)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Creating Persistent Volumes (PVs)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#forging-the-chains-of-continuity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Forging the Chains of Continuity
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Forging the Chains of Continuity">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#claiming-persistent-volume-storage-pvc" class="md-nav__link">
-    <span class="md-ellipsis">
-      Claiming Persistent Volume Storage (PVC)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Claiming Persistent Volume Storage (PVC)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#embracing-the-threads-of-destiny" class="md-nav__link">
-    <span class="md-ellipsis">
-      Embracing the Threads of Destiny
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Embracing the Threads of Destiny">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#managing-persistent-volumes-in-deployments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Managing Persistent Volumes in Deployments
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Managing Persistent Volumes in Deployments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#weaving-destiny-into-the-fabric-of-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Weaving Destiny into the Fabric of Applications
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Weaving Destiny into the Fabric of Applications">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#managing-persistent-volumes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Managing Persistent Volumes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Managing Persistent Volumes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ensuring-the-continuity-of-destiny" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ensuring the Continuity of Destiny
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Ensuring the Continuity of Destiny">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#retrieving-persistent-volumes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Retrieving Persistent Volumes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deleting-persistent-volumes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deleting Persistent Volumes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Deleting Persistent Volumes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-delete-the-pvc" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1: Delete the PVC
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-delete-the-pv" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2: Delete the PV
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1345,10 +1080,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../25_pod_scheduling/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pod Scheduling
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1357,6 +1112,134 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-pod-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Pod Scheduling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Pod Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-orchestration-of-resource-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Orchestration of Resource Allocation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-pod-scheduling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Pod Scheduling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Pod Scheduling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crafting-the-perfect-quarters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crafting the Perfect Quarters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crafting the Perfect Quarters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage-with-node-selectors-and-resource-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage with Node Selectors and Resource Requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customizing-scheduling-via-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing Scheduling via CLI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1507,36 +1390,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creating-persistent-volumes-pvs" class="md-nav__link">
+  <a href="#understanding-pod-scheduling" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating Persistent Volumes (PVs)
+      Understanding Pod Scheduling
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Creating Persistent Volumes (PVs)">
+    <nav class="md-nav" aria-label="Understanding Pod Scheduling">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#forging-the-chains-of-continuity" class="md-nav__link">
+  <a href="#the-orchestration-of-resource-allocation" class="md-nav__link">
     <span class="md-ellipsis">
-      Forging the Chains of Continuity
+      The Orchestration of Resource Allocation
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Forging the Chains of Continuity">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1546,142 +1414,40 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#claiming-persistent-volume-storage-pvc" class="md-nav__link">
+  <a href="#configuring-pod-scheduling" class="md-nav__link">
     <span class="md-ellipsis">
-      Claiming Persistent Volume Storage (PVC)
+      Configuring Pod Scheduling
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Claiming Persistent Volume Storage (PVC)">
+    <nav class="md-nav" aria-label="Configuring Pod Scheduling">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#embracing-the-threads-of-destiny" class="md-nav__link">
+  <a href="#crafting-the-perfect-quarters" class="md-nav__link">
     <span class="md-ellipsis">
-      Embracing the Threads of Destiny
+      Crafting the Perfect Quarters
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Embracing the Threads of Destiny">
+    <nav class="md-nav" aria-label="Crafting the Perfect Quarters">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-usage_1" class="md-nav__link">
+  <a href="#example-usage-with-node-selectors-and-resource-requests" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#managing-persistent-volumes-in-deployments" class="md-nav__link">
-    <span class="md-ellipsis">
-      Managing Persistent Volumes in Deployments
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Managing Persistent Volumes in Deployments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#weaving-destiny-into-the-fabric-of-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Weaving Destiny into the Fabric of Applications
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Weaving Destiny into the Fabric of Applications">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#managing-persistent-volumes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Managing Persistent Volumes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Managing Persistent Volumes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ensuring-the-continuity-of-destiny" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ensuring the Continuity of Destiny
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Ensuring the Continuity of Destiny">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#retrieving-persistent-volumes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Retrieving Persistent Volumes
+      Example Usage with Node Selectors and Resource Requests
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#deleting-persistent-volumes" class="md-nav__link">
+  <a href="#customizing-scheduling-via-cli" class="md-nav__link">
     <span class="md-ellipsis">
-      Deleting Persistent Volumes
+      Customizing Scheduling via CLI
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Deleting Persistent Volumes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-delete-the-pvc" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1: Delete the PVC
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-delete-the-pv" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2: Delete the PV
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1719,102 +1485,63 @@
                   
 
 
-<h1 id="persistent-storage">Persistent Storage</h1>
+<h1 id="pod-scheduling">Pod Scheduling</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/storage.jpg?raw=true" alt="persistent_storage" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/podscheduling.jpg?raw=true" alt="podscheduling" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Master the realm of persistent storage within Openshift, enabling your applications to retain critical data across time and space.</p>
+<p>Understand the intricacies of pod scheduling within the Openshift cluster, ensuring efficient and optimal placement of your applications.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>Before delving into the depths of persistent storage, ensure you possess:</p>
 <ul>
 <li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
-<li>Familiarity with basic Openshift concepts and command-line interfaces (CLI).</li>
+<li>Basic knowledge of Openshift concepts and command-line interfaces (CLI).</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome, custodian of continuity, to the arcane realm of persistent storage within the fortified bastion of Openshift. As the guardian of data across the ebb and flow of time, you possess the power to shape the very essence of continuity within your fortress. Join us as we unravel the mysteries of creating and managing persistent volumes, ensuring the perpetuity of your fortress's data within the mystical confines of Openshift.</p>
-<h2 id="creating-persistent-volumes-pvs">Creating Persistent Volumes (PVs)</h2>
-<h3 id="forging-the-chains-of-continuity">Forging the Chains of Continuity</h3>
-<p>In the realm of Openshift, troubleshooters can forge the chains of continuity by creating persistent volumes (PVs) through declarative means. Utilizing YAML manifests, they define the characteristics of the PV, such as capacity, access modes, and storage classes.</p>
-<h4 id="example-usage">Example Usage</h4>
-<p>To create a Persistent Volume, troubleshooters can wield the power of YAML manifests, crafting the essence of continuity within their fortress. For instance:</p>
-<div class="highlight"><span class="filename">my-app.pv.yaml</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PersistentVolume</span>
+<p>Greetings, master scheduler of the mystical realm! Within the fortified bastion of Openshift, the pod scheduler acts as the wise overseer, orchestrating the placement of your application pods onto the nodes of your cluster. As the steward of resource allocation, you wield the power to filter, prioritize, and select the best nodes, ensuring that your applications run efficiently and reliably. Join us on a journey to uncover the secrets of pod scheduling and master the art of optimal pod placement.</p>
+<h2 id="understanding-pod-scheduling">Understanding Pod Scheduling</h2>
+<h3 id="the-orchestration-of-resource-allocation">The Orchestration of Resource Allocation</h3>
+<p>In the enchanted world of Openshift, pod scheduling is akin to assigning the best quarters to your loyal subjects within the castle. This process involves three main steps:</p>
+<ol>
+<li>
+<p><strong>Filtering Nodes</strong>: The scheduler evaluates which nodes are suitable based on the criteria specified by the pods, such as node selectors and resource requests for CPU, memory, and storage. Only the nodes meeting these requirements are considered eligible. If no eligible nodes are found, a FailedScheduling event is triggered, indicating that no suitable quarters are available.</p>
+</li>
+<li>
+<p><strong>Prioritizing Nodes</strong>: Among the eligible nodes, the scheduler assigns weighted scores based on various criteria, determining their suitability for hosting the pod. Nodes with higher scores are considered better candidates.</p>
+</li>
+<li>
+<p><strong>Selecting the Best Fit Node</strong>: The scheduler sorts the nodes by their scores and selects the highest-scoring node to host the pod. If multiple nodes share the highest score, the scheduler employs a round-robin method to choose one. Once a suitable node is selected, a Scheduled event is generated for the pod.</p>
+</li>
+</ol>
+<h2 id="configuring-pod-scheduling">Configuring Pod Scheduling</h2>
+<h3 id="crafting-the-perfect-quarters">Crafting the Perfect Quarters</h3>
+<p>To ensure your applications are allocated the best quarters within the castle, you can customize the scheduling process by defining specific criteria.</p>
+<h4 id="example-usage-with-node-selectors-and-resource-requests">Example Usage with Node Selectors and Resource Requests</h4>
+<p>Here’s how to configure a pod with specific node selectors and resource requests:</p>
+<div class="highlight"><span class="filename">pod-scheduling-example.yaml</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Pod</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-app-pv</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-app-pod</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nt">spec</span><span class="p">:</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">capacity</span><span class="p">:</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">storage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20Gi</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">accessModes</span><span class="p">:</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ReadWriteOnce</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">volumeMode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Block</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="nt">persistentVolumeReclaimPolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Retain</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="nt">fc</span><span class="p">:</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="nt">targetWWNs</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;12345a1234567bcd1&quot;</span><span class="p p-Indicator">]</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="nt">lun</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="nt">readOnly</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">containers</span><span class="p">:</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-app-container</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-app:latest</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="nt">resources</span><span class="p">:</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="nt">requests</span><span class="p">:</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="nt">memory</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;64Mi&quot;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="nt">cpu</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;250m&quot;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="nt">nodeSelector</span><span class="p">:</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="nt">disktype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssd</span>
 </code></pre></div>
-<p>With this manifest, troubleshooters define a Persistent Volume named "my-app-pv" with a capacity of 20Gi, accessible in ReadWriteOnce mode. They can then create the PV using the command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>my-app.pv.yaml
+<p>In this example, the pod named "my-app-pod" requests specific CPU and memory resources and is scheduled to nodes labeled with <code>disktype=ssd</code>. Apply this configuration using the command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>pod-scheduling-example.yaml
 </code></pre></div>
-<h2 id="claiming-persistent-volume-storage-pvc">Claiming Persistent Volume Storage (PVC)</h2>
-<h3 id="embracing-the-threads-of-destiny">Embracing the Threads of Destiny</h3>
-<p>Once the PV is forged, troubleshooters can embrace the threads of destiny by claiming its storage through Persistent Volume Claims (PVCs). By specifying the desired characteristics such as capacity and access mode, they bind the PV to their application's essence, ensuring continuity and resilience.</p>
-<h4 id="example-usage_1">Example Usage</h4>
-<p>To claim persistent volume storage, troubleshooters manifest the essence of their destiny within the PVC. For example:</p>
-<div class="highlight"><span class="filename">my-app.pvc.yaml</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PersistentVolumeClaim</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">metadata</span><span class="p">:</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-app-pvc</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-app</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nt">spec</span><span class="p">:</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="nt">accessModes</span><span class="p">:</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ReadWriteOnce</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="nt">resources</span><span class="p">:</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="nt">requests</span><span class="p">:</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">      </span><span class="nt">storage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15Gi</span>
+<h4 id="customizing-scheduling-via-cli">Customizing Scheduling via CLI</h4>
+<p>You can also set node selectors and resource requests directly through the CLI. For example, to schedule a pod with specific criteria:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>run<span class="w"> </span>my-app-pod<span class="w"> </span>--image<span class="o">=</span>my-app:latest<span class="w"> </span>--requests<span class="o">=</span><span class="nv">cpu</span><span class="o">=</span>250m,memory<span class="o">=</span>64Mi<span class="w"> </span>--overrides<span class="o">=</span><span class="s1">&#39;{ &quot;apiVersion&quot;: &quot;v1&quot;, &quot;spec&quot;: { &quot;nodeSelector&quot;: { &quot;disktype&quot;: &quot;ssd&quot; } } }&#39;</span>
 </code></pre></div>
-<p>With this manifest, troubleshooters define a PVC named "my-app-pvc" requesting 15Gi of storage in ReadWriteOnce mode. They can then generate the PVC using the command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>my-app.pvc.yaml
-</code></pre></div>
-<h2 id="managing-persistent-volumes-in-deployments">Managing Persistent Volumes in Deployments</h2>
-<h3 id="weaving-destiny-into-the-fabric-of-applications">Weaving Destiny into the Fabric of Applications</h3>
-<p>With the PVs and PVCs crafted, troubleshooters can weave the threads of destiny into the fabric of their applications by mounting the PVCs within their deployments. Utilizing the 'set volumes' command, they bind the PVC to the desired mount path within the deployment, ensuring seamless interaction between the application and its persistent storage.</p>
-<h4 id="example-usage_2">Example Usage</h4>
-<p>To mount PVCs within deployments, troubleshooters invoke the 'set volumes' command, integrating destiny into the fabric of their applications. For instance:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span><span class="nb">set</span><span class="w"> </span>volumes<span class="w"> </span>deployment/my-app<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>--add<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>--name<span class="w"> </span>my-app-pv<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>--type<span class="w"> </span>persistentVolumeClaim<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>--claim-mode<span class="w"> </span>rwo<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>--claim-size<span class="w"> </span>15Gi<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>--mount-path<span class="w"> </span>/var/lib/my-app<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>--claim-name<span class="w"> </span>my-app-pvc
-</code></pre></div>
-<h2 id="managing-persistent-volumes">Managing Persistent Volumes</h2>
-<h3 id="ensuring-the-continuity-of-destiny">Ensuring the Continuity of Destiny</h3>
-<p>In the ever-evolving saga of your fortress's destiny, troubleshooters must master the art of managing persistent volumes. From retrieval to deletion, they must ensure the continuity and resilience of their fortress's data across time and space.</p>
-<h4 id="retrieving-persistent-volumes">Retrieving Persistent Volumes</h4>
-<p>Troubleshooters can retrieve information about persistent volumes using the 'get' command. For instance:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>oc<span class="w"> </span>get<span class="w"> </span>pv
-</code></pre></div>
-<p>This command provides an overview of all persistent volumes within the Openshift cluster, enabling troubleshooters to monitor and manage their fortress's storage resources.</p>
-<h4 id="deleting-persistent-volumes">Deleting Persistent Volumes</h4>
-<p>In the cycle of renewal and rebirth, troubleshooters must sometimes release the shackles of the past by deleting persistent volumes that have outlived their purpose. Deleting a PV is a multi-step process that involves careful consideration and execution to ensure the continuity and resilience of the fortress's data.</p>
-<h5 id="step-1-delete-the-pvc">Step 1: Delete the PVC</h5>
-<p>Before deleting a PV, troubleshooters must first delete the associated PVC to release the claim on the volume. For example:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>oc<span class="w"> </span>delete<span class="w"> </span>pvc<span class="w"> </span>my-app-pvc
-</code></pre></div>
-<p>This command frees the PVC named "my-app-pvc" from the confines of the fortress, preparing the PV for deletion.</p>
-<h5 id="step-2-delete-the-pv">Step 2: Delete the PV</h5>
-<p>Once the PVC is deleted, troubleshooters can proceed to delete the PV using the 'delete' command. For example:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>oc<span class="w"> </span>delete<span class="w"> </span>pv<span class="w"> </span>my-app-pv
-</code></pre></div>
-<p>This command releases the persistent volume named "my-app-pv" from the Openshift cluster, ensuring the continuity and resilience of the fortress's storage resources.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Embark on this journey of continuity and resilience within the fortified bastion of Openshift. By mastering the art of persistent storage, you ensure the perpetuity of your fortress's data, safeguarding it against the ravages of time and entropy.</p>
+<p>Embark on the journey of mastering pod scheduling within the fortified bastion of Openshift. By understanding and configuring the scheduling process, you ensure your applications are efficiently and reliably allocated the best quarters, maintaining their performance and resilience within the mystical confines of Openshift.</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">
@@ -1841,7 +1568,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 11, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 18, 2024</span>
   </span>
 
     
@@ -1879,7 +1606,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../20_secrets_and_configmaps/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Secrets &amp;amp; Configmaps">
+          <a href="../24_health_probes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Application of Health Probes">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1889,20 +1616,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Secrets &amp; Configmaps
+                Application of Health Probes
               </div>
             </div>
           </a>
         
         
           
-          <a href="../22_storage_class/" class="md-footer__link md-footer__link--next" aria-label="Next: Storage Classes">
+          <a href="../26_compute_resources/" class="md-footer__link md-footer__link--next" aria-label="Next: Compute Resources">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Storage Classes
+                Compute Resources
               </div>
             </div>
             <div class="md-footer__button md-icon">
