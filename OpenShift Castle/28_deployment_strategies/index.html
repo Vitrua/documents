@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/14_container_operations_and_monitoring/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/28_deployment_strategies/">
       
       
-        <link rel="prev" href="../13_copying_files_to_and_from_containers/">
+        <link rel="prev" href="../27_application_autoscaling/">
       
       
-        <link rel="next" href="../15_resource_management/">
+        <link rel="next" href="../29_image_streams/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Container Operations and Monitoring - Vitrua.top</title>
+        <title>Deployment Strategies - Vitrua.top</title>
       
     
     
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Container Operations and Monitoring - Vitrua.top" >
+        <meta  property="og:title"  content="Deployment Strategies - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/14_container_operations_and_monitoring.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/28_deployment_strategies.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/14_container_operations_and_monitoring/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/28_deployment_strategies/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Container Operations and Monitoring - Vitrua.top" >
+        <meta  name="twitter:title"  content="Deployment Strategies - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/14_container_operations_and_monitoring.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/28_deployment_strategies.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#container-operations-and-monitoring" class="md-skip">
+        <a href="#deployment-strategies" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Container Operations and Monitoring
+              Deployment Strategies
             
           </span>
         </div>
@@ -849,30 +849,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Container Operations and Monitoring
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../14_container_operations_and_monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -881,164 +861,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#container-operations-and-monitoring_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Container Operations and Monitoring
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Container Operations and Monitoring">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#connecting-to-a-running-container" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connecting to a Running Container
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Connecting to a Running Container">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#executing-commands-within-a-container" class="md-nav__link">
-    <span class="md-ellipsis">
-      Executing Commands Within a Container
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Executing Commands Within a Container">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#viewing-container-logs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Viewing Container Logs
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Viewing Container Logs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#monitoring-container-events" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitoring Container Events
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Monitoring Container Events">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1321,10 +1143,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../28_deployment_strategies/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Deployment Strategies
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1333,6 +1175,170 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-deployment-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Deployment Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Deployment Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-art-of-strategic-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Art of Strategic Deployment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-deployment-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Deployment Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Deployment Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crafting-the-deployment-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crafting the Deployment Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crafting the Deployment Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage-with-yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage with YAML
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-deployments-via-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Deployments via CLI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replica-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Replica Sets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rolling-back-deployments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rolling Back Deployments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-stuck-rollouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handling Stuck Rollouts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-deployment-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Deployment History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1483,29 +1489,62 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#container-operations-and-monitoring_1" class="md-nav__link">
+  <a href="#understanding-deployment-strategies" class="md-nav__link">
     <span class="md-ellipsis">
-      Container Operations and Monitoring
+      Understanding Deployment Strategies
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Container Operations and Monitoring">
+    <nav class="md-nav" aria-label="Understanding Deployment Strategies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#connecting-to-a-running-container" class="md-nav__link">
+  <a href="#the-art-of-strategic-deployment" class="md-nav__link">
     <span class="md-ellipsis">
-      Connecting to a Running Container
+      The Art of Strategic Deployment
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Connecting to a Running Container">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-deployment-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Deployment Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Deployment Strategies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-usage" class="md-nav__link">
+  <a href="#crafting-the-deployment-plan" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Usage
+      Crafting the Deployment Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crafting the Deployment Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-usage-with-yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage with YAML
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-deployments-via-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing Deployments via CLI
     </span>
   </a>
   
@@ -1517,19 +1556,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#executing-commands-within-a-container" class="md-nav__link">
+  <a href="#replica-sets" class="md-nav__link">
     <span class="md-ellipsis">
-      Executing Commands Within a Container
+      Replica Sets
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Executing Commands Within a Container">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#example-usage_1" class="md-nav__link">
+  <a href="#rolling-back-deployments" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Usage
+      Rolling Back Deployments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-stuck-rollouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handling Stuck Rollouts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-deployment-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Deployment History
     </span>
   </a>
   
@@ -1539,57 +1595,13 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#viewing-container-logs" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Viewing Container Logs
+      Conclusion
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Viewing Container Logs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#monitoring-container-events" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitoring Container Events
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Monitoring Container Events">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-usage_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Usage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1608,55 +1620,96 @@
                   
 
 
-<h1 id="container-operations-and-monitoring">Container Operations and Monitoring</h1>
+<h1 id="deployment-strategies">Deployment Strategies</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/interaction.jpg?raw=true" alt="container_operations" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/deploymentstrategies.jpg?raw=true" alt="deployment_strategies" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Interact with containers. Master the art of executing commands, monitoring events, and accessing logs within containers, enabling efficient container management within the mystical confines of the Openshift castle.</p>
+<p>Learn how to select and implement deployment strategies in Openshift to minimize risks and ensure smooth application updates.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To embark on this journey of container operations and monitoring, you'll need:</p>
 <ul>
 <li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
-<li>Basic familiarity with command-line interfaces (CLI) and container concepts.</li>
+<li>Basic knowledge of Openshift concepts and command-line interfaces (CLI).</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>As we delve deeper into the enchanted landscapes of the Openshift castle, the need to interact with and monitor containers becomes essential. Here, amidst the swirling energies of digital realms, lies the ability to execute commands, track events, and access logs within containers.</p>
-<h2 id="container-operations-and-monitoring_1">Container Operations and Monitoring</h2>
-<h3 id="connecting-to-a-running-container">Connecting to a Running Container</h3>
-<p>To establish a connection to a running container within a pod, troubleshooters can utilize the <code>oc rsh</code> command:</p>
+<p>Welcome, strategic architect of the Openshift kingdom! Deploying application changes can be fraught with risks such as downtime, bugs, or performance issues. By carefully selecting and implementing deployment strategies, you can minimize these risks and ensure seamless updates. Join us as we explore the various deployment strategies available in Openshift, and learn how to apply them to safeguard your applications within the fortified castle.</p>
+<h2 id="understanding-deployment-strategies">Understanding Deployment Strategies</h2>
+<h3 id="the-art-of-strategic-deployment">The Art of Strategic Deployment</h3>
+<p>In the magical realm of Openshift, deployment strategies are your tools for updating applications while minimizing impact. Whether you're gradually rolling out updates or replacing all instances at once, choosing the right strategy is crucial for maintaining the kingdom’s stability.</p>
+<p>Just as a wise ruler plans the defense of a castle, you must plan your deployments to ensure the safety and efficiency of your applications.</p>
 <ul>
-<li><code>oc rsh &lt;POD_NAME&gt;</code>: Connect to the specified running container, enabling direct interaction and execution of commands.</li>
+<li>
+<p><strong>RollingUpdate Strategy</strong>: Updates the application in stages, replacing one instance at a time until all are updated. This is the default strategy and ensures minimal downtime. Imagine a skilled knight replacing guards one by one at their posts, ensuring the castle remains protected at all times.</p>
+</li>
+<li>
+<p><strong>Recreate Strategy</strong>: Terminates all instances of the application before deploying the new version, causing downtime but ensuring a clean slate. Picture the castle gates closing, all guards being replaced at once, and then reopening with fresh new protectors ready to defend.</p>
+</li>
 </ul>
-<h4 id="example-usage">Example Usage</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>rsh<span class="w"> </span>my-app-pod
+<h2 id="configuring-deployment-strategies">Configuring Deployment Strategies</h2>
+<h3 id="crafting-the-deployment-plan">Crafting the Deployment Plan</h3>
+<p>To apply a deployment strategy, you modify the <code>.spec.strategy.type</code> property of the Deployment object. Let’s delve into how you can configure these strategies using YAML.</p>
+<h4 id="example-usage-with-yaml">Example Usage with YAML</h4>
+<p>Here’s how to define a RollingUpdate strategy in your deployment configuration:</p>
+<div class="highlight"><span class="filename">deployment-strategy-example.yaml</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apps/v1</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deployment</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myapp2</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">progressDeadlineSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">600</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">revisionHistoryLimit</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myapp2</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="nt">strategy</span><span class="p">:</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="nt">rollingUpdate</span><span class="p">:</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="nt">maxSurge</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">25%</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nt">maxUnavailable</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">50%</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RollingUpdate</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">  </span><span class="nt">template</span><span class="p">:</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">      </span><span class="nt">labels</span><span class="p">:</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myapp2</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">      </span><span class="nt">containers</span><span class="p">:</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myapp2</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myapp:latest</span>
 </code></pre></div>
-<h3 id="executing-commands-within-a-container">Executing Commands Within a Container</h3>
-<p>For executing commands directly within a container, the <code>oc exec</code> command provides a powerful tool:</p>
-<ul>
-<li><code>oc exec &lt;POD&gt; | &lt;TYPE/NAME&gt; [-c &lt;container_name&gt;] -- &lt;COMMAND&gt; [&lt;arg1 ... argN&gt;]</code>: Execute the specified command within the container, optionally specifying the container name if multiple containers exist within the pod.</li>
-</ul>
-<h4 id="example-usage_1">Example Usage</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>my-app-pod<span class="w"> </span>--<span class="w"> </span>ls<span class="w"> </span>/app
+<p>Apply this configuration using the command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>deployment-strategy-example.yaml
 </code></pre></div>
-<h3 id="viewing-container-logs">Viewing Container Logs</h3>
-<p>To access the logs generated by a container, troubleshooters can use the <code>oc logs</code> command:</p>
-<ul>
-<li><code>oc logs &lt;POD_NAME&gt;</code>: Retrieve and display the logs generated by the specified container.</li>
-</ul>
-<h4 id="example-usage_2">Example Usage</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>logs<span class="w"> </span>my-app-pod
+<h4 id="managing-deployments-via-cli">Managing Deployments via CLI</h4>
+<p>In times of change, even the most strategic plans may require adjustments. To pause and resume a rollout, preventing automatic updates and allowing for controlled deployment, you can command your army like this:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>rollout<span class="w"> </span>pause<span class="w"> </span>deployment/myapp
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>oc<span class="w"> </span>rollout<span class="w"> </span>resume<span class="w"> </span>deployment/myapp
 </code></pre></div>
-<h3 id="monitoring-container-events">Monitoring Container Events</h3>
-<p>For monitoring events related to containers within a namespace, troubleshooters can utilize the <code>oc get events</code> command:</p>
-<ul>
-<li><code>oc get events</code>: View the events related to containers, providing insights into their lifecycle and status changes.</li>
-</ul>
-<h4 id="example-usage_3">Example Usage</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>get<span class="w"> </span>events
+<p>This is akin to pausing the changing of the guard, giving you control over when and how the new guards take their posts.</p>
+<h3 id="replica-sets">Replica Sets</h3>
+<p>When you create or update a Deployment object, Openshift generates a new ReplicaSet object with the updated pod template. Avoid directly editing ReplicaSet objects; instead, monitor their status as a vigilant ruler would:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>get<span class="w"> </span>replicaset
 </code></pre></div>
-<p>Embark on this journey of container operations and monitoring, as we master the art of efficient container management within the enchanted confines of the Openshift castle.</p>
+<h3 id="rolling-back-deployments">Rolling Back Deployments</h3>
+<p>If an update causes issues, you can roll back to a previous version, much like reverting to a tried and trusted defense strategy:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span>rollout<span class="w"> </span>undo<span class="w"> </span>deployment/myapp2
+</code></pre></div>
+<p>Monitor the rollout status with:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>oc<span class="w"> </span>rollout<span class="w"> </span>status<span class="w"> </span>deployment/myapp2
+</code></pre></div>
+<h3 id="handling-stuck-rollouts">Handling Stuck Rollouts</h3>
+<p>For DeploymentConfig objects, you can cancel a stuck rollout. Think of this as aborting a flawed plan before it can jeopardize the castle’s defenses:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>oc<span class="w"> </span>rollout<span class="w"> </span>cancel
+</code></pre></div>
+<h3 id="viewing-deployment-history">Viewing Deployment History</h3>
+<p>Every wise ruler keeps records of past strategies. List all available revisions:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>oc<span class="w"> </span>rollout<span class="w"> </span><span class="nb">history</span><span class="w"> </span>deployment/myapp2
+</code></pre></div>
+<p>For details about a specific revision, add the <code>--revision</code> option:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>oc<span class="w"> </span>rollout<span class="w"> </span><span class="nb">history</span><span class="w"> </span>deployment/myapp2<span class="w"> </span>--revision<span class="o">=</span><span class="m">1</span>
+</code></pre></div>
+<h2 id="conclusion">Conclusion</h2>
+<p>Embark on the journey of mastering deployment strategies within the fortified bastion of Openshift. By understanding and implementing the appropriate strategies, you ensure your applications are updated smoothly, maintaining their performance and resilience within the mystical confines of Openshift.</p>
+<p>Just as a wise ruler safeguards their castle with strategic planning and vigilant management, you too can protect your applications and ensure their success within the Openshift kingdom.</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">
@@ -1683,7 +1736,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 29, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 18, 2024</span>
   </span>
 
     
@@ -1721,7 +1774,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../13_copying_files_to_and_from_containers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Copying Files to and from Containers">
+          <a href="../27_application_autoscaling/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Application Autoscaling">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1731,20 +1784,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Copying Files to and from Containers
+                Application Autoscaling
               </div>
             </div>
           </a>
         
         
           
-          <a href="../15_resource_management/" class="md-footer__link md-footer__link--next" aria-label="Next: Command Line Resources Management">
+          <a href="../29_image_streams/" class="md-footer__link md-footer__link--next" aria-label="Next: Image Streams">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Command Line Resources Management
+                Image Streams
               </div>
             </div>
             <div class="md-footer__button md-icon">

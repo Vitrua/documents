@@ -166,6 +166,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.vitrua.top/OpenShift%20Castle/28_deployment_strategies/</loc>
+         <lastmod>2024-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vitrua.top/OpenShift%20Castle/29_image_streams/</loc>
+         <lastmod>2024-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vitrua.top/OpenShift%20Castle/30_configure_image_triggers/</loc>
+         <lastmod>2024-05-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.vitrua.top/WorkFlows/01_local_jenkins_openid/</loc>
          <lastmod>2024-05-18</lastmod>
          <changefreq>daily</changefreq>
