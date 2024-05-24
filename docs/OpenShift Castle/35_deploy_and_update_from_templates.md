@@ -1,4 +1,4 @@
-# Deploying and Updating Applications from Openshift Templates
+# Deploying and Updating from Templates
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/openshift/templatesdeploy.jpg?raw=true" alt="deploy_applications" width="300" height="300">

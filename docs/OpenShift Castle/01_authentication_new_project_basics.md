@@ -1,4 +1,4 @@
-# Authentication, new project and basic commands
+# Authentication, new project and basics
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/openshift/incisions.jpg?raw=true" alt="inscription" width="300" height="300">
