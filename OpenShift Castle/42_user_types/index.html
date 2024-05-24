@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/35_deploy_and_update_from_templates/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/42_user_types/">
       
       
-        <link rel="prev" href="../34_templates/">
+        <link rel="prev" href="../41_rbac_with_cli/">
       
       
-        <link rel="next" href="../36_managing_templates/">
+        <link rel="next" href="../43_group_management/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Deploying and Updating from Templates - Vitrua.top</title>
+        <title>User Types - Vitrua.top</title>
       
     
     
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Deploying and Updating from Templates - Vitrua.top" >
+        <meta  property="og:title"  content="User Types - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/35_deploy_and_update_from_templates.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/42_user_types.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/35_deploy_and_update_from_templates/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/42_user_types/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Deploying and Updating from Templates - Vitrua.top" >
+        <meta  name="twitter:title"  content="User Types - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/35_deploy_and_update_from_templates.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/42_user_types.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploying-and-updating-from-templates" class="md-skip">
+        <a href="#user-types" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Deploying and Updating from Templates
+              User Types
             
           </span>
         </div>
@@ -1290,30 +1290,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Deploying and Updating from Templates
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../35_deploy_and_update_from_templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1322,137 +1302,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deploying-applications-from-templates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deploying Applications from Templates
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Deploying Applications from Templates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#transforming-templates-into-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Transforming Templates into Resources
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-parameter-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Parameter Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#direct-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Direct Deployment
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#updating-applications-from-templates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating Applications from Templates
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Updating Applications from Templates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comparing-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comparing Updates
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applying-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applying Updates
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1588,10 +1437,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../42_user_types/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    User Types
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1600,6 +1469,146 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-types_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-regular-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Regular Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-system-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. System Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-service-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Service Accounts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-user-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing User Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing User Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-and-managing-regular-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating and Managing Regular Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-system-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing System Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-and-managing-service-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating and Managing Service Accounts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assigning-roles-to-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assigning Roles to Users
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1774,15 +1783,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
       Introduction
@@ -1792,37 +1792,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deploying-applications-from-templates" class="md-nav__link">
+  <a href="#user-types_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploying Applications from Templates
+      User Types
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Deploying Applications from Templates">
+    <nav class="md-nav" aria-label="User Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#transforming-templates-into-resources" class="md-nav__link">
+  <a href="#1-regular-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Transforming Templates into Resources
+      1. Regular Users
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-parameter-files" class="md-nav__link">
+  <a href="#2-system-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Parameter Files
+      2. System Users
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#direct-deployment" class="md-nav__link">
+  <a href="#3-service-accounts" class="md-nav__link">
     <span class="md-ellipsis">
-      Direct Deployment
+      3. Service Accounts
     </span>
   </a>
   
@@ -1834,28 +1834,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#updating-applications-from-templates" class="md-nav__link">
+  <a href="#managing-user-types" class="md-nav__link">
     <span class="md-ellipsis">
-      Updating Applications from Templates
+      Managing User Types
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Updating Applications from Templates">
+    <nav class="md-nav" aria-label="Managing User Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#comparing-updates" class="md-nav__link">
+  <a href="#creating-and-managing-regular-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Comparing Updates
+      Creating and Managing Regular Users
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#applying-updates" class="md-nav__link">
+  <a href="#managing-system-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Applying Updates
+      Managing System Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-and-managing-service-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating and Managing Service Accounts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assigning-roles-to-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assigning Roles to Users
     </span>
   </a>
   
@@ -1890,56 +1908,60 @@
                   
 
 
-<h1 id="deploying-and-updating-from-templates">Deploying and Updating from Templates</h1>
+<h1 id="user-types">User Types</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/templatesdeploy.jpg?raw=true" alt="deploy_applications" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/usertypes.jpg?raw=true" alt="usertypes" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Learn how to deploy and update applications using Openshift templates.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
-<li>Basic knowledge of Kubernetes, YAML syntax, and Openshift CLI commands.</li>
-</ul>
+<p>Learn the different types of users in Red Hat OpenShift Container Platform (RHOCP) and their unique roles within the system. You'll learn about regular users, system users, and service accounts, understanding their responsibilities and how to manage them effectively. Finally ensure that they have the appropriate permissions and access levels within your OpenShift environment.</p>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome, noble custodian of the Openshift kingdom! As you navigate the realm of templates, you'll discover the art of deploying and updating applications seamlessly. By leveraging Openshift templates, you can transform parameterized blueprints into tangible resources and ensure your deployments are consistent and well-maintained. Embark on this journey to master the deployment and update of applications from templates, enhancing the stability and efficiency of your domain.</p>
-<h2 id="deploying-applications-from-templates">Deploying Applications from Templates</h2>
-<h3 id="transforming-templates-into-resources">Transforming Templates into Resources</h3>
-<p>In the heart of your kingdom, the <code>oc process</code> command serves as the magical incantation that transforms templates into sets of related Kubernetes resource manifests. This command uses parameter values to shape the blueprint into a deployable form.</p>
-<p>To override default values and create a resource manifest, use the following command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>-p<span class="w"> </span><span class="nv">TOTAL_CONTAINER_MEM</span><span class="o">=</span><span class="m">1024</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>-p<span class="w"> </span><span class="nv">APPLICATION_USER</span><span class="o">=</span><span class="s1">&#39;cache-user&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>-p<span class="w"> </span><span class="nv">APPLICATION_PASSWORD</span><span class="o">=</span><span class="s1">&#39;my-secret-password&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>&gt;<span class="w"> </span>my-cache-service-manifest.yaml
-</code></pre></div>
-<p>This command is akin to tailoring a royal decree to fit the specific needs of your realm, adjusting parameters to ensure optimal performance.</p>
-<h3 id="using-parameter-files">Using Parameter Files</h3>
-<p>For greater convenience and version control, save the parameters in a versioned file and apply it using the <code>--param-file</code> option:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>--param-file<span class="o">=</span>my-cache-service-params.env<span class="w"> </span>&gt;<span class="w"> </span>my-cache-service-manifest.yaml
-</code></pre></div>
-<p>This approach is like keeping a detailed ledger in the royal archives, ensuring all adjustments and configurations are well-documented and easily retrievable.</p>
-<h3 id="direct-deployment">Direct Deployment</h3>
-<p>To skip the manifest generation and apply the resources directly to the cluster, use command piping:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>-
-</code></pre></div>
-<p>This method streamlines the deployment process, casting your spell directly onto the resources without intermediary steps, ensuring swift and efficient execution.</p>
-<h2 id="updating-applications-from-templates">Updating Applications from Templates</h2>
-<h3 id="comparing-updates">Comparing Updates</h3>
-<p>Before updating resources, compare the results of the proposed update against the live resource using the <code>diff</code> command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params-2.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>diff<span class="w"> </span>-f<span class="w"> </span>-
-</code></pre></div>
-<p>This step is like consulting the royal advisors to assess the impact of new decrees, ensuring that the proposed changes align with the kingdom's best interests.</p>
-<h3 id="applying-updates">Applying Updates</h3>
-<p>Once verified, apply the updates by piping the commands:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params-2.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>-
-</code></pre></div>
-<p>This command enacts the new configurations, updating the resources in your kingdom to reflect the latest adjustments, ensuring your realm remains well-maintained and up-to-date.</p>
+<p>In the kingdom of OpenShift, every citizen, be it a valiant knight, a humble farmer, or a diligent scribe, plays a vital role in maintaining the harmony and prosperity of the realm. Similarly, every interaction within the OpenShift platform is associated with a specific type of user. These users, much like the inhabitants of a bustling medieval castle, have distinct roles and responsibilities.</p>
+<p>This guide will introduce you to the different types of users in OpenShift and their unique roles within the system.</p>
+<h2 id="user-types_1">User Types</h2>
+<p>OpenShift recognizes three primary types of users:</p>
+<ol>
+<li><strong>Regular Users</strong></li>
+<li><strong>System Users</strong></li>
+<li><strong>Service Accounts</strong></li>
+</ol>
+<h3 id="1-regular-users">1. Regular Users</h3>
+<p><strong>Regular users</strong> are the knights, nobles, and citizens of the OpenShift kingdom. They are the interactive users who access the platform to perform various tasks and activities. These users are represented by the User object in OpenShift and have specific permissions and access levels based on their roles.</p>
+<p>In the castle, regular users are like the advisors and artisans who interact directly with the king, providing counsel and crafting essential items for the kingdom's prosperity. They might create new applications, manage resources, or perform administrative tasks.</p>
+<p>Example command to list regular users:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>get<span class="w"> </span>users
+</code></pre></div></p>
+<h3 id="2-system-users">2. System Users</h3>
+<p><strong>System users</strong> are the unsung heroes who work tirelessly behind the scenes to ensure the kingdom runs smoothly. These users are automatically created for infrastructure interactions, such as a cluster administrator or per-node users. Their names start with the "system:" prefix, indicating their special status.</p>
+<p>In the castle, system users are like the castle's keepers and sentinels. They ensure the castle's defenses are strong, the gates are functioning, and all mechanisms are in perfect working order. They handle the critical, automated tasks that keep the platform running seamlessly.</p>
+<p>Example of a system user name:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>system:admin
+</code></pre></div></p>
+<h3 id="3-service-accounts">3. Service Accounts</h3>
+<p><strong>Service accounts</strong> are the specialized entities associated with projects. They are used by workloads to invoke Kubernetes APIs and perform automated tasks. Service accounts are created automatically by the system or by project administrators and have names that start with the "system:serviceaccount:" prefix.</p>
+<p>In the castle, service accounts are like the royal messengers and envoys who carry out specific missions on behalf of the kingdom. They perform tasks such as deploying applications, managing secrets, and ensuring that workloads have the necessary permissions to operate effectively.</p>
+<p>Example of a service account name:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>system:serviceaccount:my-project:default
+</code></pre></div></p>
+<h2 id="managing-user-types">Managing User Types</h2>
+<p>Understanding the different types of users is crucial for effective management and security in OpenShift. Just as a wise king must know the roles of his subjects, an OpenShift administrator must know how to manage these user types.</p>
+<h3 id="creating-and-managing-regular-users">Creating and Managing Regular Users</h3>
+<p>Regular users can be created and managed using identity providers. For example, using the HTPasswd identity provider, you can create and manage user credentials.</p>
+<h3 id="managing-system-users">Managing System Users</h3>
+<p>System users are automatically created and managed by OpenShift. They perform essential infrastructure tasks and typically do not require manual intervention.</p>
+<h3 id="creating-and-managing-service-accounts">Creating and Managing Service Accounts</h3>
+<p>Service accounts are created automatically when a new project is created. However, administrators can also create custom service accounts for specific tasks.</p>
+<p>Example command to create a service account:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>create<span class="w"> </span>serviceaccount<span class="w"> </span>my-service-account
+</code></pre></div></p>
+<h3 id="assigning-roles-to-users">Assigning Roles to Users</h3>
+<p>To ensure that each user type has the appropriate permissions, roles can be assigned using the <code>oc adm policy</code> command.</p>
+<p>Example command to assign a role to a user:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>add-role-to-user<span class="w"> </span>edit<span class="w"> </span>my-user<span class="w"> </span>-n<span class="w"> </span>my-project
+</code></pre></div></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Congratulations, esteemed steward of the Openshift kingdom! By mastering the deployment and updating of applications from templates, you ensure your resources are efficiently managed and consistently configured. Embrace the power of templates to transform and maintain your realm, ensuring stability and efficiency in all your deployments.</p>
-<p>With these skills, you hold the key to a well-ordered and dynamic kingdom, where resources are deployed and updated with precision and ease. Your kingdom flourishes under your wise and vigilant guidance, as you expertly wield the power of Openshift templates to shape and enhance your domain.</p>
+<p>In the kingdom of OpenShift, every user type plays a crucial role in maintaining the harmony and efficiency of the system. Whether they are regular users, system users, or service accounts, understanding their roles and managing their permissions is key to ensuring a secure and well-functioning platform.</p>
+<p>As the ruler of this digital realm, your knowledge of these user types will help you govern wisely, ensuring that each citizen of your kingdom performs their duties effectively and securely. May your reign be prosperous and your kingdom thrive!</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="support" width="150" height="150">
@@ -2004,7 +2026,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../34_templates/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Templates">
+          <a href="../41_rbac_with_cli/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Managing RBAC with the CLI">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2014,20 +2036,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Templates
+                Managing RBAC with the CLI
               </div>
             </div>
           </a>
         
         
           
-          <a href="../36_managing_templates/" class="md-footer__link md-footer__link--next" aria-label="Next: Managing Templates">
+          <a href="../43_group_management/" class="md-footer__link md-footer__link--next" aria-label="Next: Group Management">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Managing Templates
+                Group Management
               </div>
             </div>
             <div class="md-footer__button md-icon">

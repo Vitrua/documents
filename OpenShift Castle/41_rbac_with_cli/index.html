@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/35_deploy_and_update_from_templates/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/41_rbac_with_cli/">
       
       
-        <link rel="prev" href="../34_templates/">
+        <link rel="prev" href="../40_assign_admin_privileges/">
       
       
-        <link rel="next" href="../36_managing_templates/">
+        <link rel="next" href="../42_user_types/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Deploying and Updating from Templates - Vitrua.top</title>
+        <title>Managing RBAC with the CLI - Vitrua.top</title>
       
     
     
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Deploying and Updating from Templates - Vitrua.top" >
+        <meta  property="og:title"  content="Managing RBAC with the CLI - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/35_deploy_and_update_from_templates.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/41_rbac_with_cli.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/35_deploy_and_update_from_templates/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/41_rbac_with_cli/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Deploying and Updating from Templates - Vitrua.top" >
+        <meta  name="twitter:title"  content="Managing RBAC with the CLI - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/35_deploy_and_update_from_templates.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/41_rbac_with_cli.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploying-and-updating-from-templates" class="md-skip">
+        <a href="#managing-rbac-with-the-cli" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Deploying and Updating from Templates
+              Managing RBAC with the CLI
             
           </span>
         </div>
@@ -1290,30 +1290,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Deploying and Updating from Templates
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../35_deploy_and_update_from_templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1322,137 +1302,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deploying-applications-from-templates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deploying Applications from Templates
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Deploying Applications from Templates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#transforming-templates-into-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Transforming Templates into Resources
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-parameter-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Parameter Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#direct-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Direct Deployment
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#updating-applications-from-templates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating Applications from Templates
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Updating Applications from Templates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comparing-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comparing Updates
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applying-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applying Updates
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1567,10 +1416,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../41_rbac_with_cli/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Managing RBAC with the CLI
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1579,6 +1448,149 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-rbac-with-the-cli_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing RBAC with the CLI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Managing RBAC with the CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cluster-roles-and-local-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cluster Roles and Local Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-cluster-role-to-a-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a Cluster Role to a User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-a-regular-user-to-a-cluster-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing a Regular User to a Cluster Administrator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-a-cluster-role-from-a-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing a Cluster Role from a User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-a-cluster-administrator-to-a-regular-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing a Cluster Administrator to a Regular User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#determining-user-permissions-with-who-can" class="md-nav__link">
+    <span class="md-ellipsis">
+      Determining User Permissions with who-can
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-cluster-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Cluster Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-specified-role-to-a-user-in-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a Specified Role to a User in a Project
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1792,70 +1804,82 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deploying-applications-from-templates" class="md-nav__link">
+  <a href="#managing-rbac-with-the-cli_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploying Applications from Templates
+      Managing RBAC with the CLI
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Deploying Applications from Templates">
+    <nav class="md-nav" aria-label="Managing RBAC with the CLI">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#transforming-templates-into-resources" class="md-nav__link">
+  <a href="#cluster-roles-and-local-roles" class="md-nav__link">
     <span class="md-ellipsis">
-      Transforming Templates into Resources
+      Cluster Roles and Local Roles
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-parameter-files" class="md-nav__link">
+  <a href="#adding-a-cluster-role-to-a-user" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Parameter Files
+      Adding a Cluster Role to a User
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#direct-deployment" class="md-nav__link">
+  <a href="#changing-a-regular-user-to-a-cluster-administrator" class="md-nav__link">
     <span class="md-ellipsis">
-      Direct Deployment
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#updating-applications-from-templates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating Applications from Templates
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Updating Applications from Templates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comparing-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comparing Updates
+      Changing a Regular User to a Cluster Administrator
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#applying-updates" class="md-nav__link">
+  <a href="#removing-a-cluster-role-from-a-user" class="md-nav__link">
     <span class="md-ellipsis">
-      Applying Updates
+      Removing a Cluster Role from a User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-a-cluster-administrator-to-a-regular-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changing a Cluster Administrator to a Regular User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#determining-user-permissions-with-who-can" class="md-nav__link">
+    <span class="md-ellipsis">
+      Determining User Permissions with who-can
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-cluster-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Cluster Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-specified-role-to-a-user-in-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a Specified Role to a User in a Project
     </span>
   </a>
   
@@ -1890,56 +1914,83 @@
                   
 
 
-<h1 id="deploying-and-updating-from-templates">Deploying and Updating from Templates</h1>
+<h1 id="managing-rbac-with-the-cli">Managing RBAC with the CLI</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/templatesdeploy.jpg?raw=true" alt="deploy_applications" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/rbaccli.jpg?raw=true" alt="rbaccli" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Learn how to deploy and update applications using Openshift templates.</p>
+<p>This guide will show you how to manage Role-Based Access Control (RBAC) in Red Hat OpenShift Container Platform (RHOCP) using the command-line interface (CLI). You'll learn how to assign and remove roles, manage cluster and namespace roles, and use the <code>oc adm policy</code> command for various RBAC operations.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
-<li>Basic knowledge of Kubernetes, YAML syntax, and Openshift CLI commands.</li>
+<li>Access to an OpenShift cluster with the <code>oc</code> CLI installed.</li>
+<li>Basic knowledge of OpenShift and RBAC concepts.</li>
 </ul>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome, noble custodian of the Openshift kingdom! As you navigate the realm of templates, you'll discover the art of deploying and updating applications seamlessly. By leveraging Openshift templates, you can transform parameterized blueprints into tangible resources and ensure your deployments are consistent and well-maintained. Embark on this journey to master the deployment and update of applications from templates, enhancing the stability and efficiency of your domain.</p>
-<h2 id="deploying-applications-from-templates">Deploying Applications from Templates</h2>
-<h3 id="transforming-templates-into-resources">Transforming Templates into Resources</h3>
-<p>In the heart of your kingdom, the <code>oc process</code> command serves as the magical incantation that transforms templates into sets of related Kubernetes resource manifests. This command uses parameter values to shape the blueprint into a deployable form.</p>
-<p>To override default values and create a resource manifest, use the following command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>-p<span class="w"> </span><span class="nv">TOTAL_CONTAINER_MEM</span><span class="o">=</span><span class="m">1024</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>-p<span class="w"> </span><span class="nv">APPLICATION_USER</span><span class="o">=</span><span class="s1">&#39;cache-user&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>-p<span class="w"> </span><span class="nv">APPLICATION_PASSWORD</span><span class="o">=</span><span class="s1">&#39;my-secret-password&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>&gt;<span class="w"> </span>my-cache-service-manifest.yaml
+<p>In the medieval kingdom of OpenShift, roles and responsibilities are critical to maintaining order and ensuring the efficient management of resources. The King, represented by the cluster administrator, must delegate tasks and privileges wisely to ensure the realm runs smoothly. This guide will help you navigate the complexities of Role-Based Access Control (RBAC), much like a royal advisor guiding the king in appointing trusted stewards.</p>
+<h2 id="managing-rbac-with-the-cli_1">Managing RBAC with the CLI</h2>
+<h3 id="cluster-roles-and-local-roles">Cluster Roles and Local Roles</h3>
+<p>OpenShift defines two main types of roles:</p>
+<ul>
+<li><strong>Cluster Roles</strong>: These roles apply across the entire cluster and are managed by cluster administrators.</li>
+<li><strong>Local Roles</strong>: These roles apply within a specific project (namespace) and are managed at the project level.</li>
+</ul>
+<h3 id="adding-a-cluster-role-to-a-user">Adding a Cluster Role to a User</h3>
+<p>To grant a user a cluster-wide role, the King can issue a decree using the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>add-cluster-role-to-user<span class="w"> </span>&lt;cluster_role&gt;<span class="w"> </span>&lt;username&gt;
 </code></pre></div>
-<p>This command is akin to tailoring a royal decree to fit the specific needs of your realm, adjusting parameters to ensure optimal performance.</p>
-<h3 id="using-parameter-files">Using Parameter Files</h3>
-<p>For greater convenience and version control, save the parameters in a versioned file and apply it using the <code>--param-file</code> option:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>--param-file<span class="o">=</span>my-cache-service-params.env<span class="w"> </span>&gt;<span class="w"> </span>my-cache-service-manifest.yaml
+<p>For example, to make "arthur" a cluster administrator:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>add-cluster-role-to-user<span class="w"> </span>cluster-admin<span class="w"> </span>arthur
 </code></pre></div>
-<p>This approach is like keeping a detailed ledger in the royal archives, ensuring all adjustments and configurations are well-documented and easily retrievable.</p>
-<h3 id="direct-deployment">Direct Deployment</h3>
-<p>To skip the manifest generation and apply the resources directly to the cluster, use command piping:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>-
+<h3 id="changing-a-regular-user-to-a-cluster-administrator">Changing a Regular User to a Cluster Administrator</h3>
+<p>To elevate a regular user to the status of a cluster administrator, use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>add-cluster-role-to-user<span class="w"> </span>cluster-admin<span class="w"> </span>&lt;username&gt;
 </code></pre></div>
-<p>This method streamlines the deployment process, casting your spell directly onto the resources without intermediary steps, ensuring swift and efficient execution.</p>
-<h2 id="updating-applications-from-templates">Updating Applications from Templates</h2>
-<h3 id="comparing-updates">Comparing Updates</h3>
-<p>Before updating resources, compare the results of the proposed update against the live resource using the <code>diff</code> command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params-2.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>diff<span class="w"> </span>-f<span class="w"> </span>-
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>add-cluster-role-to-user<span class="w"> </span>cluster-admin<span class="w"> </span>arthur
 </code></pre></div>
-<p>This step is like consulting the royal advisors to assess the impact of new decrees, ensuring that the proposed changes align with the kingdom's best interests.</p>
-<h3 id="applying-updates">Applying Updates</h3>
-<p>Once verified, apply the updates by piping the commands:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params-2.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>-
+<h3 id="removing-a-cluster-role-from-a-user">Removing a Cluster Role from a User</h3>
+<p>If a noble knight must be relieved of their duties, the following command can be used:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>remove-cluster-role-from-user<span class="w"> </span>&lt;cluster_role&gt;<span class="w"> </span>&lt;username&gt;
 </code></pre></div>
-<p>This command enacts the new configurations, updating the resources in your kingdom to reflect the latest adjustments, ensuring your realm remains well-maintained and up-to-date.</p>
+<p>For instance, to revoke the cluster-admin role from "arthur":</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>remove-cluster-role-from-user<span class="w"> </span>cluster-admin<span class="w"> </span>arthur
+</code></pre></div>
+<h3 id="changing-a-cluster-administrator-to-a-regular-user">Changing a Cluster Administrator to a Regular User</h3>
+<p>To demote a cluster administrator back to a regular user:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>remove-cluster-role-from-user<span class="w"> </span>cluster-admin<span class="w"> </span>&lt;username&gt;
+</code></pre></div>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>remove-cluster-role-from-user<span class="w"> </span>cluster-admin<span class="w"> </span>arthur
+</code></pre></div>
+<h3 id="determining-user-permissions-with-who-can">Determining User Permissions with <code>who-can</code></h3>
+<p>To investigate whether a user can perform a specific action on a resource, the King can use the <code>who-can</code> command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>who-can<span class="w"> </span>&lt;verb&gt;<span class="w"> </span>&lt;resource&gt;
+</code></pre></div>
+<p>For example, to check if "arthur" can delete resources:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>policy<span class="w"> </span>who-can<span class="w"> </span>delete<span class="w"> </span>arthur
+</code></pre></div>
+<h3 id="default-cluster-roles">Default Cluster Roles</h3>
+<p>OpenShift comes with a set of default cluster roles that can be assigned to users. These include:</p>
+<ul>
+<li><strong>admin</strong></li>
+<li><strong>basic-user</strong></li>
+<li><strong>cluster-admin</strong></li>
+<li><strong>cluster-status</strong></li>
+<li><strong>edit</strong></li>
+<li><strong>self-provisioner</strong></li>
+<li><strong>view</strong></li>
+</ul>
+<h3 id="adding-a-specified-role-to-a-user-in-a-project">Adding a Specified Role to a User in a Project</h3>
+<p>To grant a user a specific role within a project, the King uses the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>oc<span class="w"> </span>policy<span class="w"> </span>add-role-to-user<span class="w"> </span>&lt;role_name&gt;<span class="w"> </span>&lt;username&gt;<span class="w"> </span>-n<span class="w"> </span>&lt;project&gt;
+</code></pre></div>
+<p>For example, to grant "arthur" the "edit" role in the "camelot" project:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>oc<span class="w"> </span>policy<span class="w"> </span>add-role-to-user<span class="w"> </span>edit<span class="w"> </span>arthur<span class="w"> </span>-n<span class="w"> </span>camelot
+</code></pre></div>
 <h2 id="conclusion">Conclusion</h2>
-<p>Congratulations, esteemed steward of the Openshift kingdom! By mastering the deployment and updating of applications from templates, you ensure your resources are efficiently managed and consistently configured. Embrace the power of templates to transform and maintain your realm, ensuring stability and efficiency in all your deployments.</p>
-<p>With these skills, you hold the key to a well-ordered and dynamic kingdom, where resources are deployed and updated with precision and ease. Your kingdom flourishes under your wise and vigilant guidance, as you expertly wield the power of Openshift templates to shape and enhance your domain.</p>
+<p>Wise ruler of the OpenShift kingdom, you now possess the knowledge to manage roles and responsibilities within your domain. By judiciously assigning and revoking roles, you ensure that your kingdom remains well-governed and secure. Remember, the power of delegation is a mighty tool—use it wisely to maintain order and prosperity in your realm.</p>
+<p>May your reign be long and your kingdom flourish!</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="support" width="150" height="150">
@@ -2004,7 +2055,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../34_templates/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Templates">
+          <a href="../40_assign_admin_privileges/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Assigning Administrative Privileges">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2014,20 +2065,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Templates
+                Assigning Administrative Privileges
               </div>
             </div>
           </a>
         
         
           
-          <a href="../36_managing_templates/" class="md-footer__link md-footer__link--next" aria-label="Next: Managing Templates">
+          <a href="../42_user_types/" class="md-footer__link md-footer__link--next" aria-label="Next: User Types">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Managing Templates
+                User Types
               </div>
             </div>
             <div class="md-footer__button md-icon">

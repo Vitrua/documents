@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/35_deploy_and_update_from_templates/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/43_group_management/">
       
       
-        <link rel="prev" href="../34_templates/">
+        <link rel="prev" href="../42_user_types/">
       
       
-        <link rel="next" href="../36_managing_templates/">
+        <link rel="next" href="../44_external_access/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Deploying and Updating from Templates - Vitrua.top</title>
+        <title>Group Management - Vitrua.top</title>
       
     
     
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Deploying and Updating from Templates - Vitrua.top" >
+        <meta  property="og:title"  content="Group Management - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/35_deploy_and_update_from_templates.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/43_group_management.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/35_deploy_and_update_from_templates/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/43_group_management/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Deploying and Updating from Templates - Vitrua.top" >
+        <meta  name="twitter:title"  content="Group Management - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/35_deploy_and_update_from_templates.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/43_group_management.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploying-and-updating-from-templates" class="md-skip">
+        <a href="#group-management" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Deploying and Updating from Templates
+              Group Management
             
           </span>
         </div>
@@ -1290,30 +1290,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Deploying and Updating from Templates
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../35_deploy_and_update_from_templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1322,137 +1302,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deploying-applications-from-templates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deploying Applications from Templates
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Deploying Applications from Templates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#transforming-templates-into-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Transforming Templates into Resources
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-parameter-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Parameter Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#direct-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Direct Deployment
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#updating-applications-from-templates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating Applications from Templates
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Updating Applications from Templates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comparing-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comparing Updates
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applying-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applying Updates
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1609,10 +1458,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../43_group_management/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Group Management
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1621,6 +1490,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-management_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Group Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a New Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-users-to-a-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Users to a Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Scenario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assigning-permissions-to-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assigning Permissions to Groups
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1774,15 +1741,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
       Introduction
@@ -1792,70 +1750,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deploying-applications-from-templates" class="md-nav__link">
+  <a href="#group-management_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploying Applications from Templates
+      Group Management
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Deploying Applications from Templates">
+    <nav class="md-nav" aria-label="Group Management">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#transforming-templates-into-resources" class="md-nav__link">
+  <a href="#creating-a-new-group" class="md-nav__link">
     <span class="md-ellipsis">
-      Transforming Templates into Resources
+      Creating a New Group
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-parameter-files" class="md-nav__link">
+  <a href="#adding-users-to-a-group" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Parameter Files
+      Adding Users to a Group
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#direct-deployment" class="md-nav__link">
+  <a href="#example-scenario" class="md-nav__link">
     <span class="md-ellipsis">
-      Direct Deployment
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#updating-applications-from-templates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating Applications from Templates
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Updating Applications from Templates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comparing-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comparing Updates
+      Example Scenario
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#applying-updates" class="md-nav__link">
+  <a href="#assigning-permissions-to-groups" class="md-nav__link">
     <span class="md-ellipsis">
-      Applying Updates
+      Assigning Permissions to Groups
     </span>
   </a>
   
@@ -1890,56 +1824,50 @@
                   
 
 
-<h1 id="deploying-and-updating-from-templates">Deploying and Updating from Templates</h1>
+<h1 id="group-management">Group Management</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/templatesdeploy.jpg?raw=true" alt="deploy_applications" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/groups.jpg?raw=true" alt="groups" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Learn how to deploy and update applications using Openshift templates.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
-<li>Basic knowledge of Kubernetes, YAML syntax, and Openshift CLI commands.</li>
-</ul>
+<p>Learn how to create groups, add users to these groups, and assign permissions efficiently.You will be equipped to organize and manage groups effectively, ensuring streamlined user management and enhanced collaboration within your OpenShift environment.</p>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome, noble custodian of the Openshift kingdom! As you navigate the realm of templates, you'll discover the art of deploying and updating applications seamlessly. By leveraging Openshift templates, you can transform parameterized blueprints into tangible resources and ensure your deployments are consistent and well-maintained. Embark on this journey to master the deployment and update of applications from templates, enhancing the stability and efficiency of your domain.</p>
-<h2 id="deploying-applications-from-templates">Deploying Applications from Templates</h2>
-<h3 id="transforming-templates-into-resources">Transforming Templates into Resources</h3>
-<p>In the heart of your kingdom, the <code>oc process</code> command serves as the magical incantation that transforms templates into sets of related Kubernetes resource manifests. This command uses parameter values to shape the blueprint into a deployable form.</p>
-<p>To override default values and create a resource manifest, use the following command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>-p<span class="w"> </span><span class="nv">TOTAL_CONTAINER_MEM</span><span class="o">=</span><span class="m">1024</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>-p<span class="w"> </span><span class="nv">APPLICATION_USER</span><span class="o">=</span><span class="s1">&#39;cache-user&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>-p<span class="w"> </span><span class="nv">APPLICATION_PASSWORD</span><span class="o">=</span><span class="s1">&#39;my-secret-password&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>&gt;<span class="w"> </span>my-cache-service-manifest.yaml
-</code></pre></div>
-<p>This command is akin to tailoring a royal decree to fit the specific needs of your realm, adjusting parameters to ensure optimal performance.</p>
-<h3 id="using-parameter-files">Using Parameter Files</h3>
-<p>For greater convenience and version control, save the parameters in a versioned file and apply it using the <code>--param-file</code> option:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>--param-file<span class="o">=</span>my-cache-service-params.env<span class="w"> </span>&gt;<span class="w"> </span>my-cache-service-manifest.yaml
-</code></pre></div>
-<p>This approach is like keeping a detailed ledger in the royal archives, ensuring all adjustments and configurations are well-documented and easily retrievable.</p>
-<h3 id="direct-deployment">Direct Deployment</h3>
-<p>To skip the manifest generation and apply the resources directly to the cluster, use command piping:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>-
-</code></pre></div>
-<p>This method streamlines the deployment process, casting your spell directly onto the resources without intermediary steps, ensuring swift and efficient execution.</p>
-<h2 id="updating-applications-from-templates">Updating Applications from Templates</h2>
-<h3 id="comparing-updates">Comparing Updates</h3>
-<p>Before updating resources, compare the results of the proposed update against the live resource using the <code>diff</code> command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params-2.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>diff<span class="w"> </span>-f<span class="w"> </span>-
-</code></pre></div>
-<p>This step is like consulting the royal advisors to assess the impact of new decrees, ensuring that the proposed changes align with the kingdom's best interests.</p>
-<h3 id="applying-updates">Applying Updates</h3>
-<p>Once verified, apply the updates by piping the commands:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params-2.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>-
-</code></pre></div>
-<p>This command enacts the new configurations, updating the resources in your kingdom to reflect the latest adjustments, ensuring your realm remains well-maintained and up-to-date.</p>
+<p>In the kingdom of OpenShift, just as in any well-organized castle, managing groups of people efficiently is key to maintaining order and productivity. Groups in OpenShift represent sets of users, allowing for streamlined management and permission assignment. The cluster administrator, akin to the castle's steward, has the authority to create new groups, add users to them, and assign necessary permissions.</p>
+<p>This guide will walk you through the essentials of group management in OpenShift, ensuring your digital realm runs as smoothly as a well-ordered medieval court.</p>
+<h2 id="group-management_1">Group Management</h2>
+<p>Groups in OpenShift serve as a means to collectively manage users, assign roles, and streamline permissions. Let's explore how to create and manage these groups, much like organizing the various guilds and factions within the castle walls.</p>
+<h3 id="creating-a-new-group">Creating a New Group</h3>
+<p>Creating a new group in OpenShift is akin to establishing a new guild in the castle. This guild, or group, can then be populated with members (users) who share common responsibilities or roles.</p>
+<p>To create a new group, use the following command:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>groups<span class="w"> </span>new<span class="w"> </span>lead-developers
+</code></pre></div></p>
+<p>In the castle, this is like forming the guild of lead developers, a group of master craftsmen and engineers responsible for the most critical and innovative projects in the realm.</p>
+<h3 id="adding-users-to-a-group">Adding Users to a Group</h3>
+<p>Once a group (or guild) is created, the next step is to add members to it. This is similar to enrolling skilled artisans into the guild, ensuring that all members can collaborate and share resources efficiently.</p>
+<p>To add a user to a group, use the following command:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>groups<span class="w"> </span>add-users<span class="w"> </span>lead-developers<span class="w"> </span>user1
+</code></pre></div></p>
+<p>Here, user1 is now a proud member of the lead-developers guild, ready to contribute their expertise to the kingdom’s most important projects.</p>
+<h3 id="example-scenario">Example Scenario</h3>
+<p>Imagine you are the steward of the castle, tasked with overseeing a major project to construct a new tower. You decide to form a group of your best engineers and builders to manage this project efficiently.</p>
+<p>First, you create a group for the lead developers:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>groups<span class="w"> </span>new<span class="w"> </span>lead-developers
+</code></pre></div></p>
+<p>Next, you add your top engineers to this group:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>adm<span class="w"> </span>groups<span class="w"> </span>add-users<span class="w"> </span>lead-developers<span class="w"> </span>user1
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>oc<span class="w"> </span>adm<span class="w"> </span>groups<span class="w"> </span>add-users<span class="w"> </span>lead-developers<span class="w"> </span>user2
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>oc<span class="w"> </span>adm<span class="w"> </span>groups<span class="w"> </span>add-users<span class="w"> </span>lead-developers<span class="w"> </span>user3
+</code></pre></div></p>
+<p>With these commands, user1, user2, and user3 are now part of the lead-developers group, ready to collaborate on the tower construction.</p>
+<h3 id="assigning-permissions-to-groups">Assigning Permissions to Groups</h3>
+<p>To ensure that the group has the necessary permissions to carry out their tasks, you can assign roles to the entire group. This is similar to granting the guild of lead developers access to the royal armory, tools, and resources needed for their work.</p>
+<p>For example, to grant the edit role to the lead-developers group:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span>policy<span class="w"> </span>add-role-to-group<span class="w"> </span>edit<span class="w"> </span>lead-developers<span class="w"> </span>-n<span class="w"> </span>my-project
+</code></pre></div></p>
+<p>With this command, the lead-developers group is now empowered with the edit role within the specified project, allowing them to make necessary changes and updates.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Congratulations, esteemed steward of the Openshift kingdom! By mastering the deployment and updating of applications from templates, you ensure your resources are efficiently managed and consistently configured. Embrace the power of templates to transform and maintain your realm, ensuring stability and efficiency in all your deployments.</p>
-<p>With these skills, you hold the key to a well-ordered and dynamic kingdom, where resources are deployed and updated with precision and ease. Your kingdom flourishes under your wise and vigilant guidance, as you expertly wield the power of Openshift templates to shape and enhance your domain.</p>
+<p>Managing groups in OpenShift is crucial for maintaining order and efficiency within your digital kingdom. By creating and managing groups, adding users, and assigning permissions, you can ensure that your teams work collaboratively and effectively.</p>
+<p>As the steward of this modern castle, your ability to organize and manage groups will lead to a more productive and harmonious realm, where every user and group can contribute to the kingdom’s success. May your administration be wise and your projects flourish!</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="support" width="150" height="150">
@@ -2004,7 +1932,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../34_templates/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Templates">
+          <a href="../42_user_types/" class="md-footer__link md-footer__link--prev" aria-label="Previous: User Types">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2014,20 +1942,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Templates
+                User Types
               </div>
             </div>
           </a>
         
         
           
-          <a href="../36_managing_templates/" class="md-footer__link md-footer__link--next" aria-label="Next: Managing Templates">
+          <a href="../44_external_access/" class="md-footer__link md-footer__link--next" aria-label="Next: Accessing from External Networks">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Managing Templates
+                Accessing from External Networks
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/35_deploy_and_update_from_templates/">
+        <link rel="canonical" href="https://docs.vitrua.top/OpenShift%20Castle/45_network_policies/">
       
       
-        <link rel="prev" href="../34_templates/">
+        <link rel="prev" href="../44_external_access/">
       
       
-        <link rel="next" href="../36_managing_templates/">
+        <link rel="next" href="../46_certificates_management/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Deploying and Updating from Templates - Vitrua.top</title>
+        <title>Network Policies - Vitrua.top</title>
       
     
     
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Deploying and Updating from Templates - Vitrua.top" >
+        <meta  property="og:title"  content="Network Policies - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/35_deploy_and_update_from_templates.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/45_network_policies.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/35_deploy_and_update_from_templates/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OpenShift%20Castle/45_network_policies/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Deploying and Updating from Templates - Vitrua.top" >
+        <meta  name="twitter:title"  content="Network Policies - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/35_deploy_and_update_from_templates.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OpenShift Castle/45_network_policies.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploying-and-updating-from-templates" class="md-skip">
+        <a href="#network-policies" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Deploying and Updating from Templates
+              Network Policies
             
           </span>
         </div>
@@ -1290,30 +1290,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Deploying and Updating from Templates
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../35_deploy_and_update_from_templates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1322,137 +1302,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
-      Objective
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deploying-applications-from-templates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deploying Applications from Templates
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Deploying Applications from Templates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#transforming-templates-into-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Transforming Templates into Resources
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-parameter-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Parameter Files
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#direct-deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Direct Deployment
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#updating-applications-from-templates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating Applications from Templates
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Updating Applications from Templates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comparing-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comparing Updates
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applying-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applying Updates
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1651,10 +1500,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../45_network_policies/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Network Policies
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1663,6 +1532,119 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-network-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Network Policies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Network Policies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-network-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Network Policies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Network Policies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-policy-for-network-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Policy for network-1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-policy-for-network-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Policy for network-2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-logic-in-network-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Logic in Network Policies
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deny-all-network-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deny-all Network Policies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1774,15 +1756,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
       Introduction
@@ -1792,37 +1765,52 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deploying-applications-from-templates" class="md-nav__link">
+  <a href="#understanding-network-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploying Applications from Templates
+      Understanding Network Policies
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Deploying Applications from Templates">
+    <nav class="md-nav" aria-label="Understanding Network Policies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#transforming-templates-into-resources" class="md-nav__link">
+  <a href="#creating-network-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Transforming Templates into Resources
+      Creating Network Policies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Network Policies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-policy-for-network-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Policy for network-1
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-parameter-files" class="md-nav__link">
+  <a href="#network-policy-for-network-2" class="md-nav__link">
     <span class="md-ellipsis">
-      Using Parameter Files
+      Network Policy for network-2
     </span>
   </a>
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
-  <a href="#direct-deployment" class="md-nav__link">
+  <a href="#boolean-logic-in-network-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Direct Deployment
+      Boolean Logic in Network Policies
     </span>
   </a>
   
@@ -1834,35 +1822,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#updating-applications-from-templates" class="md-nav__link">
+  <a href="#deny-all-network-policies" class="md-nav__link">
     <span class="md-ellipsis">
-      Updating Applications from Templates
+      Deny-all Network Policies
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Updating Applications from Templates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comparing-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comparing Updates
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applying-updates" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applying Updates
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1890,56 +1854,76 @@
                   
 
 
-<h1 id="deploying-and-updating-from-templates">Deploying and Updating from Templates</h1>
+<h1 id="network-policies">Network Policies</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/openshift/templatesdeploy.jpg?raw=true" alt="deploy_applications" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/openshift/netpol.jpg?raw=true" alt="netpol" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Learn how to deploy and update applications using Openshift templates.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>Access to an Openshift cluster or a terminal emulator connected to one.</li>
-<li>Basic knowledge of Kubernetes, YAML syntax, and Openshift CLI commands.</li>
-</ul>
+<p>Learn to control traffic flow between pods using labels, define specific network policies for secure communication, and implement deny-all policies to enhance security.</p>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome, noble custodian of the Openshift kingdom! As you navigate the realm of templates, you'll discover the art of deploying and updating applications seamlessly. By leveraging Openshift templates, you can transform parameterized blueprints into tangible resources and ensure your deployments are consistent and well-maintained. Embark on this journey to master the deployment and update of applications from templates, enhancing the stability and efficiency of your domain.</p>
-<h2 id="deploying-applications-from-templates">Deploying Applications from Templates</h2>
-<h3 id="transforming-templates-into-resources">Transforming Templates into Resources</h3>
-<p>In the heart of your kingdom, the <code>oc process</code> command serves as the magical incantation that transforms templates into sets of related Kubernetes resource manifests. This command uses parameter values to shape the blueprint into a deployable form.</p>
-<p>To override default values and create a resource manifest, use the following command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>-p<span class="w"> </span><span class="nv">TOTAL_CONTAINER_MEM</span><span class="o">=</span><span class="m">1024</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>-p<span class="w"> </span><span class="nv">APPLICATION_USER</span><span class="o">=</span><span class="s1">&#39;cache-user&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>-p<span class="w"> </span><span class="nv">APPLICATION_PASSWORD</span><span class="o">=</span><span class="s1">&#39;my-secret-password&#39;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>&gt;<span class="w"> </span>my-cache-service-manifest.yaml
+<p>In the grand kingdom of OpenShift, maintaining secure and efficient communication between the various inhabitants (pods) is crucial. Network policies act as the kingdom’s intricate system of gates and pathways, controlling traffic flow and ensuring that only the right messages reach their intended destinations. Just as a wise ruler would design a castle with secure passages, OpenShift administrators use network policies to create logical zones within the Software-Defined Network (SDN) that map to their organization’s network zones.</p>
+<h2 id="understanding-network-policies">Understanding Network Policies</h2>
+<p>Kubernetes network policies control network traffic between pods using labels instead of IP addresses. This means you can separate traffic based on logical groupings, regardless of where the pods are running. To manage communication between pods in different namespaces, you assign labels to the namespaces that need to interact and create network policies to define the allowed traffic.</p>
+<h3 id="creating-network-policies">Creating Network Policies</h3>
+<p>Imagine you have two sections in your castle, <code>network-1</code> and <code>network-2</code>. You want to allow communication between these sections while ensuring only specific traffic is permitted. To achieve this, you assign a label to each namespace and create corresponding network policies.</p>
+<p>First, label the namespaces:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>oc<span class="w"> </span>label<span class="w"> </span>namespace<span class="w"> </span>network-1<span class="w"> </span><span class="nv">network</span><span class="o">=</span>network-1
+</code></pre></div></p>
+<p>Next, define the network policies. Here are examples of network policies that allow communication between pods in the <code>network-1</code> and <code>network-2</code> namespaces:</p>
+<h4 id="network-policy-for-network-1">Network Policy for <code>network-1</code></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NetworkPolicy</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networking.k8s.io/v1</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">network-1-policy</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">network-1</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="nt">podSelector</span><span class="p">:</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">      </span><span class="nt">deployment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">my-app</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="nt">ingress</span><span class="p">:</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">from</span><span class="p">:</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">namespaceSelector</span><span class="p">:</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="nt">matchLabels</span><span class="p">:</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">          </span><span class="nt">network</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">network-2</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">      </span><span class="nt">podSelector</span><span class="p">:</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="nt">matchLabels</span><span class="p">:</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">          </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">art</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8080</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">      </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span>
 </code></pre></div>
-<p>This command is akin to tailoring a royal decree to fit the specific needs of your realm, adjusting parameters to ensure optimal performance.</p>
-<h3 id="using-parameter-files">Using Parameter Files</h3>
-<p>For greater convenience and version control, save the parameters in a versioned file and apply it using the <code>--param-file</code> option:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>--param-file<span class="o">=</span>my-cache-service-params.env<span class="w"> </span>&gt;<span class="w"> </span>my-cache-service-manifest.yaml
+<h4 id="network-policy-for-network-2">Network Policy for <code>network-2</code></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NetworkPolicy</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networking.k8s.io/v1</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">network-2-policy</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">network-2</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nt">podSelector</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="nt">ingress</span><span class="p">:</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">from</span><span class="p">:</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">namespaceSelector</span><span class="p">:</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="nt">matchLabels</span><span class="p">:</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">          </span><span class="nt">network</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">network-1</span>
 </code></pre></div>
-<p>This approach is like keeping a detailed ledger in the royal archives, ensuring all adjustments and configurations are well-documented and easily retrievable.</p>
-<h3 id="direct-deployment">Direct Deployment</h3>
-<p>To skip the manifest generation and apply the resources directly to the cluster, use command piping:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>-
+<p>These policies ensure that only pods in <code>network-1</code> with the label <code>deployment: my-app</code> can receive traffic from pods in <code>network-2</code> with the label <code>role: art</code>, and vice versa.</p>
+<h3 id="boolean-logic-in-network-policies">Boolean Logic in Network Policies</h3>
+<p>Just as a castle might have different levels of access and security, you can use boolean logic to create more specific network policy rules. This ensures users and applications access only what they should, even between different projects.</p>
+<h2 id="deny-all-network-policies">Deny-all Network Policies</h2>
+<p>In OpenShift, if a pod matches one or more network policies, it only accepts connections allowed by those policies. However, you might want to block all traffic by default and only allow specific communications. This is akin to closing all gates of the castle by default and only opening specific ones when needed.</p>
+<p>An empty pod selector applies the policy to all pods in a project. Here’s an example of a policy that blocks all traffic because no ingress rules are defined:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NetworkPolicy</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networking.k8s.io/v1</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default-deny</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="nt">podSelector</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
 </code></pre></div>
-<p>This method streamlines the deployment process, casting your spell directly onto the resources without intermediary steps, ensuring swift and efficient execution.</p>
-<h2 id="updating-applications-from-templates">Updating Applications from Templates</h2>
-<h3 id="comparing-updates">Comparing Updates</h3>
-<p>Before updating resources, compare the results of the proposed update against the live resource using the <code>diff</code> command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>-o<span class="w"> </span>yaml<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params-2.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>diff<span class="w"> </span>-f<span class="w"> </span>-
-</code></pre></div>
-<p>This step is like consulting the royal advisors to assess the impact of new decrees, ensuring that the proposed changes align with the kingdom's best interests.</p>
-<h3 id="applying-updates">Applying Updates</h3>
-<p>Once verified, apply the updates by piping the commands:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>oc<span class="w"> </span>process<span class="w"> </span>my-cache-service<span class="w"> </span>--param-file<span class="o">=</span>my-cache-service-params-2.env<span class="w"> </span><span class="p">|</span><span class="w"> </span>oc<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>-
-</code></pre></div>
-<p>This command enacts the new configurations, updating the resources in your kingdom to reflect the latest adjustments, ensuring your realm remains well-maintained and up-to-date.</p>
+<p>If a pod does not match any network policies, OpenShift does not restrict traffic to that pod. This default behavior ensures that your applications remain accessible unless explicitly restricted.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Congratulations, esteemed steward of the Openshift kingdom! By mastering the deployment and updating of applications from templates, you ensure your resources are efficiently managed and consistently configured. Embrace the power of templates to transform and maintain your realm, ensuring stability and efficiency in all your deployments.</p>
-<p>With these skills, you hold the key to a well-ordered and dynamic kingdom, where resources are deployed and updated with precision and ease. Your kingdom flourishes under your wise and vigilant guidance, as you expertly wield the power of Openshift templates to shape and enhance your domain.</p>
+<p>Managing network policies in OpenShift is like designing the secure pathways and gates within a castle. By carefully labeling namespaces and creating specific network policies, you ensure secure and efficient communication between pods. Remember to consider the castle’s overall security, not blocking essential services like router pods and monitoring services.</p>
+<p>With these strategies, your kingdom of OpenShift will be both secure and well-organized, allowing for seamless and protected communication between all its inhabitants. May your network policies be robust, and your castle gates well-guarded!</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="support" width="150" height="150">
@@ -2004,7 +1988,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../34_templates/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Templates">
+          <a href="../44_external_access/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Accessing from External Networks">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2014,20 +1998,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Templates
+                Accessing from External Networks
               </div>
             </div>
           </a>
         
         
           
-          <a href="../36_managing_templates/" class="md-footer__link md-footer__link--next" aria-label="Next: Managing Templates">
+          <a href="../46_certificates_management/" class="md-footer__link md-footer__link--next" aria-label="Next: Certificates Management">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Managing Templates
+                Certificates Management
               </div>
             </div>
             <div class="md-footer__button md-icon">
