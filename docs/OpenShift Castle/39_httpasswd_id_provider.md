@@ -1,4 +1,4 @@
-# Managing Users with the HTPasswd Identity Provider
+# The HTPasswd Identity Provider
 
 <div style="text-align:center;">
   <img src="https://github.com/Vitrua/images/blob/main/openshift/htpasswd.jpg?raw=true" alt="htpasswd" width="300" height="300">
