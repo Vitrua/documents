@@ -8,6 +8,14 @@
 
 Learn to manage and configure secondary networks in Kubernetes and OpenShift using the Multus CNI plug-in to attach pods to custom networks, both internal and external.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Basic understanding of Kubernetes and OpenShift networking concepts.
+- Familiarity with the Multus CNI plug-in and its configuration.
+- Knowledge of YAML syntax for creating and editing configuration files.
+- Basic command-line skills for using the OpenShift CLI (`oc` commands).
+
 ## Introduction
 
 In the kingdom of OpenShift, just as different guilds and factions need their own unique paths and communication channels within the vast castle, sometimes certain pods require their own distinct networks. The Multus CNI plug-in acts like a master architect, creating these specialized pathways to ensure secure and efficient communication for every pod.

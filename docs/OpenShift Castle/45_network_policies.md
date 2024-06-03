@@ -8,6 +8,12 @@
 
 Learn to control traffic flow between pods using labels, define specific network policies for secure communication, and implement deny-all policies to enhance security.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Understanding of Kubernetes network policies and how they control pod traffic.
+- Basic knowledge of YAML syntax for creating and editing configuration files.
+
 ## Introduction
 
 In the grand kingdom of OpenShift, maintaining secure and efficient communication between the various inhabitants (pods) is crucial. Network policies act as the kingdom’s intricate system of gates and pathways, controlling traffic flow and ensuring that only the right messages reach their intended destinations. Just as a wise ruler would design a castle with secure passages, OpenShift administrators use network policies to create logical zones within the Software-Defined Network (SDN) that map to their organization’s network zones.

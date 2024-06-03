@@ -8,6 +8,14 @@
 
 Learn to apply and manage project quotas in OpenShift using both the web console and command-line interface to ensure efficient resource utilization and adherence to organizational policies.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Basic understanding of Kubernetes and OpenShift resource management and quota concepts.
+- Familiarity with both the OpenShift web console and command-line interface.
+- Knowledge of YAML syntax for creating and editing configuration files.
+- Basic command-line skills for using the OpenShift CLI (`oc` commands).
+
 ## Introduction
 
 In the kingdom of OpenShift, administrators must ensure that resources are allocated fairly among the various guilds (projects) to maintain harmony and efficiency. Project quotas serve as the laws that dictate how much of each resource a guild can consume, preventing any single guild from monopolizing the kingdom's resources.

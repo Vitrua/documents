@@ -8,6 +8,12 @@
 
 Learn to manage certificates in OpenShift to ensure secure communication. This includes generating service certificates, configuring client applications to trust these certificates, and handling key rotation. Additionally, explore alternatives such as service mesh and the cert-manager operator for advanced encryption solutions.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Understanding of TLS/SSL certificates and their role in securing communication.
+- Familiarity with OpenShift service CA and certificate management concepts.
+
 ## Introduction
 
 In the ancient kingdom of OpenShift, where the digital fortress stands tall, the mantra of zero-trust is the law of the land. Here, every communication is encrypted, every certificate is meticulously vetted, and trust is a privilege earned through rigorous validation. The king's court, comprising administrators and guardians, ensures that all network traffic is secure, safeguarding the kingdom from unseen threats.

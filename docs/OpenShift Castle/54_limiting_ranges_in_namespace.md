@@ -8,6 +8,12 @@
 
 Understand how to manage and enforce resource usage limits within namespaces using LimitRange objects in Kubernetes and OpenShift.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Basic knowledge of Kubernetes resource management and namespaces.
+- Familiarity with YAML syntax for creating and editing configuration files.
+
 ## Introduction
 
 In the kingdom of OpenShift, just as there are rules and regulations to ensure that no guild or faction uses more resources than necessary, LimitRanges are set to enforce resource usage limits within namespaces. These limits ensure that all workloads operate efficiently, without overconsuming resources and disrupting the harmony of the digital kingdom.

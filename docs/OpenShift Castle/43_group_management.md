@@ -9,6 +9,12 @@
 
 Learn how to create groups, add users to these groups, and assign permissions efficiently.You will be equipped to organize and manage groups effectively, ensuring streamlined user management and enhanced collaboration within your OpenShift environment.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Understanding of Kubernetes RBAC (Role-Based Access Control) and group management.
+- Basic knowledge of YAML syntax for creating and editing configuration files.
+
 ## Introduction
 
 In the kingdom of OpenShift, just as in any well-organized castle, managing groups of people efficiently is key to maintaining order and productivity. Groups in OpenShift represent sets of users, allowing for streamlined management and permission assignment. The cluster administrator, akin to the castle's steward, has the authority to create new groups, add users to them, and assign necessary permissions.
