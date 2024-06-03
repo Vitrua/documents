@@ -8,6 +8,12 @@
 
 Learn to manage self-provisioning permissions in OpenShift to control which users can create new projects, ensuring better governance and resource management.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Basic understanding of OpenShift roles and role bindings.
+- Familiarity with Kubernetes Role-Based Access Control (RBAC) concepts.
+
 ## Introduction
 
 In the kingdom of OpenShift, the ability for users to create new projects is akin to granting citizens the power to establish new settlements. While this can foster growth and innovation, it also requires oversight to ensure that these new territories are well-planned and do not strain the kingdom's resources. By managing self-provisioning permissions, administrators can control who has the power to create new projects, maintaining order and efficiency within the cluster.

@@ -8,6 +8,12 @@
 
 Learn to create and configure project templates in OpenShift to customize namespace creation, ensuring that new projects adhere to organizational standards and resource limits.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Basic knowledge of Kubernetes namespaces and resource management.
+- Familiarity with OpenShift CLI (`oc` commands) and YAML syntax for configuration files.
+
 ## Introduction
 
 In the kingdom of OpenShift, creating project templates is akin to crafting blueprints for new territories. These templates ensure that every new project is established with the necessary resources, roles, and policies, much like how a wise ruler ensures that new settlements are well-planned and governed.

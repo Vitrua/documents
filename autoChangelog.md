@@ -1,3 +1,12 @@
+# [0.20.0](https://github.com/Vitrua/documents/compare/v0.19.0...v0.20.0) (2024-06-03)
+
+
+### Features
+
+* **openshift:** add 12, add missing prerequisites ([1ceae3e](https://github.com/Vitrua/documents/commit/1ceae3e4b70c9092db149f965315f4c25e118312))
+
+
+
 # [0.19.0](https://github.com/Vitrua/documents/compare/v0.18.0...v0.19.0) (2024-05-30)
 
 

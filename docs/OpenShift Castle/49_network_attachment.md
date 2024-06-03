@@ -8,6 +8,14 @@
 
 Understand how to create and use NetworkAttachmentDefinition resources in Kubernetes and OpenShift for different types of network interfaces such as host device, bridge, IPVLAN, and MACVLAN.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Basic understanding of Kubernetes CNI (Container Network Interface) plug-ins.
+- Familiarity with different network attachment types such as host device, bridge, IPVLAN, and MACVLAN.
+- Knowledge of YAML syntax for creating and editing configuration files.
+- Basic command-line skills for using the OpenShift CLI (`oc` commands).
+
 ## Introduction
 
 In the kingdom of OpenShift, different guilds and factions often require specialized communication channels. The NetworkAttachmentDefinition resource acts as the master plan, detailing the construction and connection of these unique pathways. Each type of network interface serves a distinct purpose, ensuring that every guild can communicate effectively within the vast castle.

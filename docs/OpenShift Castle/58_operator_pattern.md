@@ -8,6 +8,12 @@
 
 Understand the Operator pattern in Kubernetes and OpenShift, and learn how to deploy and manage operators to handle complex workloads effectively.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Basic understanding of Kubernetes operators and their purpose.
+- Familiarity with OpenShift CLI (`oc` commands) and operator management concepts.
+
 ## Introduction
 
 In the grand kingdom of OpenShift, managing complex workloads requires more than just basic resources—it demands the expertise of specialized agents known as Operators. These Operators, much like skilled artisans in the castle, understand the intricate details of their specific tasks, ensuring that everything runs smoothly and efficiently within the digital realm.

@@ -8,6 +8,12 @@
 
 Expose non-HTTP services in Kubernetes and OpenShift, including the use of Load Balancer services and MetalLB for environments that do not have cloud provider support.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Understanding of Kubernetes service types and their roles in exposing applications.
+- Basic knowledge of network debugging tools (e.g., `ping`, `traceroute`) for testing connectivity.
+
 ## Introduction
 
 In the kingdom of OpenShift, not all services communicate through the familiar HTTP gateways. Some require their own unique paths, reminiscent of secret tunnels used by messengers in ancient castles. These paths ensure that even non-HTTP protocols can reach their destinations safely and efficiently, much like how the castle's messengers used to navigate through hidden passages.

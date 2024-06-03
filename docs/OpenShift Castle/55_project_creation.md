@@ -8,6 +8,12 @@
 
 Understand how to create and manage projects in OpenShift to improve security and user experience, utilizing project templates to customize namespace creation.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Understanding of Kubernetes namespaces and their role in resource isolation.
+- Familiarity with OpenShift CLI (`oc` commands) for managing resources.
+
 ## Introduction
 
 In the kingdom of OpenShift, creating and managing projects (or namespaces) is akin to establishing new territories within the realm. Each territory must be governed by specific rules and regulations to ensure smooth and secure operations. OpenShift introduces projects to enhance security and improve users' experience when working with namespaces. This approach ensures that territories are well-defined and managed efficiently.
