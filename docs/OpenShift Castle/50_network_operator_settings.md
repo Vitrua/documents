@@ -8,6 +8,14 @@
 
 Learn how to create network attachments by editing the cluster network operator configuration in OpenShift, including configuring IP Address Management (IPAM) settings for custom networks.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Understanding of Kubernetes networking and CNI plug-ins.
+- Familiarity with OpenShift's network operator and its configuration.
+- Knowledge of YAML syntax for creating and editing configuration files.
+- Basic command-line skills for using the OpenShift CLI (`oc` commands).
+
 ## Introduction
 
 In the kingdom of OpenShift, the network operator acts like the castle's chief engineer, overseeing and managing the intricate web of pathways that connect different guilds and factions. By configuring the network operator, administrators can establish new custom networks, ensuring that every pod has the network access it needs, much like creating new secret tunnels within the castle walls.

@@ -8,6 +8,12 @@
 
 Expose and secure applications for access from external networks. You will learn about different methods such as NodePort, load balancer services, and OpenShift routes, as well as how to secure these routes to ensure safe and efficient external access to your applications.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Familiarity with Kubernetes service types (NodePort, LoadBalancer) and OpenShift routes.
+- Basic knowledge of network security concepts and TLS encryption.
+
 ## Introduction
 
 In the kingdom of OpenShift, connecting with the outside world is vital for trade, communication, and expansion. Just as a castle has gates and watchtowers to manage and secure traffic, OpenShift provides various methods to expose applications to external networks, ensuring secure and efficient access.

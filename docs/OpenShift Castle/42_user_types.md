@@ -8,6 +8,12 @@
 
 Learn the different types of users in Red Hat OpenShift Container Platform (RHOCP) and their unique roles within the system. You'll learn about regular users, system users, and service accounts, understanding their responsibilities and how to manage them effectively. Finally ensure that they have the appropriate permissions and access levels within your OpenShift environment.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Basic understanding of OpenShift user roles and permissions.
+- Familiarity with OpenShift CLI (`oc` commands) and user management concepts.
+
 ## Introduction
 
 In the kingdom of OpenShift, every citizen, be it a valiant knight, a humble farmer, or a diligent scribe, plays a vital role in maintaining the harmony and prosperity of the realm. Similarly, every interaction within the OpenShift platform is associated with a specific type of user. These users, much like the inhabitants of a bustling medieval castle, have distinct roles and responsibilities.

@@ -8,6 +8,14 @@
 
 Learn how to manage and limit workloads in Kubernetes and OpenShift by using resource limits, requests, and quotas to ensure cluster efficiency and prevent resource contention.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Basic understanding of Kubernetes and OpenShift resource management concepts.
+- Familiarity with ResourceQuotas, limits, and requests.
+- Knowledge of YAML syntax for creating and editing configuration files.
+- Basic command-line skills for using the OpenShift CLI (`oc` commands).
+
 ## Introduction
 
 In the kingdom of OpenShift, managing resources efficiently is crucial for maintaining harmony and preventing conflicts among the various guilds (workloads). Administrators, akin to wise stewards, use tools such as Role-Based Access Control (RBAC) to grant permissions for workload creation. However, to ensure the kingdom's resources are used wisely and fairly, additional measures such as resource limits, requests, and quotas are implemented. These measures act as the kingdom's laws, ensuring that no single guild consumes excessive resources or impacts others negatively.

@@ -8,6 +8,14 @@
 
 Learn to create and manage cluster resource quotas in OpenShift to ensure fair resource allocation across multiple projects, using both the web console and command-line interface.
 
+## Prerequisites
+
+- Access to an OpenShift cluster or a terminal emulator connected to one.
+- Basic understanding of Kubernetes and OpenShift resource management concepts.
+- Familiarity with ClusterResourceQuota and its configuration.
+- Knowledge of YAML syntax for creating and editing configuration files.
+- Basic command-line skills for using the OpenShift CLI (`oc` commands).
+
 ## Introduction
 
 In the kingdom of OpenShift, managing resources fairly across multiple projects (guilds) is crucial for maintaining harmony and efficiency. Cluster resource quotas are the kingdom's overarching laws, ensuring that no single guild consumes more than its fair share of resources, thus preserving balance and order throughout the realm.
