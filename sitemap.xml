@@ -2,387 +2,407 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.vitrua.top/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/Kubernetes%20Dungeon/01_Pods/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/Kubernetes%20Dungeon/02_Services/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/Misc%20Magic/01_Git_Basic_workflow/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/Misc%20Magic/02_Cow_Fortune/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vitrua.top/Misc%20Magic/03_ArgoCD_Sync_policies/</loc>
+         <lastmod>2024-07-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vitrua.top/Misc%20Magic/04_Tekton_I_pipelines_basics/</loc>
+         <lastmod>2024-07-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vitrua.top/Misc%20Magic/05_Tekton_II_deploy_pipeline/</loc>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OSpace/01_Basic_Linux/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/01_authentication_new_project_basics/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/02_exploring_api_resources/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/03_extracting_config_data/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/04_examining_cluster_metrics/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/05_get_events_and_troubleshooting/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/06_pods_creation_and_management/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/07_container_logs/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/08_deleting_resources/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/09_cri-o_container_engine/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/10_oc_images/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/11_cli_troubleshooting_tools/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/12_editing_resources/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/13_copying_files_to_and_from_containers/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/14_container_operations_and_monitoring/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/15_resource_management/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/16_k8s_networking/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/17_routes_external_connectivity/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/18_sticky_sessions/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/19_scaling/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/20_secrets_and_configmaps/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/21_persistent_storage/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/22_storage_class/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/23_stateful_set/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/24_health_probes/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/25_pod_scheduling/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/26_compute_resources/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/27_application_autoscaling/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/28_deployment_strategies/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/29_image_streams/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/30_configure_image_triggers/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/31_yaml_validation_and_comparison/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/32_management_with_kustomize/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/33_kustomize_generators/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/34_templates/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/35_deploy_and_update_from_templates/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/36_managing_templates/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/37_users_and_groups/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/38_authenticating_api_requests/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/39_httpasswd_id_provider/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/40_assign_admin_privileges/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/41_rbac_with_cli/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/42_user_types/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/43_group_management/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/44_external_access/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/45_network_policies/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/46_certificates_management/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/47_non_http_services/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/48_using_different_networks/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/49_network_attachment/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/50_network_operator_settings/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/51_limiting_workloads/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/52_project_quotas_intro/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/53_creating_quotas/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/54_limiting_ranges_in_namespace/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/55_project_creation/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/56_project_template_creation_and_config/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/57_managing_self-provisionig_permissions/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/58_operator_pattern/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/59_using_operators/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/60_scc/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/61_privileged_containers/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/62_k8s_api_access/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/63_scoping_application_access/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/64_k8s_batch_api_resources/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/65_cluster_updates_intro/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/66_pausing_machine_health/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/67_updating_cluster/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/68_api_deprecation_policy/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/69_deprecated_and_removed_features/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/OpenShift%20Castle/70_operator_updates/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.vitrua.top/OpenShift%20Castle/71_custom_resources_oc_explain/</loc>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.vitrua.top/WorkFlows/01_local_jenkins_openid/</loc>
-         <lastmod>2024-06-03</lastmod>
+         <lastmod>2024-07-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
