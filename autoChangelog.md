@@ -1,3 +1,12 @@
+# [0.22.0](https://github.com/Vitrua/documents/compare/v0.21.0...v0.22.0) (2024-09-07)
+
+
+### Features
+
+* add docker portable coding environments ([db0f875](https://github.com/Vitrua/documents/commit/db0f875dc711c68552a3a96d19cd02f905b8b8ec))
+
+
+
 # [0.21.0](https://github.com/Vitrua/documents/compare/v0.20.0...v0.21.0) (2024-07-22)
 
 
