@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://docs.vitrua.top/OSpace/01_Basic_Linux/">
+        <link rel="canonical" href="https://docs.vitrua.top/OSpace/02_windows_shared_ios/">
       
       
-        <link rel="prev" href="../../Misc%20Magic/05_Tekton_II_deploy_pipeline/">
+        <link rel="prev" href="../01_Basic_Linux/">
       
       
-        <link rel="next" href="../02_windows_shared_ios/">
+        <link rel="next" href="../../OpenShift%20Castle/01_authentication_new_project_basics/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Basic Linux Workflow - Vitrua.top</title>
+        <title>Windows to iOS File Transfer - Vitrua.top</title>
       
     
     
@@ -57,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Basic Linux Workflow - Vitrua.top" >
+        <meta  property="og:title"  content="Windows to iOS File Transfer - Vitrua.top" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OSpace/01_Basic_Linux.png" >
+        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/OSpace/02_windows_shared_ios.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -69,15 +69,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vitrua.top/OSpace/01_Basic_Linux/" >
+        <meta  property="og:url"  content="https://docs.vitrua.top/OSpace/02_windows_shared_ios/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Basic Linux Workflow - Vitrua.top" >
+        <meta  name="twitter:title"  content="Windows to iOS File Transfer - Vitrua.top" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OSpace/01_Basic_Linux.png" >
+        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/OSpace/02_windows_shared_ios.png" >
       
     
     
@@ -100,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#basic-linux-workflow" class="md-skip">
+        <a href="#windows-to-ios-file-transfer" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Basic Linux Workflow
+              Windows to iOS File Transfer
             
           </span>
         </div>
@@ -302,7 +302,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../01_Basic_Linux/" class="md-tabs__link">
           
   
   OSpace
@@ -534,6 +534,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_Basic_Linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Linux Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -550,7 +571,7 @@
           
   
   <span class="md-ellipsis">
-    Basic Linux Workflow
+    Windows to iOS File Transfer
   </span>
   
 
@@ -561,7 +582,7 @@
         
   
   <span class="md-ellipsis">
-    Basic Linux Workflow
+    Windows to iOS File Transfer
   </span>
   
 
@@ -592,15 +613,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
@@ -610,46 +622,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pulsars-directories" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Pulsar's Directories
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#linux-commands-in-action" class="md-nav__link">
+  <a href="#steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Linux Commands in Action
+      Steps
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Linux Commands in Action">
+    <nav class="md-nav" aria-label="Steps">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#navigating-and-managing-files" class="md-nav__link">
+  <a href="#step-1-create-a-shared-folder-on-windows" class="md-nav__link">
     <span class="md-ellipsis">
-      Navigating and Managing Files
+      Step 1: Create a Shared Folder on Windows
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#system-management" class="md-nav__link">
+  <a href="#step-2-connect-to-the-shared-folder-from-ios" class="md-nav__link">
     <span class="md-ellipsis">
-      System Management
+      Step 2: Connect to the Shared Folder from iOS
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#communication-and-troubleshooting" class="md-nav__link">
+  <a href="#step-3-transfer-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Communication and Troubleshooting
+      Step 3: Transfer Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-stellar-transfers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Stellar Transfers
     </span>
   </a>
   
@@ -660,49 +681,10 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#linux-survival-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux Survival Summary:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../02_windows_shared_ios/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Windows to iOS File Transfer
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -835,15 +817,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
@@ -853,46 +826,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pulsars-directories" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Pulsar's Directories
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#linux-commands-in-action" class="md-nav__link">
+  <a href="#steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Linux Commands in Action
+      Steps
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Linux Commands in Action">
+    <nav class="md-nav" aria-label="Steps">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#navigating-and-managing-files" class="md-nav__link">
+  <a href="#step-1-create-a-shared-folder-on-windows" class="md-nav__link">
     <span class="md-ellipsis">
-      Navigating and Managing Files
+      Step 1: Create a Shared Folder on Windows
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#system-management" class="md-nav__link">
+  <a href="#step-2-connect-to-the-shared-folder-from-ios" class="md-nav__link">
     <span class="md-ellipsis">
-      System Management
+      Step 2: Connect to the Shared Folder from iOS
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#communication-and-troubleshooting" class="md-nav__link">
+  <a href="#step-3-transfer-files" class="md-nav__link">
     <span class="md-ellipsis">
-      Communication and Troubleshooting
+      Step 3: Transfer Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-stellar-transfers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Stellar Transfers
     </span>
   </a>
   
@@ -900,24 +882,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linux-survival-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Linux Survival Summary:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
   
 </li>
       
@@ -936,115 +900,112 @@
                   
 
 
-<h1 id="basic-linux-workflow">Basic Linux Workflow</h1>
+<h1 id="windows-to-ios-file-transfer">Windows to iOS File Transfer</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/ospace/penguinspace.jpg?raw=true" alt="Penguin in Space" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/ospace/winios.jpg?raw=true" alt="winios" width="300" height="300">
 </div>
 
 <h2 id="objective">Objective</h2>
-<p>Learn commands for basic Linux operations from terminal by following a penguin in Outer Space. </p>
-<h2 id="introduction">Introduction</h2>
-<p>Meet Pulsar Penguin, the brave astronaut quietly floating in his spaceship in outer space. As he taps with his fins on the control panel keyboard, his spacecraft is suddenly damaged by a small meteor. Trained to stay calm in such situations, he begins to navigate through the dire scenario.</p>
+<p>Transfer files from a Windows PC to an iOS device in a safe and easy way using a shared folder.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To follow along, you'll need:</p>
 <ul>
-<li>Access to a Linux-based system or terminal emulator.</li>
+<li>Windows PC</li>
+<li>iOS Device (iPhone or iPad)</li>
+<li>Both devices connected to the same Wi-Fi network</li>
 </ul>
-<h2 id="pulsars-directories">Pulsar's Directories</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>engine
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├───mounted
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   ├───propeller.broken.part
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   └───jet.part
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>└───spare
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    ├───jet.new.part
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    └───propeller.new.part
-</code></pre></div>
-<h2 id="linux-commands-in-action">Linux Commands in Action</h2>
-<h3 id="navigating-and-managing-files">Navigating and Managing Files</h3>
+<h2 id="introduction">Introduction</h2>
+<p>In a galaxy far away, Captain Stellar of the Starship Nimbus is on a crucial mission. She needs to send important star maps from her ship's main computer (running on Windows) to her portable exploration device (an iOS system) before her next jump to a new star system. The galactic communications network is down, so relying on third-party services is risky—her data could be intercepted by space pirates or rogue AIs.</p>
+<p>To securely transfer the files, Captain Stellar knows she must use a shared folder, keeping her star maps within her control, even in the vastness of space.</p>
+<h2 id="steps">Steps</h2>
+<h3 id="step-1-create-a-shared-folder-on-windows">Step 1: Create a Shared Folder on Windows</h3>
+<p>To keep the star maps safe, Captain Stellar first needs to create a secure folder on her onboard computer.</p>
+<ol>
+<li><strong>Create a new folder:</strong></li>
+<li>Open File Explorer on your Windows PC.</li>
+<li>Navigate to the location where you want to create the shared folder (e.g., Desktop).</li>
+<li>Right-click, select "New," and then click "Folder."</li>
+<li>
+<p>Name the folder (e.g., "SharedFiles").</p>
+</li>
+<li>
+<p><strong>Set up sharing permissions:</strong></p>
+</li>
+<li>Right-click the folder you just created and select "Properties."</li>
+<li>Go to the <strong>Sharing</strong> tab and click <strong>Advanced Sharing</strong>.</li>
+<li>Check the box <strong>Share this folder</strong>.</li>
+<li>Click the <strong>Permissions</strong> button, select the user account (usually "Everyone"), and set the desired permissions (e.g., "Read/Write" for full access or "Read" for view-only).</li>
+<li>
+<p>Click <strong>OK</strong> to confirm.</p>
+</li>
+<li>
+<p><strong>Assign a specific account:</strong></p>
+</li>
+<li>Go back to the <strong>Sharing</strong> tab and click <strong>Share</strong>.</li>
+<li>Choose a custom account (e.g., your own user account) or create a new local account for security.</li>
+<li>Assign permission levels as needed (e.g., "Read/Write" or "Read").</li>
+<li>
+<p>Note the username and password associated with this account.</p>
+</li>
+<li>
+<p><strong>Get the network path:</strong></p>
+</li>
+<li>In the <strong>Sharing</strong> tab, you will see the network path of the folder, such as <code>\\YourComputerName\SharedFiles</code>. Write this down for later use when connecting from your iOS device.</li>
+</ol>
+<p><strong>Example network path:</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>\\YourComputerName\SharedFiles
+</code></pre></div></p>
+<h3 id="step-2-connect-to-the-shared-folder-from-ios">Step 2: Connect to the Shared Folder from iOS</h3>
+<p>With the shared folder set up on her onboard computer, Captain Stellar now turns to her iOS exploration device.</p>
+<ol>
+<li><strong>Open the Files app on your iOS device:</strong></li>
+<li>
+<p>This app is pre-installed on iOS devices and is used to access local and network files.</p>
+</li>
+<li>
+<p><strong>Access the shared folder:</strong></p>
+</li>
+<li>Tap on the <strong>Browse</strong> tab at the bottom of the screen.</li>
+<li>
+<p>Tap the three dots (<code>...</code>) in the upper-right corner, then tap <strong>Connect to Server</strong>.</p>
+</li>
+<li>
+<p><strong>Enter the server address:</strong></p>
+</li>
+<li>Type the address of the shared folder in this format: <code>smb://YourComputerName/SharedFiles</code>.</li>
+<li>
+<p>Tap <strong>Connect</strong>.</p>
+</li>
+<li>
+<p><strong>Authenticate with your account:</strong></p>
+</li>
+<li>Enter the username and password of the Windows account you shared the folder with.</li>
+<li>
+<p>If you used your local Windows account, enter those credentials here.</p>
+</li>
+<li>
+<p><strong>Access your files:</strong></p>
+</li>
+<li>Once authenticated, the shared folder will appear in the Files app, allowing you to browse, download, and upload files between your iOS device and the Windows PC.</li>
+</ol>
+<h3 id="step-3-transfer-files">Step 3: Transfer Files</h3>
+<p>Now that the devices are securely connected, Captain Stellar begins transferring data between them.</p>
+<ol>
+<li><strong>Send files from Windows to iOS:</strong></li>
+<li>
+<p>Simply drag and drop files into the shared folder on your Windows PC. These files will become accessible from the Files app on your iOS device.</p>
+</li>
+<li>
+<p><strong>Send files from iOS to Windows:</strong></p>
+</li>
+<li>In the Files app on your iOS device, browse to the shared folder and tap the upload icon to add files from your device into the shared folder.</li>
+</ol>
+<h3 id="tips-for-stellar-transfers">Tips for Stellar Transfers</h3>
 <ul>
-<li>
-<p>Calmly, Pulsar begins repair operations by determining his current location with the 'print working directory' command:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">pwd</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>Discovering he's in the /engine directory, he confirms its contents with the 'list' command:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ls
-</code></pre></div></p>
-</li>
-<li>
-<p>Hearing strange noises from the 'mounted' directory, he investigates further using the 'change directory' command:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd</span><span class="w"> </span>mounted
-</code></pre></div></p>
-</li>
-<li>
-<p>He finds a broken file, 'propeller.broken.part', and swiftly creates a new directory using 'make directory' to store parts temporarily:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mkdir<span class="w"> </span>temporary
-</code></pre></div></p>
-</li>
-<li>
-<p>Returning to the 'engine' level:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>..
-</code></pre></div></p>
-</li>
-<li>
-<p>He easily makes a 'copy' of the spare part:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>cp<span class="w"> </span>spare/propeller.new.part<span class="w"> </span>mounted/propeller.new.part
-</code></pre></div></p>
-</li>
-<li>
-<p>Revisiting the 'mounted' components, he renames the new part while 'moving' it:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>mv<span class="w"> </span>propeller.new.part<span class="w"> </span>propeller.part
-</code></pre></div></p>
-</li>
-<li>
-<p>After completing the repairs, he cleans up the debris by 'removing' unnecessary files:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>rm<span class="w"> </span>propeller.broken.part
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>rm<span class="w"> </span>-r<span class="w"> </span>temporary
-</code></pre></div></p>
-</li>
+<li><strong>Security:</strong> For improved security, consider setting up a dedicated user account with limited access and a strong password for file sharing.</li>
+<li><strong>Connection issues:</strong> Ensure both your Windows PC and iOS device are connected to the same Wi-Fi network.</li>
+<li><strong>Firewall:</strong> If you have trouble connecting, check that your Windows firewall is not blocking file sharing. You can temporarily disable it or add an exception for "File and Printer Sharing."</li>
 </ul>
-<h3 id="system-management">System Management</h3>
-<ul>
-<li>
-<p>Facing a moment of panic when the new part doesn't work due to incorrect permissions, Pulsar temporarily grants full access using the 'change mode' command:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">777</span><span class="w"> </span>/engine/mounted
-</code></pre></div></p>
-</li>
-<li>
-<p>Encountering an error, he elevates his privileges using the 'super user do' command:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">777</span><span class="w"> </span>/engine/mounted
-</code></pre></div></p>
-</li>
-</ul>
-<h3 id="communication-and-troubleshooting">Communication and Troubleshooting</h3>
-<ul>
-<li>
-<p>With the spaceship stabilized, Pulsar performs a final check to ensure all parts are accounted for using 'global regular expression print':
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>grep<span class="w"> </span>part
-</code></pre></div></p>
-</li>
-<li>
-<p>Before resuming his journey, he consults the manual one last time:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>man<span class="w"> </span><span class="nb">pwd</span>
-</code></pre></div></p>
-</li>
-</ul>
-<h2 id="linux-survival-summary">Linux Survival Summary:</h2>
-<ul>
-<li><code>pwd</code>: Get the path to the current working directory.</li>
-<li><code>ls</code>: List directory contents. <code>ls -lah</code> for more information.</li>
-<li><code>cd &lt;directory_name&gt;</code>: Change directory. <code>cd ..</code> to go back to a higher level.</li>
-<li><code>mkdir &lt;directory_name&gt;</code>: Create a new directory.</li>
-<li><code>cp &lt;path_original_file&gt; &lt;path_destination_file&gt;</code>: Copy a file.</li>
-<li><code>mv &lt;path_original_file&gt; &lt;path_destination_file&gt;</code>: Move a file.</li>
-<li><code>rm &lt;file_path&gt;</code>: Remove a file. <code>rm -rf &lt;directory_path&gt;</code>: Remove a directory and everything inside it forcefully.</li>
-<li><code>chmod &lt;permissions&gt; &lt;file_name&gt;</code>: Manage permissions.</li>
-<li><code>sudo &lt;command&gt;</code>: Execute a command as a superuser (root).</li>
-<li><code>grep &lt;pattern&gt; &lt;file_name&gt;</code>: Search for a pattern in files.</li>
-</ul>
-<h2 id="conclusion">Conclusion</h2>
-<p>Pulsar's journey demonstrates how mastering basic Linux commands can be crucial in critical situations. By familiarizing yourself with these commands, you too can navigate through the complexities of Linux systems with confidence and resilience.</p>
+<p>With the star maps successfully transferred, Captain Stellar breathes a sigh of relief. Using this secure method, she avoids the risks of third-party networks in deep space and keeps her data safely within her control. Now fully prepared, she heads off to her next mission, knowing her files are secure and easily accessible across the stars.</p>
 <div style="text-align:center;">
   <a href="https://patreon.com/Vitrua">
     <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">
@@ -1109,7 +1070,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../Misc%20Magic/05_Tekton_II_deploy_pipeline/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tekton Pipelines simple deploy">
+          <a href="../01_Basic_Linux/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Basic Linux Workflow">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1119,20 +1080,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Tekton Pipelines simple deploy
+                Basic Linux Workflow
               </div>
             </div>
           </a>
         
         
           
-          <a href="../02_windows_shared_ios/" class="md-footer__link md-footer__link--next" aria-label="Next: Windows to iOS File Transfer">
+          <a href="../../OpenShift%20Castle/01_authentication_new_project_basics/" class="md-footer__link md-footer__link--next" aria-label="Next: Authentication, new project and basics">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Windows to iOS File Transfer
+                Authentication, new project and basics
               </div>
             </div>
             <div class="md-footer__button md-icon">
