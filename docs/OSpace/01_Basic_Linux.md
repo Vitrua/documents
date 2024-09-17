@@ -1,7 +1,7 @@
 # Basic Linux Workflow
 
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/linux/penguinspace.jpg?raw=true" alt="Penguin in Space" width="300" height="300">
+  <img src="https://github.com/Vitrua/images/blob/main/ospace/penguinspace.jpg?raw=true" alt="Penguin in Space" width="300" height="300">
 </div>
 
 ## Objective
