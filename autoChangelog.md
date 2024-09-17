@@ -1,3 +1,12 @@
+# [0.23.0](https://github.com/Vitrua/documents/compare/v0.22.0...v0.23.0) (2024-09-17)
+
+
+### Features
+
+* add windows to ios transfer ([357a5e1](https://github.com/Vitrua/documents/commit/357a5e191ee8f914b0b8197096d2ff6792fc94cb))
+
+
+
 # [0.22.0](https://github.com/Vitrua/documents/compare/v0.21.0...v0.22.0) (2024-09-07)
 
 
