@@ -1,3 +1,12 @@
+# [0.24.0](https://github.com/Vitrua/documents/compare/v0.23.0...v0.24.0) (2024-11-13)
+
+
+### Features
+
+* add first server setup ([b300f5d](https://github.com/Vitrua/documents/commit/b300f5dd4917467b286430b80588807ea3c89da5))
+
+
+
 # [0.23.0](https://github.com/Vitrua/documents/compare/v0.22.0...v0.23.0) (2024-09-17)
 
 
