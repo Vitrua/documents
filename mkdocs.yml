@@ -51,6 +51,17 @@ theme:
 plugins:
   - social
   - search
+  - ultralytics:
+      verbose: True
+      enabled: True
+      default_image: "https://github.com/Vitrua/website/blob/main/docs/hero.png"
+      add_desc: True
+      add_image: True
+      add_keywords: True
+      add_share_buttons: True
+      add_authors: False
+      add_json_ld: False
+      add_css: True
   - git-revision-date-localized:
       type: date
 #  - search.highlight
