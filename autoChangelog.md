@@ -1,3 +1,12 @@
+## [0.24.1](https://github.com/Vitrua/documents/compare/v0.24.0...v0.24.1) (2025-01-19)
+
+
+### Bug Fixes
+
+* install correct ultralytics ([8df4a21](https://github.com/Vitrua/documents/commit/8df4a21f7438c50d17fb4ea49b0390eece9e1310))
+
+
+
 # [0.24.0](https://github.com/Vitrua/documents/compare/v0.23.0...v0.24.0) (2024-11-13)
 
 
