@@ -1,251 +1,128 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-        <link rel="canonical" href="https://docs.vitrua.top/WorkFlows/03_power_saving_2_HDD/">
-      
-      
-        <link rel="prev" href="../02_pc_server_ssh/">
-      
-      
-        <link rel="next" href="../Portable_Docker_coding_environments/01_portable_python/">
-      
-      
-      <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
-    
-    
-      
-        <title>Power-Saving 2-HDD Ubuntu Server Setup - Vitrua.top</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
-      
-      
+<!DOCTYPE html>
 
-
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-      
-        <meta  property="og:type"  content="website" >
-      
-        <meta  property="og:title"  content="Power-Saving 2-HDD Ubuntu Server Setup - Vitrua.top" >
-      
-        <meta  property="og:description"  content="None" >
-      
-        <meta  property="og:image"  content="https://docs.vitrua.top/assets/images/social/WorkFlows/03_power_saving_2_HDD.png" >
-      
-        <meta  property="og:image:type"  content="image/png" >
-      
-        <meta  property="og:image:width"  content="1200" >
-      
-        <meta  property="og:image:height"  content="630" >
-      
-        <meta  property="og:url"  content="https://docs.vitrua.top/WorkFlows/03_power_saving_2_HDD/" >
-      
-        <meta  name="twitter:card"  content="summary_large_image" >
-      
-        <meta  name="twitter:title"  content="Power-Saving 2-HDD Ubuntu Server Setup - Vitrua.top" >
-      
-        <meta  name="twitter:description"  content="None" >
-      
-        <meta  name="twitter:image"  content="https://docs.vitrua.top/assets/images/social/WorkFlows/03_power_saving_2_HDD.png" >
-      
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#power-saving-2-hdd-ubuntu-server-setup" class="md-skip">
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Learn how to configure an energy-efficient 2-HDD setup on an Ubuntu server using cron jobs, rsync for syncing, and power management tools—all to reduce energy usage while ensuring data security." name="description"/>
+<link href="https://docs.vitrua.top/WorkFlows/03_power_saving_2_HDD/" rel="canonical"/>
+<link href="../02_pc_server_ssh/" rel="prev"/>
+<link href="../Portable_Docker_coding_environments/01_portable_python/" rel="next"/>
+<link href="../../assets/favicon.ico" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.5.50" name="generator"/>
+<title>Power-Saving 2-HDD Ubuntu Server Setup - Vitrua.top</title>
+<link href="../../assets/stylesheets/main.a40c8224.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"DM Sans";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<meta content="website" property="og:type"/>
+<meta content="Power-Saving 2-HDD Ubuntu Server Setup - Vitrua.top" property="og:title"/>
+<meta content="None" property="og:description"/>
+<meta content="https://github.com/Vitrua/images/blob/main/workflows/2bays.jpg?raw=true" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="https://docs.vitrua.top/WorkFlows/03_power_saving_2_HDD/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Power-Saving 2-HDD Ubuntu Server Setup - Vitrua.top" name="twitter:title"/>
+<meta content="None" name="twitter:description"/>
+<meta content="https://docs.vitrua.top/assets/images/social/WorkFlows/03_power_saving_2_HDD.png" name="twitter:image"/>
+<meta content="Power-Saving 2-HDD Ubuntu Server Setup" name="title"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/><meta content="website" property="og:type"/><meta content="https://docs.vitrua.top/WorkFlows/03_power_saving_2_HDD" property="og:url"/><meta content="Power-Saving 2-HDD Ubuntu Server Setup" property="og:title"/><meta content="Learn how to configure an energy-efficient 2-HDD setup on an Ubuntu server using cron jobs, rsync for syncing, and power management tools—all to reduce energy usage while ensuring data security." property="og:description"/><meta content="summary_large_image" property="twitter:card"/><meta content="https://docs.vitrua.top/WorkFlows/03_power_saving_2_HDD" property="twitter:url"/><meta content="Power-Saving 2-HDD Ubuntu Server Setup" property="twitter:title"/><meta content="Learn how to configure an energy-efficient 2-HDD setup on an Ubuntu server using cron jobs, rsync for syncing, and power management tools—all to reduce energy usage while ensuring data security." property="twitter:description"/><meta content="https://github.com/Vitrua/images/blob/main/workflows/2bays.jpg?raw=true" property="twitter:image"/></head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#power-saving-2-hdd-ubuntu-server-setup">
           Skip to content
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
+</div>
+<div data-md-component="announce">
+</div>
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Vitrua.top" class="md-header__button md-logo" aria-label="Vitrua.top" data-md-component="logo">
-      
-  <img src="../../assets/logo.png" alt="logo">
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Vitrua.top" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Vitrua.top">
+<img alt="logo" src="../../assets/logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             Vitrua.top
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               Power-Saving 2-HDD Ubuntu Server Setup
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-orange"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
-    
-      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
-      </label>
-    
-  
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="deep-orange" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="deep-orange" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+</label>
 </form>
-      
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Share">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list" role="presentation"></ol>
 </div>
-    
-    
-  </nav>
-  
+</div>
+</div>
+</div>
+</div>
+</nav>
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
         
   
     
@@ -253,921 +130,479 @@
   Guides
 
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../Kubernetes%20Dungeon/01_Pods/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Kubernetes%20Dungeon/01_Pods/">
           
   
   Kubernetes Dungeon
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../Misc%20Magic/01_Git_Basic_workflow/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Misc%20Magic/01_Git_Basic_workflow/">
           
   
   Misc Magic
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../OSpace/01_Basic_Linux/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../OSpace/01_Basic_Linux/">
           
   
   OSpace
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../OpenShift%20Castle/01_authentication_new_project_basics/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../OpenShift%20Castle/01_authentication_new_project_basics/">
           
   
   OpenShift Castle
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../01_local_jenkins_openid/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../01_local_jenkins_openid/">
           
   
   WorkFlows
 
         </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
+</li>
+</ul>
+</div>
 </nav>
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Vitrua.top" class="md-nav__button md-logo" aria-label="Vitrua.top" data-md-component="logo">
-      
-  <img src="../../assets/logo.png" alt="logo">
-
-    </a>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Vitrua.top" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Vitrua.top">
+<img alt="logo" src="../../assets/logo.png"/>
+</a>
     Vitrua.top
   </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
     Guides
   </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../Kubernetes%20Dungeon/01_Pods/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../Kubernetes%20Dungeon/01_Pods/">
+<span class="md-ellipsis">
     Kubernetes Dungeon
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../Misc%20Magic/01_Git_Basic_workflow/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../Misc%20Magic/01_Git_Basic_workflow/">
+<span class="md-ellipsis">
     Misc Magic
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../OSpace/01_Basic_Linux/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../OSpace/01_Basic_Linux/">
+<span class="md-ellipsis">
     OSpace
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../OpenShift%20Castle/01_authentication_new_project_basics/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../OpenShift%20Castle/01_authentication_new_project_basics/">
+<span class="md-ellipsis">
     OpenShift Castle
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+<span class="md-ellipsis">
     WorkFlows
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
             WorkFlows
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../01_local_jenkins_openid/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../01_local_jenkins_openid/">
+<span class="md-ellipsis">
     Local Jenkins OpenId test - Login in Jenkins with Azure Entra Id
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../02_pc_server_ssh/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../02_pc_server_ssh/">
+<span class="md-ellipsis">
     PC-Server SSH Connection Setup
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
     Power-Saving 2-HDD Ubuntu Server Setup
   </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
     Power-Saving 2-HDD Ubuntu Server Setup
   </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#objective">
+<span class="md-ellipsis">
       Objective
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#the-tale-of-the-persistent-mariner-and-the-slumbering-sailor" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-tale-of-the-persistent-mariner-and-the-slumbering-sailor">
+<span class="md-ellipsis">
       The Tale of the Persistent Mariner and the Slumbering Sailor
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#preparing-the-ships-log-and-storage" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preparing-the-ships-log-and-storage">
+<span class="md-ellipsis">
       Preparing the Ship’s Log and Storage
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Preparing the Ship’s Log and Storage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-identifying-the-first-mate-and-slumbering-sailor" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="Preparing the Ship’s Log and Storage" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-identifying-the-first-mate-and-slumbering-sailor">
+<span class="md-ellipsis">
       1. Identifying the First Mate and Slumbering Sailor
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-creating-a-dock-for-the-slumbering-sailor" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-creating-a-dock-for-the-slumbering-sailor">
+<span class="md-ellipsis">
       2. Creating a Dock for the Slumbering Sailor
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3-writing-the-weekly-sync-routine" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-writing-the-weekly-sync-routine">
+<span class="md-ellipsis">
       3. Writing the Weekly Sync Routine
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#4-scheduling-the-sync-using-the-tides-of-cron" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-scheduling-the-sync-using-the-tides-of-cron">
+<span class="md-ellipsis">
       4. Scheduling the Sync Using the Tides of Cron
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#bestowing-rest-upon-the-persistent-mariner" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bestowing-rest-upon-the-persistent-mariner">
+<span class="md-ellipsis">
       Bestowing Rest Upon the Persistent Mariner
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Bestowing Rest Upon the Persistent Mariner">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-installing-hdparm" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="Bestowing Rest Upon the Persistent Mariner" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-installing-hdparm">
+<span class="md-ellipsis">
       1. Installing hdparm
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-setting-an-idle-timer" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-setting-an-idle-timer">
+<span class="md-ellipsis">
       2. Setting an Idle Timer
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3-setting-advanced-power-management-optional" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-setting-advanced-power-management-optional">
+<span class="md-ellipsis">
       3. Setting Advanced Power Management (Optional)
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#summary-of-captain-nets-routine" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary-of-captain-nets-routine">
+<span class="md-ellipsis">
       Summary of Captain Net’s Routine
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Summary of Captain Net’s Routine">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#commands-summary" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="Summary of Captain Net’s Routine" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#commands-summary">
+<span class="md-ellipsis">
       Commands Summary:
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../Portable_Docker_coding_environments/01_portable_python/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../Portable_Docker_coding_environments/01_portable_python/">
+<span class="md-ellipsis">
     Portable Docker coding environments
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-  </ul>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#objective" class="md-nav__link">
-    <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#objective">
+<span class="md-ellipsis">
       Objective
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#the-tale-of-the-persistent-mariner-and-the-slumbering-sailor" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-tale-of-the-persistent-mariner-and-the-slumbering-sailor">
+<span class="md-ellipsis">
       The Tale of the Persistent Mariner and the Slumbering Sailor
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#preparing-the-ships-log-and-storage" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#preparing-the-ships-log-and-storage">
+<span class="md-ellipsis">
       Preparing the Ship’s Log and Storage
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Preparing the Ship’s Log and Storage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-identifying-the-first-mate-and-slumbering-sailor" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="Preparing the Ship’s Log and Storage" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-identifying-the-first-mate-and-slumbering-sailor">
+<span class="md-ellipsis">
       1. Identifying the First Mate and Slumbering Sailor
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-creating-a-dock-for-the-slumbering-sailor" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-creating-a-dock-for-the-slumbering-sailor">
+<span class="md-ellipsis">
       2. Creating a Dock for the Slumbering Sailor
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3-writing-the-weekly-sync-routine" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-writing-the-weekly-sync-routine">
+<span class="md-ellipsis">
       3. Writing the Weekly Sync Routine
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#4-scheduling-the-sync-using-the-tides-of-cron" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-scheduling-the-sync-using-the-tides-of-cron">
+<span class="md-ellipsis">
       4. Scheduling the Sync Using the Tides of Cron
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#bestowing-rest-upon-the-persistent-mariner" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bestowing-rest-upon-the-persistent-mariner">
+<span class="md-ellipsis">
       Bestowing Rest Upon the Persistent Mariner
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Bestowing Rest Upon the Persistent Mariner">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-installing-hdparm" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="Bestowing Rest Upon the Persistent Mariner" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-installing-hdparm">
+<span class="md-ellipsis">
       1. Installing hdparm
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-setting-an-idle-timer" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-setting-an-idle-timer">
+<span class="md-ellipsis">
       2. Setting an Idle Timer
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3-setting-advanced-power-management-optional" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-setting-advanced-power-management-optional">
+<span class="md-ellipsis">
       3. Setting Advanced Power Management (Optional)
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#summary-of-captain-nets-routine" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#summary-of-captain-nets-routine">
+<span class="md-ellipsis">
       Summary of Captain Net’s Routine
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Summary of Captain Net’s Routine">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#commands-summary" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="Summary of Captain Net’s Routine" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#commands-summary">
+<span class="md-ellipsis">
       Commands Summary:
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
 <h1 id="power-saving-2-hdd-ubuntu-server-setup">Power-Saving 2-HDD Ubuntu Server Setup</h1>
 <div style="text-align:center;">
-  <img src="https://github.com/Vitrua/images/blob/main/workflows/2bays.jpg?raw=true" alt="2bays" width="300" height="300">
+<img alt="2bays" height="300" src="https://github.com/Vitrua/images/blob/main/workflows/2bays.jpg?raw=true" width="300"/>
 </div>
-
 <h2 id="objective">Objective</h2>
 <p>Learn how to configure an energy-efficient 2-HDD setup on an Ubuntu server using cron jobs, rsync for syncing, and power management tools—all to reduce energy usage while ensuring data security.</p>
-<hr />
+<hr/>
 <h2 id="the-tale-of-the-persistent-mariner-and-the-slumbering-sailor">The Tale of the Persistent Mariner and the Slumbering Sailor</h2>
 <p>In the vast ocean of Cloudoria, a ship captain named Captain Net embarked on a quest to manage his storage fleet. The ship’s <strong>Persistent Mariner</strong> (the first disk) worked tirelessly, keeping the ship’s records organized and accessible at all times. But beside it rested a <strong>Slumbering Sailor</strong> (the second disk), who awoke only once a week to synchronize data, aiding the captain in preserving precious cargo without draining the ship’s energy.</p>
 <p>To maintain this balance, Captain Net needed a strategy to control the Slumbering Sailor’s awakenings and to allow the Persistent Mariner to conserve energy when idle.</p>
-<hr />
+<hr/>
 <h2 id="preparing-the-ships-log-and-storage">Preparing the Ship’s Log and Storage</h2>
 <h3 id="1-identifying-the-first-mate-and-slumbering-sailor">1. <strong>Identifying the First Mate and Slumbering Sailor</strong></h3>
 <p>Captain Net started by identifying each disk’s identifier:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>lsblk
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>lsblk
 </code></pre></div>
 <p>In the device list, he found:
 - The <strong>Persistent Mariner</strong> (<code>/dev/sdb</code>) was mounted at <code>/mnt/disk1</code>, always prepared for the crew’s needs.
 - The <strong>Slumbering Sailor</strong> (<code>/dev/sdc</code>) would only mount at <code>/mnt/disk2</code> for the weekly sync.</p>
 <h3 id="2-creating-a-dock-for-the-slumbering-sailor">2. <strong>Creating a Dock for the Slumbering Sailor</strong></h3>
 <p>To ensure the Slumbering Sailor had a safe place to mount when needed, the captain created a mount point:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/mnt/disk2
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/mnt/disk2
 </code></pre></div>
 <h3 id="3-writing-the-weekly-sync-routine">3. <strong>Writing the Weekly Sync Routine</strong></h3>
 <p>Captain Net penned a script, naming it <code>weekly_sync.sh</code>, to summon the Slumbering Sailor weekly, sync data with the Persistent Mariner, and let it rest once again. He placed it in the <code>/usr/local/bin/</code> directory:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="ch">#!/bin/bash</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># Defining paths and devices</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nv">DISK1</span><span class="o">=</span><span class="s2">&quot;/mnt/disk1&quot;</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nv">DISK2</span><span class="o">=</span><span class="s2">&quot;/mnt/disk2&quot;</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nv">DEVICE</span><span class="o">=</span><span class="s2">&quot;/dev/sdc&quot;</span><span class="w"> </span><span class="c1"># Identifier of the Slumbering Sailor</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># Step 1: Mount the Slumbering Sailor</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>sudo<span class="w"> </span>mount<span class="w"> </span><span class="nv">$DEVICE</span><span class="w"> </span><span class="nv">$DISK2</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Failed to mount </span><span class="nv">$DEVICE</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="o">}</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># Step 2: Sync Persistent Mariner&#39;s data with the Slumbering Sailor</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>rsync<span class="w"> </span>-av<span class="w"> </span>--delete<span class="w"> </span><span class="nv">$DISK1</span>/<span class="w"> </span><span class="nv">$DISK2</span>/
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="c1"># Step 3: Unmount the Slumbering Sailor</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>sudo<span class="w"> </span>umount<span class="w"> </span><span class="nv">$DISK2</span>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1"># Step 4: Power down the Slumbering Sailor</span>
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>sudo<span class="w"> </span>udisksctl<span class="w"> </span>power-off<span class="w"> </span>-b<span class="w"> </span><span class="nv">$DEVICE</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="ch">#!/bin/bash</span>
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="c1"># Defining paths and devices</span>
+<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="nv">DISK1</span><span class="o">=</span><span class="s2">"/mnt/disk1"</span>
+<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nv">DISK2</span><span class="o">=</span><span class="s2">"/mnt/disk2"</span>
+<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="nv">DEVICE</span><span class="o">=</span><span class="s2">"/dev/sdc"</span><span class="w"> </span><span class="c1"># Identifier of the Slumbering Sailor</span>
+<a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a>
+<a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="c1"># Step 1: Mount the Slumbering Sailor</span>
+<a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a>sudo<span class="w"> </span>mount<span class="w"> </span><span class="nv">$DEVICE</span><span class="w"> </span><span class="nv">$DISK2</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">"Failed to mount </span><span class="nv">$DEVICE</span><span class="s2">"</span><span class="p">;</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="o">}</span>
+<a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a>
+<a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="c1"># Step 2: Sync Persistent Mariner's data with the Slumbering Sailor</span>
+<a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a>rsync<span class="w"> </span>-av<span class="w"> </span>--delete<span class="w"> </span><span class="nv">$DISK1</span>/<span class="w"> </span><span class="nv">$DISK2</span>/
+<a href="#__codelineno-2-13" id="__codelineno-2-13" name="__codelineno-2-13"></a>
+<a href="#__codelineno-2-14" id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="c1"># Step 3: Unmount the Slumbering Sailor</span>
+<a href="#__codelineno-2-15" id="__codelineno-2-15" name="__codelineno-2-15"></a>sudo<span class="w"> </span>umount<span class="w"> </span><span class="nv">$DISK2</span>
+<a href="#__codelineno-2-16" id="__codelineno-2-16" name="__codelineno-2-16"></a>
+<a href="#__codelineno-2-17" id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="c1"># Step 4: Power down the Slumbering Sailor</span>
+<a href="#__codelineno-2-18" id="__codelineno-2-18" name="__codelineno-2-18"></a>sudo<span class="w"> </span>udisksctl<span class="w"> </span>power-off<span class="w"> </span>-b<span class="w"> </span><span class="nv">$DEVICE</span>
 </code></pre></div>
 <p>After finishing, Captain Net made the script executable:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>/usr/local/bin/weekly_sync.sh
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>/usr/local/bin/weekly_sync.sh
 </code></pre></div>
 <h3 id="4-scheduling-the-sync-using-the-tides-of-cron">4. <strong>Scheduling the Sync Using the Tides of Cron</strong></h3>
 <p>Using a <code>cron</code> job, Captain Net scheduled his script to wake up the Slumbering Sailor every Sunday at 2:00 AM.</p>
 <p>To configure this, he opened the cron editor:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>crontab<span class="w"> </span>-e
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>crontab<span class="w"> </span>-e
 </code></pre></div>
 <p>Then, he added the following line to ensure the Slumbering Sailor would reliably appear:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="m">0</span><span class="w"> </span><span class="m">2</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span><span class="m">0</span><span class="w"> </span>/usr/local/bin/weekly_sync.sh
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="m">0</span><span class="w"> </span><span class="m">2</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span><span class="m">0</span><span class="w"> </span>/usr/local/bin/weekly_sync.sh
 </code></pre></div>
 <p>With this, each week, the Slumbering Sailor would awaken, sync with the Persistent Mariner, and return to sleep, saving energy and maintaining safe data backups.</p>
-<hr />
+<hr/>
 <h2 id="bestowing-rest-upon-the-persistent-mariner">Bestowing Rest Upon the Persistent Mariner</h2>
 <p>To help the Persistent Mariner conserve energy during calm seas, Captain Net used <code>hdparm</code>, an efficient power-management tool.</p>
 <h3 id="1-installing-hdparm">1. <strong>Installing <code>hdparm</code></strong></h3>
 <p>Captain Net ensured <code>hdparm</code> was available on his ship’s server:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>hdparm
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>hdparm
 </code></pre></div>
 <h3 id="2-setting-an-idle-timer">2. <strong>Setting an Idle Timer</strong></h3>
 <p>He then set the Persistent Mariner to spin down automatically after 10 minutes of inactivity, reducing energy use without compromising availability.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>hdparm<span class="w"> </span>-S<span class="w"> </span><span class="m">120</span><span class="w"> </span>/dev/sdb
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>sudo<span class="w"> </span>hdparm<span class="w"> </span>-S<span class="w"> </span><span class="m">120</span><span class="w"> </span>/dev/sdb
 </code></pre></div>
 <ul>
 <li><strong><code>-S 120</code></strong>: This value sets the spin-down timer to 10 minutes (120 units of 5 seconds each).</li>
 </ul>
 <p>To make this setting persistent across reboots, he added it to the system configuration file:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;/dev/sdb { spindown_time = 120 }&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/hdparm.conf
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">"/dev/sdb { spindown_time = 120 }"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/hdparm.conf
 </code></pre></div>
 <h3 id="3-setting-advanced-power-management-optional">3. <strong>Setting Advanced Power Management (Optional)</strong></h3>
 <p>For more energy efficiency, he used <strong>Advanced Power Management</strong>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>hdparm<span class="w"> </span>-B<span class="w"> </span><span class="m">127</span><span class="w"> </span>/dev/sdb
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>sudo<span class="w"> </span>hdparm<span class="w"> </span>-B<span class="w"> </span><span class="m">127</span><span class="w"> </span>/dev/sdb
 </code></pre></div>
 <ul>
 <li><strong><code>-B 127</code></strong>: This option allows for moderate power savings without impacting the Persistent Mariner’s performance.</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="summary-of-captain-nets-routine">Summary of Captain Net’s Routine</h2>
 <ol>
 <li>The Slumbering Sailor powers on weekly to sync with the Persistent Mariner, then returns to rest.</li>
 <li>The Persistent Mariner spins down automatically after 10 minutes of inactivity, conserving energy.</li>
 </ol>
 <p>With this setup, Captain Net’s storage fleet would be energy-efficient and reliable, ready to protect their valuable data for many voyages ahead.</p>
-<hr />
+<hr/>
 <h3 id="commands-summary">Commands Summary:</h3>
 <ul>
 <li><strong>Sync Script</strong>: Schedule weekly syncing using <code>rsync</code> and <code>udisksctl</code> to power down the Slumbering Sailor.</li>
@@ -1175,181 +610,105 @@
 <li><strong>Spin-Down</strong>: <code>hdparm -S 120 /dev/sdb</code> — Set a spin-down timer for the Persistent Mariner.</li>
 <li><strong>Advanced Power Management</strong>: <code>hdparm -B 127 /dev/sdb</code> — Moderate power-saving settings.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>ship-storage-setup/
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>├── weekly_sync.sh # Automates the syncing process and powers down the Slumbering Sailor
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>└── hdparm.conf    # Stores persistent power management settings
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>ship-storage-setup/
+<a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a>├── weekly_sync.sh # Automates the syncing process and powers down the Slumbering Sailor
+<a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a>└── hdparm.conf    # Stores persistent power management settings
 </code></pre></div>
 <p>Captain Net’s journey came to a satisfying end, knowing his disks would be loyal, energy-efficient stewards of his server’s data for many voyages ahead.</p>
 <div style="text-align:center;">
-  <a href="https://patreon.com/Vitrua">
-    <img src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" alt="wiz" width="150" height="150">
-    <img src="https://github.com/Vitrua/images/blob/main/others/supportmon.png?raw=true#only-dark" alt="wiz" width="150" height="150">
-  </a>
+<a href="https://patreon.com/Vitrua">
+<img alt="wiz" height="150" src="https://github.com/Vitrua/images/blob/main/others/supportmonlight.png?raw=true#only-light" width="150"/>
+<img alt="wiz" height="150" src="https://github.com/Vitrua/images/blob/main/others/supportmon.png?raw=true#only-dark" width="150"/>
+</a>
 </div>
-
-
-
-
-
-
-
-  
-    
-  
-  
-
-
-  <aside class="md-source-file">
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Last update">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2024</span>
-  </span>
-
-    
-    
-    
-    
-  </aside>
-
-
-
-
-
-                
-              </article>
-            </div>
-          
-          
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
-
+<aside class="md-source-file">
+<span class="md-source-file__fact">
+<span class="md-icon" title="Last update">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
+</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2024</span>
+</span>
+</aside>
+<div class="share-buttons">
+<button class="share-button hover-item" onclick="window.open('https://twitter.com/intent/tweet?url=https://docs.vitrua.top/WorkFlows/03_power_saving_2_HDD', 'TwitterShare', 'width=550,height=680,menubar=no,toolbar=no'); return false;">
+<i class="fa-brands fa-x-twitter"></i> Tweet
+    </button>
+<button class="share-button hover-item linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?url=https://docs.vitrua.top/WorkFlows/03_power_saving_2_HDD', 'LinkedinShare', 'width=550,height=730,menubar=no,toolbar=no'); return false;">
+<i class="fa-brands fa-linkedin-in"></i> Share
+    </button>
+</div>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../02_pc_server_ssh/" class="md-footer__link md-footer__link--prev" aria-label="Previous: PC-Server SSH Connection Setup">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: PC-Server SSH Connection Setup" class="md-footer__link md-footer__link--prev" href="../02_pc_server_ssh/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
                 Previous
               </span>
-              <div class="md-ellipsis">
+<div class="md-ellipsis">
                 PC-Server SSH Connection Setup
               </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../Portable_Docker_coding_environments/01_portable_python/" class="md-footer__link md-footer__link--next" aria-label="Next: Portable Python development environment">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
+</div>
+</a>
+<a aria-label="Next: Portable Python development environment" class="md-footer__link md-footer__link--next" href="../Portable_Docker_coding_environments/01_portable_python/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
                 Next
               </span>
-              <div class="md-ellipsis">
+<div class="md-ellipsis">
                 Portable Python development environment
               </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-    
-      <div class="md-copyright__highlight">
-        &copy; 2024 <a href="https://vitrua.top"  target="_blank" rel="noopener">Vitrua</a>
-
-      </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+        © 2024 <a href="https://vitrua.top" rel="noopener" target="_blank">Vitrua</a>
+</div>
     
     
       Visit our
-      <a href="https://linkedin.com/in/phuongcth" target="_blank" rel="noopener">
+      <a href="https://linkedin.com/in/phuongcth" rel="noopener" target="_blank">
         Mastermind
       </a>
-    
-  </div>
-      
-        <div class="md-social">
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://patreon.com/Vitrua" target="_blank" rel="noopener" title="patreon.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M489.7 153.8c-.1-65.4-51-119-110.7-138.3C304.8-8.5 207-5 136.1 28.4 50.3 68.9 23.3 157.7 22.3 246.2 21.5 319 28.7 510.6 136.9 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://instagram.com/vitruastudio" target="_blank" rel="noopener" title="instagram.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://linkedin.com/in/phuongcth" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
-    </a>
-  
 </div>
-      
-    </div>
-  </div>
+<div class="md-social">
+<a class="md-social__link" href="https://patreon.com/Vitrua" rel="noopener" target="_blank" title="patreon.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M489.7 153.8c-.1-65.4-51-119-110.7-138.3C304.8-8.5 207-5 136.1 28.4 50.3 68.9 23.3 157.7 22.3 246.2 21.5 319 28.7 510.6 136.9 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"></path></svg>
+</a>
+<a class="md-social__link" href="https://instagram.com/vitruastudio" rel="noopener" target="_blank" title="instagram.com">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"></path></svg>
+</a>
+<a class="md-social__link" href="https://linkedin.com/in/phuongcth" rel="noopener" target="_blank" title="linkedin.com">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"></path></svg>
+</a>
+</div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
-    
-    
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.prune", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
-      
-    
-  </body>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<div class="md-progress" data-md-component="progress" role="progressbar"></div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.prune", "navigation.footer"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+</body>
 </html>
