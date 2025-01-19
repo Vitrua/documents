@@ -23,5 +23,4 @@ jobs:
       - run: pip install "mkdocs-material[imaging]"
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install pillow cairosvg
-      - run: pip install ultralytics
       - run: mkdocs gh-deploy --force
