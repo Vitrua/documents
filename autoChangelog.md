@@ -1,3 +1,12 @@
+# [0.25.0](https://github.com/Vitrua/documents/compare/v0.24.1...v0.25.0) (2025-04-16)
+
+
+### Features
+
+* add python jumpstart ([f65bb48](https://github.com/Vitrua/documents/commit/f65bb48b883cc01e25d76df56ca4af33385d543e))
+
+
+
 ## [0.24.1](https://github.com/Vitrua/documents/compare/v0.24.0...v0.24.1) (2025-01-19)
 
 
